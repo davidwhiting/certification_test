@@ -1,7 +1,7 @@
 #default: build
 
 mongo_run:
-	docker run -d -p 27017-27019:27017-27019 -v ~/data:~/tmp/db --name mongodb mongo:latest
+	docker run -d -p 27017-27019:27017-27019 -v ~/data:/Users/dwhiting/tmp/db --name mongodb mongo:latest
 
 #
 #fetch:
