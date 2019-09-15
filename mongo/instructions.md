@@ -23,7 +23,11 @@ WriteResult({ "nInserted" : 1 })
 
 > db.people.save({ firstname: "Santa", lastname: "Claus"})
 WriteResult({ "nInserted" : 1 })
+```
 
+This creates a database called `myfirstmongo` and we have entered a little information into a collection called `people`. 
+
+```
 > db.people.find({firstname: "Nick"})
 { "_id" : ObjectId("5d7d912dcc73f8f2d807af79"), "firstname" : "Nick", "lastname" : "Claus" }
 
