@@ -1,0 +1,63 @@
+{
+    "index": {
+        "0": 0
+    },
+    "Type": {
+        "0": "LightGBMModel"
+    },
+    "Num Folds": {
+        "0": 4
+    },
+    "Model Weight": {
+        "0": 1.0
+    },
+    "booster": {
+        "0": "lightgbm"
+    },
+    "max_depth": {
+        "0": 6
+    },
+    "max_leaves": {
+        "0": 64
+    },
+    "subsample": {
+        "0": 0.7
+    },
+    "colsample_bytree": {
+        "0": 0.8
+    },
+    "tree_method": {
+        "0": "gpu_hist"
+    },
+    "grow_policy": {
+        "0": "depthwise"
+    },
+    "random_state": {
+        "0": 98765
+    },
+    "learning rate": {
+        "0": 0.05
+    },
+    "Target Transformer": {
+        "0": "str"
+    },
+    "Fitted features": {
+        "0": 63
+    },
+    "Fit iterations [each fold]": {
+        "0": [
+            68,
+            69,
+            65,
+            73
+        ]
+    },
+    "Fit tree/step count [each fold]": {
+        "0": [
+            68,
+            69,
+            65,
+            73
+        ]
+    }
+}

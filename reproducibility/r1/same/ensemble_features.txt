@@ -1,0 +1,64 @@
+Relative Importance,Standard Deviation of Relative Importance,Feature,Description
+1,0.32991,45_NumToCatWoE:PayAmt3:Status1:Status2.0,"Weight of Evidence for columns ['PayAmt3', 'Status1', 'Status2'] column #0 (numeric columns are bucketed into 25 equally populated bins)"
+0.68854,0.49648,61_NumToCatWoE:PayAmt2:Status1:Status2.0,"Weight of Evidence for columns ['PayAmt2', 'Status1', 'Status2'] column #0 (numeric columns are bucketed into 25 equally populated bins)"
+0.24965,0.14375,51_ClusterTE:ClusterID71:PayAmt3:Status1:Status3.0,"Out-of-fold mean of the response grouped by: ['ClusterID71:PayAmt3:Status1:Status3'] using 5 folds (Clustered into 71 clusters) [internal:(71, True, 20, 3, 100)]"
+0.1295,0.029295,53_ClusterTE:ClusterID60:CreditLimit:PayAmt5:Status1.0,"Out-of-fold mean of the response grouped by: ['ClusterID60:CreditLimit:PayAmt5:Status1'] using 5 folds (Clustered into 60 clusters) [internal:(60, True, 20, 5, None)]"
+0.097821,0.05472,73_WoE:CreditLimit:Status1:Status2.0,"Weight of Evidence for columns ['CreditLimit', 'Status1', 'Status2'] column #0"
+0.097337,0.029129,44_CVCatNumEnc:Status1:Status2:Status3:Status6:CreditLimit.mean,"Out-of-fold mean of 'CreditLimit' grouped by: ['Status1', 'Status2', 'Status3', 'Status6'] using 5 folds [internal:('mean', 10)]"
+0.090737,0.012285,56_NumToCatWoE:CreditLimit:PayAmt1:Status5.0,"Weight of Evidence for columns ['CreditLimit', 'PayAmt1', 'Status5'] column #0 (numeric columns are bucketed into 25 equally populated bins)"
+0.064892,0.0089635,72_WoE:CreditLimit:Status1:Status2:Status4.0,"Weight of Evidence for columns ['CreditLimit', 'Status1', 'Status2', 'Status4'] column #0"
+0.064503,0.011039,33_NumToCatWoE:BillAmt5:Status5.0,"Weight of Evidence for columns ['BillAmt5', 'Status5'] column #0 (numeric columns are bucketed into 25 equally populated bins)"
+0.063838,0.014879,48_NumCatTE:BillAmt2:CreditLimit:PayAmt4:PayAmt6:Status1:Status3.0,"Out-of-fold mean of the response grouped by: ['BillAmt2', 'CreditLimit', 'PayAmt4', 'PayAmt6', 'Status1', 'Status3'] using 5 folds (numeric columns are bucketed into 25 equally populated bins) [internal:(20, 10, 20)]"
+0.060628,0.015862,10_PayAmt2,PayAmt2 (original)
+0.057284,0.011449,47_WoE:Age:Status1:Status4:Status5.0,"Weight of Evidence for columns ['Age', 'Status1', 'Status4', 'Status5'] column #0"
+0.057198,0.023528,68_NumToCatWoE:BillAmt6:PayAmt3.0,"Weight of Evidence for columns ['BillAmt6', 'PayAmt3'] column #0 (numeric columns are bucketed into 25 equally populated bins)"
+0.056894,0.020247,39_NumCatTE:CreditLimit:Status1:Status2:Status5.0,"Out-of-fold mean of the response grouped by: ['CreditLimit', 'Status1', 'Status2', 'Status5'] using 5 folds (numeric columns are bucketed into 25 equally populated bins) [internal:(10, 3, 10)]"
+0.056479,0.031602,69_NumToCatWoE:BillAmt5:PayAmt1:PayAmt3:Status2.0,"Weight of Evidence for columns ['BillAmt5', 'PayAmt1', 'PayAmt3', 'Status2'] column #0 (numeric columns are bucketed into 25 equally populated bins)"
+0.055417,0.014459,9_PayAmt1,PayAmt1 (original)
+0.055208,0.015217,7_CreditLimit,CreditLimit (original)
+0.052009,0.017175,64_InteractionSub:BillAmt1:Status1,[BillAmt1] - [Status1]
+0.051061,0.027064,59_ClusterTE:ClusterID12:BillAmt5:Status4:Status5.0,"Out-of-fold mean of the response grouped by: ['ClusterID12:BillAmt5:Status4:Status5'] using 5 folds (Clustered into 12 clusters) [internal:(12, False, 10, 3, 10)]"
+0.047877,0.018694,50_NumCatTE:PayAmt4:PayAmt5:PayAmt6:Status1:Status2:Status3:Status4:Status5.0,"Out-of-fold mean of the response grouped by: ['PayAmt4', 'PayAmt5', 'PayAmt6', 'Status1', 'Status2', 'Status3', 'Status4', 'Status5'] using 5 folds (numeric columns are bucketed into 10 equally populated bins) [internal:(10, 5, 100)]"
+0.046829,0.014016,1_BillAmt1,BillAmt1 (original)
+0.045495,0.0088335,44_CVCatNumEnc:Status1:Status2:Status3:Status6:PayAmt5.mean,"Out-of-fold mean of 'PayAmt5' grouped by: ['Status1', 'Status2', 'Status3', 'Status6'] using 5 folds [internal:('mean', 10)]"
+0.04,0.0072176,12_PayAmt4,PayAmt4 (original)
+0.038477,0.0097963,11_PayAmt3,PayAmt3 (original)
+0.037295,0.011699,14_PayAmt6,PayAmt6 (original)
+0.037009,0.0076029,57_CVTE:CreditLimit:Status1:Status2:Status5.0,"Out-of-fold mean of the response grouped by: ['CreditLimit', 'Status1', 'Status2', 'Status5'] using 5 folds [internal:(10, 10, 100)]"
+0.036811,0.0069072,41_CVTE:CreditLimit:Status1:Status2:Status4.0,"Out-of-fold mean of the response grouped by: ['CreditLimit', 'Status1', 'Status2', 'Status4'] using 5 folds [internal:(10, 3, None)]"
+0.035727,0.011428,2_BillAmt2,BillAmt2 (original)
+0.031644,0.010706,78_NumToCatWoE:PayAmt4.0,Weight of Evidence for columns ['PayAmt4'] column #0 (numeric columns are bucketed into 100 equally populated bins)
+0.030241,0.017066,46_InteractionSub:Age:PayAmt5,[Age] - [PayAmt5]
+0.029459,0.0051708,38_CVTE:CreditLimit:Status3:Status4:Status6.0,"Out-of-fold mean of the response grouped by: ['CreditLimit', 'Status3', 'Status4', 'Status6'] using 5 folds [internal:(100, 5, 100)]"
+0.029191,0.0053517,54_ClusterID89:BillAmt3:CreditLimit,"Centroid assignment after segmenting columns ['BillAmt3', 'CreditLimit'] into 89 clusters"
+0.026541,0.0088955,21_Freq:Age,Encoding of categorical levels of feature(s) ['Age'] to value between 0 and 1 based on their relative frequency
+0.025782,0.012427,52_WoE:Status3.0,Weight of Evidence for columns ['Status3'] column #0
+0.025215,0.0062937,3_BillAmt3,BillAmt3 (original)
+0.025065,0.0072088,0_Age,Age (original)
+0.02311,0.0016508,65_Freq:CreditLimit:Status1:Status6,"Encoding of categorical levels of feature(s) ['CreditLimit', 'Status1', 'Status6'] to their counts"
+0.022608,0.0058975,44_CVCatNumEnc:Status1:Status2:Status3:Status6:BillAmt1.mean,"Out-of-fold mean of 'BillAmt1' grouped by: ['Status1', 'Status2', 'Status3', 'Status6'] using 5 folds [internal:('mean', 10)]"
+0.021508,0.0048431,74_NumCatTE:Age:PayAmt5:PayAmt6:Status1:Status4.0,"Out-of-fold mean of the response grouped by: ['Age', 'PayAmt5', 'PayAmt6', 'Status1', 'Status4'] using 5 folds (numeric columns are bucketed into 100 equally populated bins) [internal:(100, 10, 20)]"
+0.020897,0.013212,20_Status6,Status6 (original)
+0.020717,0.003688,4_BillAmt4,BillAmt4 (original)
+0.019893,0.0047224,77_ClusterID40:Age:BillAmt6,"Centroid assignment after segmenting columns ['Age', 'BillAmt6'] into 40 clusters"
+0.018888,0.0090122,6_BillAmt6,BillAmt6 (original)
+0.018735,0.0047679,5_BillAmt5,BillAmt5 (original)
+0.01815,0.0059164,22_Freq:CreditLimit,Encoding of categorical levels of feature(s) ['CreditLimit'] to value between 0 and 1 based on their relative frequency
+0.017457,0.0015539,37_Freq:Education,Encoding of categorical levels of feature(s) ['Education'] to value between 0 and 1 based on their relative frequency
+0.016888,0.0018343,13_PayAmt5,PayAmt5 (original)
+0.015655,0.0053321,34_Freq:Status1:Status2:Status5,"Encoding of categorical levels of feature(s) ['Status1', 'Status2', 'Status5'] to value between 0 and 1 based on their relative frequency"
+0.014776,0.0037523,44_CVCatNumEnc:Status1:Status2:Status3:Status6:BillAmt2.mean,"Out-of-fold mean of 'BillAmt2' grouped by: ['Status1', 'Status2', 'Status3', 'Status6'] using 5 folds [internal:('mean', 10)]"
+0.014458,0.0070008,8_Education,Education (original)
+0.013849,0.0035072,49_CVCatNumEnc:CreditLimit:Status1:Status2:Status4:Age.min,"Out-of-fold min of 'Age' grouped by: ['CreditLimit', 'Status1', 'Status2', 'Status4'] using 5 folds [internal:('min', None)]"
+0.012332,0.0015695,70_ClusterTE:ClusterID4:PayAmt1:Status1:Status2:Status3.0,"Out-of-fold mean of the response grouped by: ['ClusterID4:PayAmt1:Status1:Status2:Status3'] using 5 folds (Clustered into 4 clusters) [internal:(4, False, 20, 5, 20)]"
+0.012045,0.0037864,60_NumToCatTE:Status1.0,"Out-of-fold mean of the response grouped by: ['Status1'] using 5 folds (numeric columns are bucketed into 25 equally populated bins) [internal:(100, 1, 100)]"
+0.011203,0.0033028,42_WoE:Status1.0,Weight of Evidence for columns ['Status1'] column #0
+0.010379,0.0020743,18_Status4,Status4 (original)
+0.0096632,0.0034911,62_ClusterTE:ClusterID94:Status1.0,"Out-of-fold mean of the response grouped by: ['ClusterID94:Status1'] using 5 folds (Clustered into 94 clusters) [internal:(94, True, 100, 1, None)]"
+0.009065,0.0035457,55_ClusterID27:CreditLimit:PayAmt2:PayAmt6:Status1,"Centroid assignment after segmenting columns ['CreditLimit', 'PayAmt2', 'PayAmt6', 'Status1'] into 27 clusters"
+0.0087012,0.0031251,36_ClusterID69:BillAmt1:PayAmt3:Status1:Status3,"Centroid assignment after segmenting columns ['BillAmt1', 'PayAmt3', 'Status1', 'Status3'] into 69 clusters"
+0.0080729,0.0034327,49_CVCatNumEnc:CreditLimit:Status1:Status2:Status4:PayAmt2.min,"Out-of-fold min of 'PayAmt2' grouped by: ['CreditLimit', 'Status1', 'Status2', 'Status4'] using 5 folds [internal:('min', None)]"
+0.0071114,0.0023845,66_NumCatTE:CreditLimit:PayAmt2:PayAmt3:PayAmt6:Status1:Status2:Status5.0,"Out-of-fold mean of the response grouped by: ['CreditLimit', 'PayAmt2', 'PayAmt3', 'PayAmt6', 'Status1', 'Status2', 'Status5'] using 5 folds (numeric columns are bucketed into 100 equally populated bins) [internal:(100, 1, 10)]"
+0.0067957,0.0013312,49_CVCatNumEnc:CreditLimit:Status1:Status2:Status4:Status5.min,"Out-of-fold min of 'Status5' grouped by: ['CreditLimit', 'Status1', 'Status2', 'Status4'] using 5 folds [internal:('min', None)]"
+0.0048865,0.0042967,63_Freq:Status2,Encoding of categorical levels of feature(s) ['Status2'] to value between 0 and 1 based on their relative frequency
+0.0046043,0.0073272,19_Status5,Status5 (original)

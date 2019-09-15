@@ -1,0 +1,22 @@
+Experiment: 854f239a-d5d9-11e9-b3a7-0242ac110002
+
+ACCURACY [5/10]:
+- Training data size: *23,999 rows, 25 cols*
+- Feature evolution: *[GLM, XGBoostGBM, LightGBM]*, *1/3 validation split*
+- Final pipeline: *Ensemble (4 models), 4-fold CV*
+
+TIME [2/10]:
+- Feature evolution: *4 individuals*, up to *26 iterations*
+- Early stopping: After *5* iterations of no improvement
+
+INTERPRETABILITY [6/10]:
+- Feature pre-pruning strategy: FS
+- XGBoost Monotonicity constraints: disabled
+- Feature engineering search space (where applicable): [NumToCatWoE, Frequent, IsHoliday, ClusterId, NumCatTE, TextLinModel, Text, OneHotEncoding, NumToCatTE, CVTargetEncode, WeightOfEvidence, Interactions, Original, ClusterTE, CVCatNumEncode, Dates]
+
+[GLM, XGBoostGBM, LightGBM] models to train:
+- Model and feature tuning: *16*
+- Feature evolution: *24*
+- Final pipeline: *4*
+
+Estimated runtime: *minutes*

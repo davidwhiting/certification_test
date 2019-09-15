@@ -1,0 +1,10 @@
+{
+    "top_pid": 2797,
+    "top_pid": 2797,
+  "experiment_description": "huhacoho",
+  "experiment_id": "854f239a-d5d9-11e9-b3a7-0242ac110002",  
+  "run_indicator_file": "/opt/h2oai/dai/tmp/h2oai_experiment_854f239a-d5d9-11e9-b3a7-0242ac110002/STARTED",
+  "start_time_millis": 1568346583363,
+  "t_start": 1568346583.7702034,
+  "tmp_dir": "./tmp/h2oai_experiment_854f239a-d5d9-11e9-b3a7-0242ac110002"
+}
