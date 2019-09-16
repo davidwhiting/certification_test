@@ -1,0 +1,2 @@
+#!/bin/bash
+(git mv $1.txt Txt/) & (git mv $1.json Json/)
