@@ -1,7 +1,10 @@
 #default: build
 
-mongo:
+mongo_run:
 	docker run -d -p 27017-27019:27017-27019 -v /Users/dwhiting/tmp/db:/data/db --name mongodb mongo:latest
+
+mongo_http:
+	docker run -d -p 27017-27019:27017-27019 -p 28017:28017 --name mongodb -v /Users/dwhiting/tmp/db:/data/db mongo:latest mongod --rest --httpinterface
 
 #build:  fetch
 #	docker build -t whiting/h2o-sw-training -f Dockerfile .
