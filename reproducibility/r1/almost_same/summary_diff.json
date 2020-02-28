@@ -1,0 +1,45 @@
+{
+  "experiment_description": "huhacoho",
+  "experiment_id": "854f239a-d5d9-11e9-b3a7-0242ac110002",
+
+  "max_cpu_memory_usage": 1083763712,
+  "max_gpu_memory_usage": 94109696.0,
+  "mojo_msg": "16.94 secs",
+  "name_dict": {
+    "length": 16.93862795829773
+  },
+  "python_msg": "97.37 secs",
+  "timers_dict": {
+    "Data preparation": "27.02 secs",
+    "Shift/Leakage detection": "13.75 secs",
+    "Model and feature tuning": "157.88 secs (16 models trained)",
+    "Feature evolution": "40.43 secs (6 of 24 models trained)",
+    "Final pipeline training": "287.28 secs (4 models trained)",
+    "Python scorer building": "97.37 secs",
+    "Mojo scorer building": "16.94 secs"
+  },
+  "timers_dict_for_json": {
+    "Data preparation": {
+      "length": 27.015389680862427
+    },
+    "Shift/Leakage detection": {
+      "length": 13.753960371017456
+    },
+    "Model and feature tuning": {
+      "length": 157.88290739059448
+    },
+    "Feature evolution": {
+      "length": 40.42582869529724
+    },
+    "Final pipeline training": {
+      "length": 287.2807114124298
+    },
+    "Python scorer building": {
+      "length": 97.37072515487671
+    },
+    "Mojo scorer building": {
+      "length": 16.93862795829773
+    }
+  },
+  "tmp_dir": "./tmp/h2oai_experiment_854f239a-d5d9-11e9-b3a7-0242ac110002"
+}

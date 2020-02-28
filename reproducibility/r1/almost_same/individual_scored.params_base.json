@@ -1,0 +1,2248 @@
+{
+    "indiv_id": {
+        "0": 0
+    },
+    "iter_num": {
+        "0": 7
+    },
+    "accuracy": {
+        "0": 5
+    },
+    "time_tolerance": {
+        "0": 2
+    },
+    "interpretability": {
+        "0": 6
+    },
+    "score": {
+        "0": 0.6858783913
+    },
+    "score_sd": {
+        "0": 0.0082199672
+    },
+    "top derived_features": {
+        "0": "[['15_Status1', 1.0], ['9_PayAmt1', 0.7014066576957703], ['16_Status2', 0.46500787138938904]]"
+    },
+    "top original_features": {
+        "0": "[['Status1', 0.18764736944853241], ['PayAmt1', 0.1316171142302985], ['Status2', 0.08725750383908033]]"
+    },
+    "training_times": {
+        "0": 13.2266044617
+    },
+    "best_iterations": {
+        "0": 30
+    },
+    "ngenes_start": {
+        "0": 23
+    },
+    "ngenes_max": {
+        "0": 100000000
+    },
+    "ngenes": {
+        "0": 19
+    },
+    "ngenes_dead": {
+        "0": 4
+    },
+    "nfeatures_max": {
+        "0": 100000000
+    },
+    "nfeatures": {
+        "0": 23
+    },
+    "model_name": {
+        "0": "GLM"
+    },
+    "target_transformer_name": {
+        "0": "NoneType"
+    },
+    "booster": {
+        "0": "gblinear"
+    },
+    "n_gpus": {
+        "0": 1
+    },
+    "gpu_id": {
+        "0": 0
+    },
+    "n_jobs": {
+        "0": 2
+    },
+    "n_estimators": {
+        "0": 600
+    },
+    "num_classes": {
+        "0": 2
+    },
+    "num_class": {
+        "0": 1
+    },
+    "score_f_name": {
+        "0": "AUC"
+    },
+    "random_state": {
+        "0": 98765
+    },
+    "reg_lambda": {
+        "0": 0.001
+    },
+    "reg_alpha": {
+        "0": 0.0005
+    },
+    "max_depth": {
+        "0": 0
+    },
+    "max_bin": {
+        "0": 32
+    },
+    "max_leaves": {
+        "0": 0
+    },
+    "updater": {
+        "0": "coord_descent"
+    },
+    "tree_method": {
+        "0": "auto"
+    },
+    "coordinate_selection": {
+        "0": "cyclic"
+    },
+    "tolerance": {
+        "0": 0.0001
+    },
+    "n_lambda": {
+        "0": 1
+    },
+    "min_lambda_fraction": {
+        "0": 0.0001
+    },
+    "early_stopping_rounds": {
+        "0": 10
+    },
+    "objective": {
+        "0": "binary:logistic"
+    },
+    "eval_metric": {
+        "0": "auc"
+    },
+    "early_stopping_threshold": {
+        "0": 0.0001
+    },
+    "monotonicity_constraints": {
+        "0": false
+    },
+    "silent": {
+        "0": true
+    },
+    "debug_verbose": {
+        "0": 0
+    },
+    "learning_rate": {
+        "0": 0.5
+    },
+    "grow_policy": {
+        "0": ""
+    },
+    "model_origin": {
+        "0": "GLM_OHE"
+    }
+}{
+    "indiv_id": {
+        "7": 0
+    },
+    "iter_num": {
+        "7": 8
+    },
+    "accuracy": {
+        "7": 5
+    },
+    "time_tolerance": {
+        "7": 2
+    },
+    "interpretability": {
+        "7": 6
+    },
+    "score": {
+        "7": 0.6858783913
+    },
+    "score_sd": {
+        "7": 0.0082199672
+    },
+    "top derived_features": {
+        "7": "[['15_Status1', 1.0], ['9_PayAmt1', 0.7014066576957703], ['16_Status2', 0.46500787138938904]]"
+    },
+    "top original_features": {
+        "7": "[['Status1', 0.18764736944853241], ['PayAmt1', 0.1316171142302985], ['Status2', 0.08725750383908033]]"
+    },
+    "training_times": {
+        "7": 0.9837687016
+    },
+    "best_iterations": {
+        "7": 30
+    },
+    "ngenes_start": {
+        "7": 23
+    },
+    "ngenes_max": {
+        "7": 100000000
+    },
+    "ngenes": {
+        "7": 19
+    },
+    "ngenes_dead": {
+        "7": 4
+    },
+    "nfeatures_max": {
+        "7": 100000000
+    },
+    "nfeatures": {
+        "7": 23
+    },
+    "model_name": {
+        "7": "GLM"
+    },
+    "target_transformer_name": {
+        "7": "NoneType"
+    },
+    "booster": {
+        "7": "gblinear"
+    },
+    "n_gpus": {
+        "7": 1
+    },
+    "gpu_id": {
+        "7": 0
+    },
+    "n_jobs": {
+        "7": 2
+    },
+    "n_estimators": {
+        "7": 600
+    },
+    "num_classes": {
+        "7": 2
+    },
+    "num_class": {
+        "7": 1
+    },
+    "score_f_name": {
+        "7": "AUC"
+    },
+    "random_state": {
+        "7": 98765
+    },
+    "learning_rate": {
+        "7": 0.5
+    },
+    "reg_alpha": {
+        "7": 0.0005
+    },
+    "reg_lambda": {
+        "7": 0.001
+    },
+    "gamma": {
+        "7": ""
+    },
+    "max_bin": {
+        "7": 32
+    },
+    "scale_pos_weight": {
+        "7": ""
+    },
+    "max_delta_step": {
+        "7": ""
+    },
+    "min_child_weight": {
+        "7": ""
+    },
+    "subsample": {
+        "7": ""
+    },
+    "colsample_bytree": {
+        "7": ""
+    },
+    "tree_method": {
+        "7": "auto"
+    },
+    "grow_policy": {
+        "7": ""
+    },
+    "max_leaves": {
+        "7": 0
+    },
+    "max_depth": {
+        "7": 0
+    },
+    "min_data_in_bin": {
+        "7": ""
+    },
+    "min_child_samples": {
+        "7": ""
+    },
+    "boosting_type": {
+        "7": ""
+    },
+    "early_stopping_rounds": {
+        "7": 10
+    },
+    "objective": {
+        "7": "binary:logistic"
+    },
+    "eval_metric": {
+        "7": "auc"
+    },
+    "monotonicity_constraints": {
+        "7": false
+    },
+    "silent": {
+        "7": true
+    },
+    "model_origin": {
+        "7": "RANDOM"
+    },
+    "updater": {
+        "7": "coord_descent"
+    },
+    "coordinate_selection": {
+        "7": "cyclic"
+    },
+    "tolerance": {
+        "7": 0.0001
+    },
+    "n_lambda": {
+        "7": 1.0
+    },
+    "min_lambda_fraction": {
+        "7": 0.0001
+    },
+    "early_stopping_threshold": {
+        "7": 0.0001
+    },
+    "debug_verbose": {
+        "7": 0.0
+    }
+}{
+    "indiv_id": {
+        "8": 0
+    },
+    "iter_num": {
+        "8": 9
+    },
+    "accuracy": {
+        "8": 5
+    },
+    "time_tolerance": {
+        "8": 2
+    },
+    "interpretability": {
+        "8": 6
+    },
+    "score": {
+        "8": 0.7572478141
+    },
+    "score_sd": {
+        "8": 0.0075402121
+    },
+    "top derived_features": {
+        "8": "[['15_Status1', 1.0], ['16_Status2', 0.35283440351486206], ['7_CreditLimit', 0.16518498957157135]]"
+    },
+    "top original_features": {
+        "8": "[['Status1', 0.35378809651068377], ['Status2', 0.12482861200300557], ['CreditLimit', 0.05844048303266338]]"
+    },
+    "training_times": {
+        "8": 1.9028661251
+    },
+    "best_iterations": {
+        "8": 22
+    },
+    "ngenes_start": {
+        "8": 23
+    },
+    "ngenes_max": {
+        "8": 16343
+    },
+    "ngenes": {
+        "8": 23
+    },
+    "ngenes_dead": {
+        "8": 0
+    },
+    "nfeatures_max": {
+        "8": 16343
+    },
+    "nfeatures": {
+        "8": 23
+    },
+    "model_name": {
+        "8": "XGBOOSTGBM"
+    },
+    "target_transformer_name": {
+        "8": "NoneType"
+    },
+    "booster": {
+        "8": "gbtree"
+    },
+    "n_gpus": {
+        "8": 1
+    },
+    "gpu_id": {
+        "8": 0
+    },
+    "n_jobs": {
+        "8": 2
+    },
+    "n_estimators": {
+        "8": 600
+    },
+    "num_classes": {
+        "8": 2
+    },
+    "num_class": {
+        "8": 1
+    },
+    "score_f_name": {
+        "8": "AUC"
+    },
+    "random_state": {
+        "8": 98765
+    },
+    "learning_rate": {
+        "8": 0.1
+    },
+    "reg_alpha": {
+        "8": 0.0
+    },
+    "reg_lambda": {
+        "8": 1.0
+    },
+    "gamma": {
+        "8": 0
+    },
+    "max_bin": {
+        "8": 256
+    },
+    "scale_pos_weight": {
+        "8": 1
+    },
+    "max_delta_step": {
+        "8": 0
+    },
+    "min_child_weight": {
+        "8": 1
+    },
+    "subsample": {
+        "8": 0.7
+    },
+    "colsample_bytree": {
+        "8": 0.8
+    },
+    "tree_method": {
+        "8": "gpu_hist"
+    },
+    "grow_policy": {
+        "8": "depthwise"
+    },
+    "max_leaves": {
+        "8": 0
+    },
+    "max_depth": {
+        "8": 6
+    },
+    "min_data_in_bin": {
+        "8": ""
+    },
+    "min_child_samples": {
+        "8": ""
+    },
+    "boosting_type": {
+        "8": ""
+    },
+    "early_stopping_rounds": {
+        "8": 10
+    },
+    "objective": {
+        "8": "binary:logistic"
+    },
+    "eval_metric": {
+        "8": "auc"
+    },
+    "monotonicity_constraints": {
+        "8": false
+    },
+    "silent": {
+        "8": true
+    },
+    "model_origin": {
+        "8": "RANDOM"
+    },
+    "updater": {
+        "8": ""
+    },
+    "coordinate_selection": {
+        "8": ""
+    },
+    "tolerance": {
+        "8": ""
+    },
+    "n_lambda": {
+        "8": ""
+    },
+    "min_lambda_fraction": {
+        "8": ""
+    },
+    "early_stopping_threshold": {
+        "8": 0.0001
+    },
+    "debug_verbose": {
+        "8": 0.0
+    }
+}{
+    "indiv_id": {
+        "9": 0
+    },
+    "iter_num": {
+        "9": 10
+    },
+    "accuracy": {
+        "9": 5
+    },
+    "time_tolerance": {
+        "9": 2
+    },
+    "interpretability": {
+        "9": 6
+    },
+    "score": {
+        "9": 0.7344633872
+    },
+    "score_sd": {
+        "9": 0.006320563
+    },
+    "top derived_features": {
+        "9": "[['34_NumToCatTE:CreditLimit:Status1.0', 1.0], ['9_PayAmt1', 0.48055675625801086], ['29_InteractionDiv:CreditLimit:PayAmt2', 0.37851449847221375]]"
+    },
+    "top original_features": {
+        "9": "[['CreditLimit', 0.16864876690245742], ['Status1', 0.12682105955366535], ['Marriage', 0.10632749462804386]]"
+    },
+    "training_times": {
+        "9": 1.3046066761
+    },
+    "best_iterations": {
+        "9": 14
+    },
+    "ngenes_start": {
+        "9": 46
+    },
+    "ngenes_max": {
+        "9": 100000000
+    },
+    "ngenes": {
+        "9": 39
+    },
+    "ngenes_dead": {
+        "9": 8
+    },
+    "nfeatures_max": {
+        "9": 100000000
+    },
+    "nfeatures": {
+        "9": 45
+    },
+    "model_name": {
+        "9": "GLM"
+    },
+    "target_transformer_name": {
+        "9": "NoneType"
+    },
+    "booster": {
+        "9": "gblinear"
+    },
+    "n_gpus": {
+        "9": 1
+    },
+    "gpu_id": {
+        "9": 0
+    },
+    "n_jobs": {
+        "9": 2
+    },
+    "n_estimators": {
+        "9": 600
+    },
+    "num_classes": {
+        "9": 2
+    },
+    "num_class": {
+        "9": 1
+    },
+    "score_f_name": {
+        "9": "AUC"
+    },
+    "random_state": {
+        "9": 98765
+    },
+    "learning_rate": {
+        "9": 0.5
+    },
+    "reg_alpha": {
+        "9": 0.0005
+    },
+    "reg_lambda": {
+        "9": 0.001
+    },
+    "gamma": {
+        "9": ""
+    },
+    "max_bin": {
+        "9": 32
+    },
+    "scale_pos_weight": {
+        "9": ""
+    },
+    "max_delta_step": {
+        "9": ""
+    },
+    "min_child_weight": {
+        "9": ""
+    },
+    "subsample": {
+        "9": ""
+    },
+    "colsample_bytree": {
+        "9": ""
+    },
+    "tree_method": {
+        "9": "auto"
+    },
+    "grow_policy": {
+        "9": ""
+    },
+    "max_leaves": {
+        "9": 0
+    },
+    "max_depth": {
+        "9": 0
+    },
+    "min_data_in_bin": {
+        "9": ""
+    },
+    "min_child_samples": {
+        "9": ""
+    },
+    "boosting_type": {
+        "9": ""
+    },
+    "early_stopping_rounds": {
+        "9": 10
+    },
+    "objective": {
+        "9": "binary:logistic"
+    },
+    "eval_metric": {
+        "9": "auc"
+    },
+    "monotonicity_constraints": {
+        "9": false
+    },
+    "silent": {
+        "9": true
+    },
+    "model_origin": {
+        "9": "RANDOM"
+    },
+    "updater": {
+        "9": "coord_descent"
+    },
+    "coordinate_selection": {
+        "9": "cyclic"
+    },
+    "tolerance": {
+        "9": 0.0001
+    },
+    "n_lambda": {
+        "9": 1
+    },
+    "min_lambda_fraction": {
+        "9": 0.0001
+    },
+    "early_stopping_threshold": {
+        "9": 0.0001
+    },
+    "debug_verbose": {
+        "9": 0.0
+    }
+}{
+    "indiv_id": {
+        "10": 0
+    },
+    "iter_num": {
+        "10": 11
+    },
+    "accuracy": {
+        "10": 5
+    },
+    "time_tolerance": {
+        "10": 2
+    },
+    "interpretability": {
+        "10": 6
+    },
+    "score": {
+        "10": 0.7414762432
+    },
+    "score_sd": {
+        "10": 0.0077983609
+    },
+    "top derived_features": {
+        "10": "[['35_NumToCatWoE:Status1:Status6.0', 1.0], ['9_PayAmt1', 0.491999089717865], ['32_ClusterTE:ClusterID63:BillAmt1:PayAmt6:Status1.0', 0.4485374391078949]]"
+    },
+    "top original_features": {
+        "10": "[['Status1', 0.18735897312421754], ['Status6', 0.14373766104500982], ['Marriage', 0.14036064852167332]]"
+    },
+    "training_times": {
+        "10": 2.6672370434
+    },
+    "best_iterations": {
+        "10": 51
+    },
+    "ngenes_start": {
+        "10": 46
+    },
+    "ngenes_max": {
+        "10": 100000000
+    },
+    "ngenes": {
+        "10": 35
+    },
+    "ngenes_dead": {
+        "10": 8
+    },
+    "nfeatures_max": {
+        "10": 100000000
+    },
+    "nfeatures": {
+        "10": 48
+    },
+    "model_name": {
+        "10": "GLM"
+    },
+    "target_transformer_name": {
+        "10": "NoneType"
+    },
+    "booster": {
+        "10": "gblinear"
+    },
+    "n_gpus": {
+        "10": 1
+    },
+    "gpu_id": {
+        "10": 0
+    },
+    "n_jobs": {
+        "10": 2
+    },
+    "n_estimators": {
+        "10": 600
+    },
+    "num_classes": {
+        "10": 2
+    },
+    "num_class": {
+        "10": 1
+    },
+    "score_f_name": {
+        "10": "AUC"
+    },
+    "random_state": {
+        "10": 98765
+    },
+    "learning_rate": {
+        "10": 0.5
+    },
+    "reg_alpha": {
+        "10": 0.0005
+    },
+    "reg_lambda": {
+        "10": 0.001
+    },
+    "gamma": {
+        "10": ""
+    },
+    "max_bin": {
+        "10": 32
+    },
+    "scale_pos_weight": {
+        "10": ""
+    },
+    "max_delta_step": {
+        "10": ""
+    },
+    "min_child_weight": {
+        "10": ""
+    },
+    "subsample": {
+        "10": ""
+    },
+    "colsample_bytree": {
+        "10": ""
+    },
+    "tree_method": {
+        "10": "auto"
+    },
+    "grow_policy": {
+        "10": ""
+    },
+    "max_leaves": {
+        "10": 0
+    },
+    "max_depth": {
+        "10": 0
+    },
+    "min_data_in_bin": {
+        "10": ""
+    },
+    "min_child_samples": {
+        "10": ""
+    },
+    "boosting_type": {
+        "10": ""
+    },
+    "early_stopping_rounds": {
+        "10": 10
+    },
+    "objective": {
+        "10": "binary:logistic"
+    },
+    "eval_metric": {
+        "10": "auc"
+    },
+    "monotonicity_constraints": {
+        "10": false
+    },
+    "silent": {
+        "10": true
+    },
+    "model_origin": {
+        "10": "RANDOM"
+    },
+    "updater": {
+        "10": "coord_descent"
+    },
+    "coordinate_selection": {
+        "10": "cyclic"
+    },
+    "tolerance": {
+        "10": 0.0001
+    },
+    "n_lambda": {
+        "10": 1
+    },
+    "min_lambda_fraction": {
+        "10": 0.0001
+    },
+    "early_stopping_threshold": {
+        "10": 0.0001
+    },
+    "debug_verbose": {
+        "10": 0.0
+    }
+}{
+    "indiv_id": {
+        "11": 0
+    },
+    "iter_num": {
+        "11": 12
+    },
+    "accuracy": {
+        "11": 5
+    },
+    "time_tolerance": {
+        "11": 2
+    },
+    "interpretability": {
+        "11": 6
+    },
+    "score": {
+        "11": 0.7577465668
+    },
+    "score_sd": {
+        "11": 0.007796121
+    },
+    "top derived_features": {
+        "11": "[['45_NumToCatWoE:PayAmt3:Status1:Status2.0', 1.0], ['51_ClusterTE:ClusterID71:PayAmt3:Status1:Status3.0', 0.8313193917274475], ['53_ClusterTE:ClusterID60:CreditLimit:PayAmt5:Status1.0', 0.15941676497459412]]"
+    },
+    "top original_features": {
+        "11": "[['Status1', 0.26522346735537694], ['PayAmt3', 0.1867979949056001], ['Status2', 0.15576999461360988]]"
+    },
+    "training_times": {
+        "11": 3.0018465519
+    },
+    "best_iterations": {
+        "11": 24
+    },
+    "ngenes_start": {
+        "11": 69
+    },
+    "ngenes_max": {
+        "11": 100000000
+    },
+    "ngenes": {
+        "11": 61
+    },
+    "ngenes_dead": {
+        "11": 18
+    },
+    "nfeatures_max": {
+        "11": 100000000
+    },
+    "nfeatures": {
+        "11": 65
+    },
+    "model_name": {
+        "11": "LIGHTGBM"
+    },
+    "target_transformer_name": {
+        "11": "NoneType"
+    },
+    "booster": {
+        "11": "lightgbm"
+    },
+    "n_gpus": {
+        "11": 1
+    },
+    "gpu_id": {
+        "11": 0
+    },
+    "n_jobs": {
+        "11": 2
+    },
+    "n_estimators": {
+        "11": 600
+    },
+    "num_classes": {
+        "11": 2
+    },
+    "num_class": {
+        "11": 1
+    },
+    "score_f_name": {
+        "11": "AUC"
+    },
+    "random_state": {
+        "11": 98765
+    },
+    "learning_rate": {
+        "11": 0.1
+    },
+    "reg_alpha": {
+        "11": 0.0
+    },
+    "reg_lambda": {
+        "11": 1.0
+    },
+    "gamma": {
+        "11": 0
+    },
+    "max_bin": {
+        "11": 256
+    },
+    "scale_pos_weight": {
+        "11": 1
+    },
+    "max_delta_step": {
+        "11": 0
+    },
+    "min_child_weight": {
+        "11": 1
+    },
+    "subsample": {
+        "11": 0.7
+    },
+    "colsample_bytree": {
+        "11": 0.8
+    },
+    "tree_method": {
+        "11": "gpu_hist"
+    },
+    "grow_policy": {
+        "11": "depthwise"
+    },
+    "max_leaves": {
+        "11": 0
+    },
+    "max_depth": {
+        "11": 6
+    },
+    "min_data_in_bin": {
+        "11": 1
+    },
+    "min_child_samples": {
+        "11": 1
+    },
+    "boosting_type": {
+        "11": "gbdt"
+    },
+    "early_stopping_rounds": {
+        "11": 10
+    },
+    "objective": {
+        "11": "binary:logistic"
+    },
+    "eval_metric": {
+        "11": "auc"
+    },
+    "monotonicity_constraints": {
+        "11": false
+    },
+    "silent": {
+        "11": true
+    },
+    "model_origin": {
+        "11": "SEQUENCE"
+    },
+    "updater": {
+        "11": ""
+    },
+    "coordinate_selection": {
+        "11": ""
+    },
+    "tolerance": {
+        "11": ""
+    },
+    "n_lambda": {
+        "11": ""
+    },
+    "min_lambda_fraction": {
+        "11": ""
+    },
+    "early_stopping_threshold": {
+        "11": ""
+    },
+    "debug_verbose": {
+        "11": ""
+    }
+}{
+    "indiv_id": {
+        "12": 0
+    },
+    "iter_num": {
+        "12": 13
+    },
+    "accuracy": {
+        "12": 5
+    },
+    "time_tolerance": {
+        "12": 2
+    },
+    "interpretability": {
+        "12": 6
+    },
+    "score": {
+        "12": 0.7475268533
+    },
+    "score_sd": {
+        "12": 0.0073850126
+    },
+    "top derived_features": {
+        "12": "[['37_NumToCatWoE:CreditLimit:Status1:Status2.0', 1.0], ['42_ClusterTE:ClusterID21:PayAmt3:Status1:Status2.0', 0.801532506942749], ['39_NumToCatWoE:Status2.0', 0.6691588759422302]]"
+    },
+    "top original_features": {
+        "12": "[['Status1', 0.19654209974041792], ['Status2', 0.15268752037902936], ['PayAmt3', 0.11716045166818762]]"
+    },
+    "training_times": {
+        "12": 6.6992106438
+    },
+    "best_iterations": {
+        "12": 91
+    },
+    "ngenes_start": {
+        "12": 69
+    },
+    "ngenes_max": {
+        "12": 100000000
+    },
+    "ngenes": {
+        "12": 48
+    },
+    "ngenes_dead": {
+        "12": 17
+    },
+    "nfeatures_max": {
+        "12": 100000000
+    },
+    "nfeatures": {
+        "12": 53
+    },
+    "model_name": {
+        "12": "GLM"
+    },
+    "target_transformer_name": {
+        "12": "NoneType"
+    },
+    "booster": {
+        "12": "gblinear"
+    },
+    "n_gpus": {
+        "12": 1
+    },
+    "gpu_id": {
+        "12": 0
+    },
+    "n_jobs": {
+        "12": 2
+    },
+    "n_estimators": {
+        "12": 600
+    },
+    "num_classes": {
+        "12": 2
+    },
+    "num_class": {
+        "12": 1
+    },
+    "score_f_name": {
+        "12": "AUC"
+    },
+    "random_state": {
+        "12": 98765
+    },
+    "learning_rate": {
+        "12": 0.5
+    },
+    "reg_alpha": {
+        "12": 0.0005
+    },
+    "reg_lambda": {
+        "12": 0.001
+    },
+    "gamma": {
+        "12": ""
+    },
+    "max_bin": {
+        "12": 32
+    },
+    "scale_pos_weight": {
+        "12": ""
+    },
+    "max_delta_step": {
+        "12": ""
+    },
+    "min_child_weight": {
+        "12": ""
+    },
+    "subsample": {
+        "12": ""
+    },
+    "colsample_bytree": {
+        "12": ""
+    },
+    "tree_method": {
+        "12": "auto"
+    },
+    "grow_policy": {
+        "12": ""
+    },
+    "max_leaves": {
+        "12": 0
+    },
+    "max_depth": {
+        "12": 0
+    },
+    "min_data_in_bin": {
+        "12": ""
+    },
+    "min_child_samples": {
+        "12": ""
+    },
+    "boosting_type": {
+        "12": ""
+    },
+    "early_stopping_rounds": {
+        "12": 10
+    },
+    "objective": {
+        "12": "binary:logistic"
+    },
+    "eval_metric": {
+        "12": "auc"
+    },
+    "monotonicity_constraints": {
+        "12": false
+    },
+    "silent": {
+        "12": true
+    },
+    "model_origin": {
+        "12": "SEQUENCE"
+    },
+    "updater": {
+        "12": "coord_descent"
+    },
+    "coordinate_selection": {
+        "12": "cyclic"
+    },
+    "tolerance": {
+        "12": 0.0001
+    },
+    "n_lambda": {
+        "12": 1
+    },
+    "min_lambda_fraction": {
+        "12": 0.0001
+    },
+    "early_stopping_threshold": {
+        "12": 0.0001
+    },
+    "debug_verbose": {
+        "12": 0
+    }
+}{
+    "indiv_id": {
+        "13": 0
+    },
+    "iter_num": {
+        "13": 14
+    },
+    "accuracy": {
+        "13": 5
+    },
+    "time_tolerance": {
+        "13": 2
+    },
+    "interpretability": {
+        "13": 6
+    },
+    "score": {
+        "13": 0.7556708861
+    },
+    "score_sd": {
+        "13": 0.0073560788
+    },
+    "top derived_features": {
+        "13": "[['47_NumToCatWoE:PayAmt3:Status1:Status2.0', 1.0], ['44_CVTE:Status1:Status2:Status3.0', 0.8813939690589905], ['65_WoE:CreditLimit:Status3.0', 0.055076174437999725]]"
+    },
+    "top original_features": {
+        "13": "[['Status1', 0.2736940194106343], ['Status2', 0.2601568347738319], ['PayAmt3', 0.14385912621195832]]"
+    },
+    "training_times": {
+        "13": 1.8950619698
+    },
+    "best_iterations": {
+        "13": 13
+    },
+    "ngenes_start": {
+        "13": 69
+    },
+    "ngenes_max": {
+        "13": 100000000
+    },
+    "ngenes": {
+        "13": 58
+    },
+    "ngenes_dead": {
+        "13": 23
+    },
+    "nfeatures_max": {
+        "13": 100000000
+    },
+    "nfeatures": {
+        "13": 68
+    },
+    "model_name": {
+        "13": "LIGHTGBM"
+    },
+    "target_transformer_name": {
+        "13": "NoneType"
+    },
+    "booster": {
+        "13": "lightgbm"
+    },
+    "n_gpus": {
+        "13": 1
+    },
+    "gpu_id": {
+        "13": 0
+    },
+    "n_jobs": {
+        "13": 2
+    },
+    "n_estimators": {
+        "13": 600
+    },
+    "num_classes": {
+        "13": 2
+    },
+    "num_class": {
+        "13": 1
+    },
+    "score_f_name": {
+        "13": "AUC"
+    },
+    "random_state": {
+        "13": 98765
+    },
+    "learning_rate": {
+        "13": 0.1
+    },
+    "reg_alpha": {
+        "13": 0.0
+    },
+    "reg_lambda": {
+        "13": 1.0
+    },
+    "gamma": {
+        "13": 0
+    },
+    "max_bin": {
+        "13": 256
+    },
+    "scale_pos_weight": {
+        "13": 1
+    },
+    "max_delta_step": {
+        "13": 0
+    },
+    "min_child_weight": {
+        "13": 1
+    },
+    "subsample": {
+        "13": 0.7
+    },
+    "colsample_bytree": {
+        "13": 0.8
+    },
+    "tree_method": {
+        "13": "gpu_hist"
+    },
+    "grow_policy": {
+        "13": "depthwise"
+    },
+    "max_leaves": {
+        "13": 0
+    },
+    "max_depth": {
+        "13": 6
+    },
+    "min_data_in_bin": {
+        "13": 1
+    },
+    "min_child_samples": {
+        "13": 1
+    },
+    "boosting_type": {
+        "13": "gbdt"
+    },
+    "early_stopping_rounds": {
+        "13": 10
+    },
+    "objective": {
+        "13": "binary:logistic"
+    },
+    "eval_metric": {
+        "13": "auc"
+    },
+    "monotonicity_constraints": {
+        "13": false
+    },
+    "silent": {
+        "13": true
+    },
+    "model_origin": {
+        "13": "RANDOM"
+    },
+    "updater": {
+        "13": ""
+    },
+    "coordinate_selection": {
+        "13": ""
+    },
+    "tolerance": {
+        "13": ""
+    },
+    "n_lambda": {
+        "13": ""
+    },
+    "min_lambda_fraction": {
+        "13": ""
+    },
+    "early_stopping_threshold": {
+        "13": ""
+    },
+    "debug_verbose": {
+        "13": ""
+    }
+}{
+    "indiv_id": {
+        "14": 0
+    },
+    "iter_num": {
+        "14": 15
+    },
+    "accuracy": {
+        "14": 5
+    },
+    "time_tolerance": {
+        "14": 2
+    },
+    "interpretability": {
+        "14": 6
+    },
+    "score": {
+        "14": 0.7531963919
+    },
+    "score_sd": {
+        "14": 0.0074799756
+    },
+    "top derived_features": {
+        "14": "[['65_NumToCatWoE:PayAmt3:Status1:Status2:Status3.0', 1.0], ['51_NumCatTE:Marriage:Status1:Status2:Status3:Status4.0', 0.8538414975132427], ['27_NumToCatTE:Status1:Status2.0', 0.6059669163839388]]"
+    },
+    "top original_features": {
+        "14": "[['Status1', 0.22316009976252166], ['Status3', 0.1729088400179718], ['Status2', 0.16931282783006352]]"
+    },
+    "training_times": {
+        "14": 2.3083953857
+    },
+    "best_iterations": {
+        "14": 19
+    },
+    "ngenes_start": {
+        "14": 69
+    },
+    "ngenes_max": {
+        "14": 16343
+    },
+    "ngenes": {
+        "14": 59
+    },
+    "ngenes_dead": {
+        "14": 9
+    },
+    "nfeatures_max": {
+        "14": 16343
+    },
+    "nfeatures": {
+        "14": 61
+    },
+    "model_name": {
+        "14": "XGBOOSTGBM"
+    },
+    "target_transformer_name": {
+        "14": "NoneType"
+    },
+    "booster": {
+        "14": "gbtree"
+    },
+    "n_gpus": {
+        "14": 1
+    },
+    "gpu_id": {
+        "14": 0
+    },
+    "n_jobs": {
+        "14": 2
+    },
+    "n_estimators": {
+        "14": 600
+    },
+    "num_classes": {
+        "14": 2
+    },
+    "num_class": {
+        "14": 1
+    },
+    "score_f_name": {
+        "14": "AUC"
+    },
+    "random_state": {
+        "14": 98765
+    },
+    "learning_rate": {
+        "14": 0.1
+    },
+    "reg_alpha": {
+        "14": 0.0
+    },
+    "reg_lambda": {
+        "14": 1.0
+    },
+    "gamma": {
+        "14": 0
+    },
+    "max_bin": {
+        "14": 256
+    },
+    "scale_pos_weight": {
+        "14": 1
+    },
+    "max_delta_step": {
+        "14": 0
+    },
+    "min_child_weight": {
+        "14": 1
+    },
+    "subsample": {
+        "14": 0.7
+    },
+    "colsample_bytree": {
+        "14": 0.8
+    },
+    "tree_method": {
+        "14": "gpu_hist"
+    },
+    "grow_policy": {
+        "14": "depthwise"
+    },
+    "max_leaves": {
+        "14": 0
+    },
+    "max_depth": {
+        "14": 6
+    },
+    "min_data_in_bin": {
+        "14": ""
+    },
+    "min_child_samples": {
+        "14": ""
+    },
+    "boosting_type": {
+        "14": ""
+    },
+    "early_stopping_rounds": {
+        "14": 10
+    },
+    "objective": {
+        "14": "binary:logistic"
+    },
+    "eval_metric": {
+        "14": "auc"
+    },
+    "monotonicity_constraints": {
+        "14": false
+    },
+    "silent": {
+        "14": true
+    },
+    "model_origin": {
+        "14": "SEQUENCE"
+    },
+    "updater": {
+        "14": ""
+    },
+    "coordinate_selection": {
+        "14": ""
+    },
+    "tolerance": {
+        "14": ""
+    },
+    "n_lambda": {
+        "14": ""
+    },
+    "min_lambda_fraction": {
+        "14": ""
+    },
+    "early_stopping_threshold": {
+        "14": 0.0001
+    },
+    "debug_verbose": {
+        "14": 0
+    }
+}{
+    "indiv_id": {
+        "15": 0,
+        "16": 3
+    },
+    "iter_num": {
+        "15": 17,
+        "16": 17
+    },
+    "accuracy": {
+        "15": 5,
+        "16": 5
+    },
+    "time_tolerance": {
+        "15": 2,
+        "16": 2
+    },
+    "interpretability": {
+        "15": 6,
+        "16": 6
+    },
+    "score": {
+        "15": 0.7565410981,
+        "16": 0.7577465668
+    },
+    "score_sd": {
+        "15": 0.0074164516,
+        "16": 0.0076742583
+    },
+    "top derived_features": {
+        "15": "[['15_Status1', 1.0], ['16_Status2', 0.35426566004753113], ['7_CreditLimit', 0.17645993828773499]]",
+        "16": "[['45_NumToCatWoE:PayAmt3:Status1:Status2.0', 1.0], ['51_ClusterTE:ClusterID71:PayAmt3:Status1:Status3.0', 0.2851134240627289], ['53_ClusterTE:ClusterID60:CreditLimit:PayAmt5:Status1.0', 0.10481749475002289]]"
+    },
+    "top original_features": {
+        "15": "[['Status1', 0.33849787725135355], ['Status2', 0.11991817390913893], ['CreditLimit', 0.059731314530303135]]",
+        "16": "[['Status1', 0.26095598170670753], ['Status2', 0.19450013894135768], ['PayAmt3', 0.1908144160720619]]"
+    },
+    "training_times": {
+        "15": 2.9918344021,
+        "16": 4.1824479103
+    },
+    "best_iterations": {
+        "15": 25,
+        "16": 27
+    },
+    "ngenes_start": {
+        "15": 23,
+        "16": 69
+    },
+    "ngenes_max": {
+        "15": 16343,
+        "16": 100000000
+    },
+    "ngenes": {
+        "15": 23,
+        "16": 58
+    },
+    "ngenes_dead": {
+        "15": 2,
+        "16": 23
+    },
+    "nfeatures_max": {
+        "15": 16343,
+        "16": 100000000
+    },
+    "nfeatures": {
+        "15": 23,
+        "16": 63
+    },
+    "model_name": {
+        "15": "XGBOOSTGBM",
+        "16": "LIGHTGBM"
+    },
+    "target_transformer_name": {
+        "15": "NoneType",
+        "16": "NoneType"
+    },
+    "booster": {
+        "15": "gbtree",
+        "16": "lightgbm"
+    },
+    "n_gpus": {
+        "15": 1,
+        "16": 1
+    },
+    "gpu_id": {
+        "15": 0,
+        "16": 0
+    },
+    "n_jobs": {
+        "15": 2,
+        "16": 2
+    },
+    "n_estimators": {
+        "15": 600,
+        "16": 600
+    },
+    "num_classes": {
+        "15": 2,
+        "16": 2
+    },
+    "num_class": {
+        "15": 1,
+        "16": 1
+    },
+    "score_f_name": {
+        "15": "AUC",
+        "16": "AUC"
+    },
+    "random_state": {
+        "15": 98765,
+        "16": 98765
+    },
+    "learning_rate": {
+        "15": 0.1,
+        "16": 0.1
+    },
+    "reg_alpha": {
+        "15": 0.0,
+        "16": 0.0
+    },
+    "reg_lambda": {
+        "15": 1.0,
+        "16": 1.0
+    },
+    "gamma": {
+        "15": 0,
+        "16": 0
+    },
+    "max_bin": {
+        "15": 256,
+        "16": 256
+    },
+    "scale_pos_weight": {
+        "15": 1,
+        "16": 1
+    },
+    "max_delta_step": {
+        "15": 0,
+        "16": 0
+    },
+    "min_child_weight": {
+        "15": 1,
+        "16": 1
+    },
+    "subsample": {
+        "15": 0.7,
+        "16": 0.7
+    },
+    "colsample_bytree": {
+        "15": 0.8,
+        "16": 0.8
+    },
+    "tree_method": {
+        "15": "gpu_hist",
+        "16": "gpu_hist"
+    },
+    "grow_policy": {
+        "15": "depthwise",
+        "16": "depthwise"
+    },
+    "max_leaves": {
+        "15": 0,
+        "16": 0
+    },
+    "max_depth": {
+        "15": 6,
+        "16": 6
+    },
+    "min_data_in_bin": {
+        "15": "",
+        "16": 1.0
+    },
+    "min_child_samples": {
+        "15": "",
+        "16": 1.0
+    },
+    "boosting_type": {
+        "15": "",
+        "16": "gbdt"
+    },
+    "early_stopping_rounds": {
+        "15": 10,
+        "16": 10
+    },
+    "objective": {
+        "15": "binary:logistic",
+        "16": "binary:logistic"
+    },
+    "eval_metric": {
+        "15": "auc",
+        "16": "auc"
+    },
+    "monotonicity_constraints": {
+        "15": false,
+        "16": false
+    },
+    "silent": {
+        "15": true,
+        "16": true
+    },
+    "model_origin": {
+        "15": "RANDOM",
+        "16": "SEQUENCE"
+    },
+    "updater": {
+        "15": "",
+        "16": ""
+    },
+    "coordinate_selection": {
+        "15": "",
+        "16": ""
+    },
+    "tolerance": {
+        "15": "",
+        "16": ""
+    },
+    "n_lambda": {
+        "15": "",
+        "16": ""
+    },
+    "min_lambda_fraction": {
+        "15": "",
+        "16": ""
+    },
+    "early_stopping_threshold": {
+        "15": 0.0001,
+        "16": ""
+    },
+    "debug_verbose": {
+        "15": 0.0,
+        "16": ""
+    }
+}{
+    "indiv_id": {
+        "17": 1,
+        "18": 3
+    },
+    "iter_num": {
+        "17": 18,
+        "18": 18
+    },
+    "accuracy": {
+        "17": 5,
+        "18": 5
+    },
+    "time_tolerance": {
+        "17": 2,
+        "18": 2
+    },
+    "interpretability": {
+        "17": 6,
+        "18": 6
+    },
+    "score": {
+        "17": 0.7567698578,
+        "18": 0.7585556475
+    },
+    "score_sd": {
+        "17": 0.0070251761,
+        "18": 0.0072024522
+    },
+    "top derived_features": {
+        "17": "[['45_NumToCatWoE:PayAmt3:Status1:Status2.0', 1.0], ['51_ClusterTE:ClusterID71:PayAmt3:Status1:Status3.0', 0.45408394932746887], ['73_WoE:CreditLimit:Status1:Status2.0', 0.12064765393733978]]",
+        "18": "[['45_NumToCatWoE:PayAmt3:Status1:Status2.0', 1.0], ['51_ClusterTE:ClusterID71:PayAmt3:Status1:Status3.0', 0.4260323643684387], ['53_ClusterTE:ClusterID60:CreditLimit:PayAmt5:Status1.0', 0.09998224675655365]]"
+    },
+    "top original_features": {
+        "17": "[['Status1', 0.2581780350665966], ['PayAmt3', 0.18020111442498432], ['Status2', 0.17995381414532638]]",
+        "18": "[['Status1', 0.265009259975647], ['PayAmt3', 0.19264290855321353], ['Status2', 0.18414894852490998]]"
+    },
+    "training_times": {
+        "17": 3.354279995,
+        "18": 3.1990993023
+    },
+    "best_iterations": {
+        "17": 24,
+        "18": 25
+    },
+    "ngenes_start": {
+        "17": 69,
+        "18": 69
+    },
+    "ngenes_max": {
+        "17": 100000000,
+        "18": 100000000
+    },
+    "ngenes": {
+        "17": 57,
+        "18": 58
+    },
+    "ngenes_dead": {
+        "17": 35,
+        "18": 29
+    },
+    "nfeatures_max": {
+        "17": 100000000,
+        "18": 100000000
+    },
+    "nfeatures": {
+        "17": 61,
+        "18": 63
+    },
+    "model_name": {
+        "17": "LIGHTGBM",
+        "18": "LIGHTGBM"
+    },
+    "target_transformer_name": {
+        "17": "NoneType",
+        "18": "NoneType"
+    },
+    "booster": {
+        "17": "lightgbm",
+        "18": "lightgbm"
+    },
+    "n_gpus": {
+        "17": 1,
+        "18": 1
+    },
+    "gpu_id": {
+        "17": 0,
+        "18": 0
+    },
+    "n_jobs": {
+        "17": 2,
+        "18": 2
+    },
+    "n_estimators": {
+        "17": 600,
+        "18": 600
+    },
+    "num_classes": {
+        "17": 2,
+        "18": 2
+    },
+    "num_class": {
+        "17": 1,
+        "18": 1
+    },
+    "score_f_name": {
+        "17": "AUC",
+        "18": "AUC"
+    },
+    "random_state": {
+        "17": 98765,
+        "18": 98765
+    },
+    "learning_rate": {
+        "17": 0.1,
+        "18": 0.1
+    },
+    "reg_alpha": {
+        "17": 0.0,
+        "18": 0.0
+    },
+    "reg_lambda": {
+        "17": 1.0,
+        "18": 1.0
+    },
+    "gamma": {
+        "17": 0,
+        "18": 0
+    },
+    "max_bin": {
+        "17": 256,
+        "18": 256
+    },
+    "scale_pos_weight": {
+        "17": 1,
+        "18": 1
+    },
+    "max_delta_step": {
+        "17": 0,
+        "18": 0
+    },
+    "min_child_weight": {
+        "17": 1,
+        "18": 1
+    },
+    "subsample": {
+        "17": 0.7,
+        "18": 0.7
+    },
+    "colsample_bytree": {
+        "17": 0.8,
+        "18": 0.8
+    },
+    "tree_method": {
+        "17": "gpu_hist",
+        "18": "gpu_hist"
+    },
+    "grow_policy": {
+        "17": "depthwise",
+        "18": "depthwise"
+    },
+    "max_leaves": {
+        "17": 0,
+        "18": 0
+    },
+    "max_depth": {
+        "17": 6,
+        "18": 6
+    },
+    "min_data_in_bin": {
+        "17": 1.0,
+        "18": 1.0
+    },
+    "min_child_samples": {
+        "17": 1.0,
+        "18": 1.0
+    },
+    "boosting_type": {
+        "17": "gbdt",
+        "18": "gbdt"
+    },
+    "early_stopping_rounds": {
+        "17": 10,
+        "18": 10
+    },
+    "objective": {
+        "17": "binary:logistic",
+        "18": "binary:logistic"
+    },
+    "eval_metric": {
+        "17": "auc",
+        "18": "auc"
+    },
+    "monotonicity_constraints": {
+        "17": false,
+        "18": false
+    },
+    "silent": {
+        "17": true,
+        "18": true
+    },
+    "model_origin": {
+        "17": "SEQUENCE",
+        "18": "SEQUENCE"
+    },
+    "updater": {
+        "17": "",
+        "18": ""
+    },
+    "coordinate_selection": {
+        "17": "",
+        "18": ""
+    },
+    "tolerance": {
+        "17": "",
+        "18": ""
+    },
+    "n_lambda": {
+        "17": "",
+        "18": ""
+    },
+    "min_lambda_fraction": {
+        "17": "",
+        "18": ""
+    },
+    "early_stopping_threshold": {
+        "17": "",
+        "18": ""
+    },
+    "debug_verbose": {
+        "17": "",
+        "18": ""
+    }
+}{
+    "indiv_id": {
+        "19": 0,
+        "20": 2
+    },
+    "iter_num": {
+        "19": 19,
+        "20": 19
+    },
+    "accuracy": {
+        "19": 5,
+        "20": 5
+    },
+    "time_tolerance": {
+        "19": 2,
+        "20": 2
+    },
+    "interpretability": {
+        "19": 6,
+        "20": 6
+    },
+    "score": {
+        "19": 0.7585556475,
+        "20": 0.7577465668
+    },
+    "score_sd": {
+        "19": 0.0070589836,
+        "20": 0.0075763443
+    },
+    "top derived_features": {
+        "19": "[['45_NumToCatWoE:PayAmt3:Status1:Status2.0', 1.0], ['51_ClusterTE:ClusterID71:PayAmt3:Status1:Status3.0', 0.42987823486328125], ['53_ClusterTE:ClusterID60:CreditLimit:PayAmt5:Status1.0', 0.10833760350942612]]",
+        "20": "[['86_WoE:Status1:Status2:Status4.0', 1.0], ['51_ClusterTE:ClusterID71:PayAmt3:Status1:Status3.0', 0.14712128043174744], ['53_ClusterTE:ClusterID60:CreditLimit:PayAmt5:Status1.0', 0.06592697650194168]]"
+    },
+    "top original_features": {
+        "19": "[['Status1', 0.263288202111711], ['Status2', 0.18344824073388033], ['PayAmt3', 0.18236927158878816]]",
+        "20": "[['Status1', 0.27014938214215045], ['Status2', 0.2218342298219961], ['Status4', 0.1896805368466153]]"
+    },
+    "training_times": {
+        "19": 2.2962708473,
+        "20": 1.4041035175
+    },
+    "best_iterations": {
+        "19": 27,
+        "20": 25
+    },
+    "ngenes_start": {
+        "19": 69,
+        "20": 69
+    },
+    "ngenes_max": {
+        "19": 100000000,
+        "20": 100000000
+    },
+    "ngenes": {
+        "19": 58,
+        "20": 56
+    },
+    "ngenes_dead": {
+        "19": 35,
+        "20": 31
+    },
+    "nfeatures_max": {
+        "19": 100000000,
+        "20": 100000000
+    },
+    "nfeatures": {
+        "19": 63,
+        "20": 58
+    },
+    "model_name": {
+        "19": "LIGHTGBM",
+        "20": "LIGHTGBM"
+    },
+    "target_transformer_name": {
+        "19": "NoneType",
+        "20": "NoneType"
+    },
+    "booster": {
+        "19": "lightgbm",
+        "20": "lightgbm"
+    },
+    "n_gpus": {
+        "19": 1,
+        "20": 1
+    },
+    "gpu_id": {
+        "19": 0,
+        "20": 0
+    },
+    "n_jobs": {
+        "19": 2,
+        "20": 2
+    },
+    "n_estimators": {
+        "19": 600,
+        "20": 600
+    },
+    "num_classes": {
+        "19": 2,
+        "20": 2
+    },
+    "num_class": {
+        "19": 1,
+        "20": 1
+    },
+    "score_f_name": {
+        "19": "AUC",
+        "20": "AUC"
+    },
+    "random_state": {
+        "19": 98765,
+        "20": 98765
+    },
+    "learning_rate": {
+        "19": 0.1,
+        "20": 0.1
+    },
+    "reg_alpha": {
+        "19": 0.0,
+        "20": 0.0
+    },
+    "reg_lambda": {
+        "19": 1.0,
+        "20": 1.0
+    },
+    "gamma": {
+        "19": 0,
+        "20": 0
+    },
+    "max_bin": {
+        "19": 256,
+        "20": 256
+    },
+    "scale_pos_weight": {
+        "19": 1,
+        "20": 1
+    },
+    "max_delta_step": {
+        "19": 0,
+        "20": 0
+    },
+    "min_child_weight": {
+        "19": 1,
+        "20": 1
+    },
+    "subsample": {
+        "19": 0.7,
+        "20": 0.7
+    },
+    "colsample_bytree": {
+        "19": 0.8,
+        "20": 0.8
+    },
+    "tree_method": {
+        "19": "gpu_hist",
+        "20": "gpu_hist"
+    },
+    "grow_policy": {
+        "19": "depthwise",
+        "20": "depthwise"
+    },
+    "max_leaves": {
+        "19": 0,
+        "20": 0
+    },
+    "max_depth": {
+        "19": 6,
+        "20": 6
+    },
+    "min_data_in_bin": {
+        "19": 1.0,
+        "20": 1.0
+    },
+    "min_child_samples": {
+        "19": 1.0,
+        "20": 1.0
+    },
+    "boosting_type": {
+        "19": "gbdt",
+        "20": "gbdt"
+    },
+    "early_stopping_rounds": {
+        "19": 10,
+        "20": 10
+    },
+    "objective": {
+        "19": "binary:logistic",
+        "20": "binary:logistic"
+    },
+    "eval_metric": {
+        "19": "auc",
+        "20": "auc"
+    },
+    "monotonicity_constraints": {
+        "19": false,
+        "20": false
+    },
+    "silent": {
+        "19": true,
+        "20": true
+    },
+    "model_origin": {
+        "19": "SEQUENCE",
+        "20": "SEQUENCE"
+    },
+    "updater": {
+        "19": "",
+        "20": ""
+    },
+    "coordinate_selection": {
+        "19": "",
+        "20": ""
+    },
+    "tolerance": {
+        "19": "",
+        "20": ""
+    },
+    "n_lambda": {
+        "19": "",
+        "20": ""
+    },
+    "min_lambda_fraction": {
+        "19": "",
+        "20": ""
+    },
+    "early_stopping_threshold": {
+        "19": "",
+        "20": ""
+    },
+    "debug_verbose": {
+        "19": "",
+        "20": ""
+    }
+}
