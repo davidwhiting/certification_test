@@ -1,0 +1,36 @@
+Experiment: ponasowa (04c896ce-7ed1-11ea-96d6-0242ac110002)
+  Version: 1.8.5.1, 2020-04-15 04:27
+  Settings: 3/3/8, seed=1234, GPUs enabled
+  Train data: Card_train (23999, 25)
+  Validation data: N/A
+  Test data: N/A
+  Target column: Default (binary, 22.118% target class)
+System specs: Docker/Linux, 60 GB, 8 CPU cores, 1/1 GPU
+  Max memory usage: 0.692 GB, 0.304 GB GPU
+Recipe: AutoDL (8 iterations, 2 individuals)
+  Validation scheme: stratified, 1 internal holdout
+  Feature engineering: 50 features scored (22 selected)
+Timing: MOJO latency: 0.77213 millis (128.2KB)
+  Data preparation: 14.96 secs
+  Shift/Leakage detection: 11.70 secs
+  Model and feature tuning: 26.48 secs (7 models trained)
+  Feature evolution: 36.42 secs (6 of 32 models trained)
+  Final pipeline training: 45.50 secs (9 models trained)
+  Python / MOJO scorer building: 18.59 secs / 2.68 secs
+Validation score: AUC = 0.5 (constant preds of 0.2212)
+Validation score: AUC = 0.781394 +/- 0.006478744 (baseline)
+Validation score: AUC = 0.7776164 +/- 0.003504786 (final pipeline)
+Test score:       AUC = N/A
+
+Optimal threshold (max. F1): 0.28441
+Final validation scores (internal holdout, bootstrap on folds) +/- stddev:
+                   MCC = 0.4153862 +/- 0.008276535 (more is better)
+              MACROAUC = 0.7776164 +/- 0.003504786 (more is better)
+               LOGLOSS = 0.4337286 +/- 0.003290567 (less is better)
+                  GINI = 0.5552328 +/- 0.007009572 (more is better)
+                    F2 = 0.6386541 +/- 0.004620936 (more is better)
+                    F1 = 0.5438757 +/- 0.006514066 (more is better)
+                   F05 = 0.5628527 +/- 0.007161527 (more is better)
+                 AUCPR = 0.533133 +/- 0.008701996 (more is better)
+              ACCURACY = 0.8138672 +/- 0.002481037 (more is better)
+        optimized: AUC = 0.7776164 +/- 0.003504786 (more is better)

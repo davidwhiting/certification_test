@@ -1,0 +1,55 @@
+{
+    "index": {
+        "0": 0
+    },
+    "Type": {
+        "0": "XGBoostGBMModel"
+    },
+    "Num Folds": {
+        "0": 4
+    },
+    "Model Weight": {
+        "0": 1
+    },
+    "booster": {
+        "0": "gbtree"
+    },
+    "model_class_name": {
+        "0": "XGBoostGBMModel"
+    },
+    "max_depth": {
+        "0": 5
+    },
+    "max_leaves": {
+        "0": 0
+    },
+    "subsample": {
+        "0": 0.6
+    },
+    "colsample_bytree": {
+        "0": 0.5
+    },
+    "tree_method": {
+        "0": "gpu_hist"
+    },
+    "grow_policy": {
+        "0": "depthwise"
+    },
+    "random_state": {
+        "0": 1234
+    },
+    "learning rate": {
+        "0": 0.05
+    },
+    "Target Transformer": {
+        "0": "LabelEncoder"
+    },
+    "Fitted features": {
+        "0": 22
+    },
+    "Fit iterations [each fold]": {
+        "0": [
+            116
+        ]
+    }
+}

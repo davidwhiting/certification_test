@@ -1,0 +1,25 @@
+Relative Importance,Standard Deviation of Relative Importance,Original Feature
+1,0,Status1
+0.4761678,0,Status2
+0.371332,0,Status3
+0.234,0,BillAmt1
+0.194854,0,CreditLimit
+0.1806425,0,PayAmt1
+0.1430647,0,PayAmt2
+0.1325258,0,Status4
+0.1270412,0,Status6
+0.1235299,0,PayAmt4
+0.121455,0,PayAmt3
+0.1044148,0,BillAmt4
+0.09091328,0,BillAmt2
+0.08295321,0,Age
+0.07656839,0,PayAmt5
+0.06972241,0,BillAmt6
+0.06678915,0,BillAmt5
+0.06531724,0,BillAmt3
+0.05758026,0,PayAmt6
+0.05183131,0,Marriage
+0.04395154,0,Sex
+0.03392754,0,Education
+0,0,ID
+0,0,Status5

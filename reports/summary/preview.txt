@@ -1,0 +1,23 @@
+Experiment: 04c896ce-7ed1-11ea-96d6-0242ac110002
+
+ACCURACY [3/10]:
+- Training data size: *23,999 rows, 25 cols*
+- Feature evolution: *[Constant, DecisionTree, GLM, LightGBM, XGBoostGBM]*, *1/4 validation split*
+- Final pipeline: *CV+single model (9 models), 4-fold CV*
+
+TIME [3/10]:
+- Feature evolution: *2 individuals*, up to *35 iterations*
+- Early stopping: After *5* iterations of no improvement
+
+INTERPRETABILITY [8/10]:
+- Feature pre-pruning strategy: Permutation Importance FS
+- Monotonicity constraints: enabled
+- Feature engineering search space: [CVCatNumEncode, CVTargetEncode, CatOriginal, Cat, Frequent, Interactions, NumCatTE, NumToCatWoEMonotonic, NumToCatWoE, OneHotEncoding, Original, WeightOfEvidence]
+
+[Constant, DecisionTree, GLM, LightGBM, XGBoostGBM] models to train:
+- Model and feature tuning: *5*
+- Feature evolution: *32*
+- Final pipeline: *9*
+
+Estimated runtime: *minutes*
+Auto-click Finish/Abort if not done in: *1 day*/*7 days*

@@ -1,0 +1,110 @@
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.260 127.0.0.1:12348       2351   FJ-1-13   INFO: Starting MLI experiment: a3fba89e-7ed1-11ea-96d6-0242ac110002
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.261 127.0.0.1:12348       2351   FJ-1-13   INFO: Parameters used for random forest surrogate model:
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.261 127.0.0.1:12348       2351   FJ-1-13   INFO: {"_train":{"name":"mli_a3fba89e_7ed1_11ea_96d6_0242ac110002.hex","type":"Key"},"_valid":null,"_nfolds":3,"_keep_cross_validation_models":true,"_keep_cross_validation_predictions":false,"_keep_cross_validation_fold_assignment":false,"_parallelize_cross_validation":true,"_auto_rebalance":true,"_seed":3644312481936935991,"_fold_assignment":"AUTO","_categorical_encoding":"EnumLimited","_max_categorical_levels":50,"_distribution":"gaussian","_tweedie_power":1.5,"_quantile_alpha":0.5,"_huber_alpha":0.9,"_ignored_columns":["ID","Default"],"_ignore_const_cols":false,"_weights_column":null,"_offset_column":null,"_fold_column":null,"_check_constant_response":false,"_is_cv_model":false,"_score_each_iteration":false,"_max_runtime_secs":0.0,"_stopping_rounds":0,"_stopping_metric":"RMSE","_stopping_tolerance":1.0E-4,"_response_column":"model_pred","_balance_classes":false,"_max_after_balance_size":5.0,"_class_sampling_factors":null,"_max_confusion_matrix_size":20,"_checkpoint":null,"_pretrained_autoencoder":null,"_custom_metric_func":null,"_custom_distribution_func":null,"_export_checkpoints_dir":null,"_ntrees":100,"_max_depth":20,"_min_rows":10.0,"_nbins":20,"_nbins_cats":1024,"_min_split_improvement":1.0E-5,"_histogram_type":"AUTO","_r2_stopping":1.7976931348623157E308,"_nbins_top_level":1024,"_build_tree_one_node":false,"_score_tree_interval":0,"_initial_score_interval":4000,"_score_interval":4000,"_sample_rate":0.6320000290870667,"_sample_rate_per_class":null,"_calibrate_model":false,"_calibration_frame":null,"_col_sample_rate_change_per_level":1.0,"_col_sample_rate_per_tree":1.0,"_binomial_double_trees":false,"_mtries":-1}
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.261 127.0.0.1:12348       2351   FJ-1-13   INFO: Model summary for random forest surrogate model:
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.262 127.0.0.1:12348       2351   FJ-1-13   INFO: Model Summary:
+04-15 04:30:12.262 127.0.0.1:12348       2351   FJ-1-13   INFO:   Number of Trees  Number of Internal Trees  Model Size in Bytes  Min. Depth  Max. Depth  Mean Depth  Min. Leaves  Max. Leaves  Mean Leaves
+04-15 04:30:12.262 127.0.0.1:12348       2351   FJ-1-13   INFO:               100                       100              1335585          20          20    20.00000          956         1137   1055.96997
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.262 127.0.0.1:12348       2351   FJ-1-13   INFO: Scoring history for random forest surrogate model:
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO: Scoring History:
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:             Timestamp    Duration  Number of Trees  Training RMSE  Training MAE  Training Deviance
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:03  24.684 sec                0            NaN           NaN                NaN
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:03  24.809 sec                1        0.03379       0.02031            0.00114
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:03  24.878 sec                2        0.03128       0.01873            0.00098
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:03  24.953 sec                3        0.02906       0.01777            0.00084
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:03  25.032 sec                4        0.02765       0.01724            0.00076
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:03  25.098 sec                5        0.02636       0.01655            0.00069
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:03  25.160 sec                6        0.02562       0.01619            0.00066
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:03  25.215 sec                7        0.02493       0.01583            0.00062
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.266 sec                8        0.02436       0.01550            0.00059
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.322 sec                9        0.02354       0.01509            0.00055
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.385 sec               10        0.02300       0.01477            0.00053
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.440 sec               11        0.02253       0.01453            0.00051
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.499 sec               12        0.02221       0.01433            0.00049
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.556 sec               13        0.02177       0.01410            0.00047
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.611 sec               14        0.02168       0.01399            0.00047
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.666 sec               15        0.02135       0.01381            0.00046
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.720 sec               16        0.02115       0.01373            0.00045
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.772 sec               17        0.02088       0.01359            0.00044
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.828 sec               18        0.02102       0.01369            0.00044
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.885 sec               19        0.02083       0.01357            0.00043
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.939 sec               20        0.02067       0.01349            0.00043
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  25.999 sec               21        0.02048       0.01341            0.00042
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  26.051 sec               22        0.02048       0.01342            0.00042
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  26.104 sec               23        0.02045       0.01338            0.00042
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  26.156 sec               24        0.02032       0.01331            0.00041
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:04  26.208 sec               25        0.02033       0.01331            0.00041
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  26.260 sec               26        0.02024       0.01326            0.00041
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  26.359 sec               27        0.02011       0.01318            0.00040
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  26.469 sec               28        0.02002       0.01312            0.00040
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  26.592 sec               29        0.01997       0.01309            0.00040
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  26.727 sec               30        0.01993       0.01306            0.00040
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  26.854 sec               31        0.01987       0.01302            0.00039
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  26.937 sec               32        0.01979       0.01297            0.00039
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  27.045 sec               33        0.01981       0.01297            0.00039
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  27.148 sec               34        0.01977       0.01294            0.00039
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:05  27.249 sec               35        0.01971       0.01291            0.00039
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:06  27.367 sec               36        0.01968       0.01289            0.00039
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:06  27.510 sec               37        0.01966       0.01287            0.00039
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:06  27.614 sec               38        0.01961       0.01284            0.00038
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:10  31.673 sec               89        0.01872       0.01229            0.00035
+04-15 04:30:12.263 127.0.0.1:12348       2351   FJ-1-13   INFO:   2020-04-15 04:30:11  32.436 sec              100        0.01859       0.01222            0.00035
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO: Cross validation metrics for random forest surrogate model:
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO: Cross-Validation Metrics Summary:
+04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO:                                mean            sd   cv_1_valid   cv_2_valid    cv_3_valid
+04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO:                    mae  0.012862726  1.4975201E-4  0.012714463  0.012711489   0.013162225
+04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO: mean_residual_deviance  3.806364E-4  7.7147015E-6  3.764255E-4  3.698868E-4  3.9559684E-4
+04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO:                    mse  3.806364E-4  7.7147015E-6  3.764255E-4  3.698868E-4  3.9559684E-4
+04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO:                     r2   0.98430437  3.4444357E-4     0.984173    0.9849557    0.98378444
+04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO:      residual_deviance  3.806364E-4  7.7147015E-6  3.764255E-4  3.698868E-4  3.9559684E-4
+04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO:                   rmse  0.019507915  1.9700483E-4  0.019401688  0.019232443   0.019889615
+04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO:                  rmsle  0.014533111  1.5990494E-4  0.014445185  0.014310784   0.014843364
+20/04/15 04:30:12 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:30:12.264 127.0.0.1:12348       2351   FJ-1-13   INFO: Running Partial Dependence
+20/04/15 04:31:18 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:18.470 127.0.0.1:12348       2351   FJ-1-13   INFO: Finished Partial Dependence
+20/04/15 04:31:18 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:18.484 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out pdp.json...
+20/04/15 04:31:18 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:18.489 127.0.0.1:12348       2351   FJ-1-13   INFO: Running DT Surrogate Model
+20/04/15 04:31:18 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:18.949 127.0.0.1:12348       2351   FJ-1-13   INFO: Finished DT Surrogate Model
+20/04/15 04:31:18 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:18.950 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out dtPathsFrame.csv...
+20/04/15 04:31:19 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:19.006 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out dtSurrogate.json...
+20/04/15 04:31:19 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:19.010 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out dtModel.json...
+20/04/15 04:31:19 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:19.011 127.0.0.1:12348       2351   FJ-1-13   INFO: Attempting to write out DT Surrogate MOJO to ./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/dtsurr_mojo.zip
+20/04/15 04:31:19 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:19.022 127.0.0.1:12348       2351   FJ-1-13   INFO: Wrote DT Surrogate MOJO to ./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/dtsurr_mojo.zip
+20/04/15 04:31:19 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:19.022 127.0.0.1:12348       2351   FJ-1-13   INFO: Running LOCO
+20/04/15 04:31:20 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:20.256 127.0.0.1:12348       2351   FJ-1-13   INFO: Leave One Covariate Out (LOCO) initialized with leafRemovalMethod
+20/04/15 04:31:20 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:20.257 127.0.0.1:12348       2351   FJ-1-13   INFO: Starting random forest scoring to make leaf paths
+20/04/15 04:31:21 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:21.844 127.0.0.1:12348       2351   FJ-1-13   INFO: Finished random forest scoring to make leaf paths
+20/04/15 04:31:23 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:23.191 127.0.0.1:12348       2351   FJ-1-13   INFO: Finished LOCO
+20/04/15 04:31:23 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:23.191 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out surrogate global loco json
+20/04/15 04:31:23 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:23.248 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out surrogate_shapley_global.json...
+20/04/15 04:31:23 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:23.248 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out locoFrame.csv...
+20/04/15 04:31:24 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:24.071 127.0.0.1:12348       2351   FJ-1-13   INFO: Training Grid Search K-Lime
+20/04/15 04:31:24 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:24.075 127.0.0.1:12348       2351   FJ-1-13   INFO: Starting gridsearch: estimated size of search space = 3
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.813 127.0.0.1:12348       2351   FJ-1-13   INFO: Cleaning up CV Models for klime_glm_global_Grid_KLime_mli_a3fba89e_7ed1_11ea_96d6_0242ac110002.hex_model_1586923293619_1_model_1
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.814 127.0.0.1:12348       2351   FJ-1-13   INFO: 3 CV models were removed
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.814 127.0.0.1:12348       2351   FJ-1-13   INFO: Cleaning up CV Models for klime_glm_cluster0-Grid_KLime_mli_a3fba89e_7ed1_11ea_96d6_0242ac110002.hex_model_1586923293619_1_model_1
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.814 127.0.0.1:12348       2351   FJ-1-13   INFO: 3 CV models were removed
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.814 127.0.0.1:12348       2351   FJ-1-13   INFO: Cleaning up CV Models for klime_glm_global_Grid_KLime_mli_a3fba89e_7ed1_11ea_96d6_0242ac110002.hex_model_1586923293619_1_model_2
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.815 127.0.0.1:12348       2351   FJ-1-13   INFO: 3 CV models were removed
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.815 127.0.0.1:12348       2351   FJ-1-13   INFO: Cleaning up CV Models for klime_glm_cluster0-Grid_KLime_mli_a3fba89e_7ed1_11ea_96d6_0242ac110002.hex_model_1586923293619_1_model_2
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.815 127.0.0.1:12348       2351   FJ-1-13   INFO: 3 CV models were removed
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.815 127.0.0.1:12348       2351   FJ-1-13   INFO: Finished KLime Training
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.815 127.0.0.1:12348       2351   FJ-1-13   INFO: Scoring K-Lime
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.832 127.0.0.1:12348       2351   FJ-1-13   INFO: Finished Scoring K-Lime
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.882 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out klimeLocalMeanSDCVCoeff.json...
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.983 127.0.0.1:12348       2351   FJ-1-13   INFO: Running H2O Aggregator 
+20/04/15 04:31:27 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:27.983 127.0.0.1:12348       2351   FJ-1-13   INFO: Aggregator ignored columns: [ID, Default, model_pred, h2oframe_idx]
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.571 127.0.0.1:12348       2351   FJ-1-13   INFO: Finished H2O Aggregator
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.571 127.0.0.1:12348       2351   FJ-1-13   INFO: H2O Aggregator finished in: 0.588 seconds
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.625 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out aggregatedFrame.csv...
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.667 127.0.0.1:12348       2351   FJ-1-13   INFO: Exporting MLI data...
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.667 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out kLimeFrame.csv...
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.886 127.0.0.1:12348       2351   FJ-1-13   INFO: Attempting to write out k-LIME MOJO to ./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/klime_mojo.zip
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.935 127.0.0.1:12348       2351   FJ-1-13   INFO: Wrote k-LIME MOJO to ./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/klime_mojo.zip
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.939 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out klimeData.json...
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.940 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out DRF variable importance...
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.940 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out varImp.json...
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.940 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out DRF metadata...
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.945 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out drfMetaData.json...
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.945 127.0.0.1:12348       2351   FJ-1-13   INFO: Writing out predictions frame...
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.975 127.0.0.1:12348       2351   FJ-1-13   INFO: Interpret Job Finished
+20/04/15 04:31:28 [a3fba89e-7ed1-11ea-96d6-0242ac110002] INFO default: 04-15 04:31:28.977 127.0.0.1:12348       2351   FJ-1-13   INFO: Finished MLI experiment: a3fba89e-7ed1-11ea-96d6-0242ac110002

@@ -1,0 +1,1 @@
+Pipeline Description: Final XGBoostGBMModel pipeline with ensemble_level=0 transforming 22 original features -> 22 features in each of 1 models each of 4 fold hyperparameters averaged and re-fit as single model.:

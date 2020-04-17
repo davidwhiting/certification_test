@@ -1,0 +1,790 @@
+{
+    "indiv_id": {
+        "0": 1
+    },
+    "iter_num": {
+        "0": 6
+    },
+    "accuracy": {
+        "0": 3
+    },
+    "time_tolerance": {
+        "0": 3
+    },
+    "interpretability": {
+        "0": 8
+    },
+    "score": {
+        "0": 0.7670312656
+    },
+    "tournament_score": {
+        "0": 0.7670312656
+    },
+    "score_sd": {
+        "0": 0.0071854273
+    },
+    "top derived_features": {
+        "0": "[['48_WoE:Status1:Status6.0', 1.0], ['49_CVTE:Marriage:Status1.0', 0.1497141718864441], ['66_BillAmt2', 0.07925475388765335]]"
+    },
+    "top original_features": {
+        "0": "[['Status1', 0.395366381207807], ['Status6', 0.3595833016412478], ['Marriage', 0.07396677016552211]]"
+    },
+    "training_times": {
+        "0": 0.8554399014
+    },
+    "best_iterations": {
+        "0": 48
+    },
+    "last_3_mutation_try_actual_actions": {
+        "0": []
+    },
+    "ngenes_start": {
+        "0": 24
+    },
+    "ngenes_max": {
+        "0": 100
+    },
+    "ngenes": {
+        "0": 24
+    },
+    "ngenes_dead": {
+        "0": 51
+    },
+    "nfeatures_max": {
+        "0": 100
+    },
+    "nfeatures": {
+        "0": 22
+    },
+    "feature_cost": {
+        "0": 22
+    },
+    "model_name": {
+        "0": "LIGHTGBM"
+    },
+    "target_transformer_name": {
+        "0": "NoneType"
+    },
+    "from_brain": {
+        "0": false
+    },
+    "derived_from_brain": {
+        "0": false
+    },
+    "from_brain_count": {
+        "0": 0
+    },
+    "derived_from_brain_count": {
+        "0": 0
+    },
+    "booster": {
+        "0": "lightgbm"
+    },
+    "model_class_name": {
+        "0": "LightGBMModel"
+    },
+    "n_gpus": {
+        "0": 1
+    },
+    "gpu_id": {
+        "0": 0
+    },
+    "n_jobs": {
+        "0": 4
+    },
+    "num_classes": {
+        "0": 2
+    },
+    "num_class": {
+        "0": 1
+    },
+    "labels": {
+        "0": [
+            0,
+            1
+        ]
+    },
+    "score_f_name": {
+        "0": "AUC"
+    },
+    "random_state": {
+        "0": 1234
+    },
+    "time_column": {
+        "0": ""
+    },
+    "tgc": {
+        "0": ""
+    },
+    "pred_gap": {
+        "0": ""
+    },
+    "pred_periods": {
+        "0": ""
+    },
+    "target": {
+        "0": ""
+    },
+    "n_estimators": {
+        "0": 300
+    },
+    "learning_rate": {
+        "0": 0.1
+    },
+    "reg_alpha": {
+        "0": 0.0
+    },
+    "reg_lambda": {
+        "0": 1.0
+    },
+    "gamma": {
+        "0": 0
+    },
+    "max_bin": {
+        "0": 256
+    },
+    "scale_pos_weight": {
+        "0": 1
+    },
+    "max_delta_step": {
+        "0": 0
+    },
+    "min_child_weight": {
+        "0": 1
+    },
+    "subsample": {
+        "0": 0.7
+    },
+    "colsample_bytree": {
+        "0": 0.8
+    },
+    "tree_method": {
+        "0": "gpu_hist"
+    },
+    "grow_policy": {
+        "0": "depthwise"
+    },
+    "max_depth": {
+        "0": 6
+    },
+    "max_leaves": {
+        "0": 0
+    },
+    "objective": {
+        "0": "binary:logistic"
+    },
+    "eval_metric": {
+        "0": "auc"
+    },
+    "early_stopping_threshold": {
+        "0": 0.001
+    },
+    "monotonicity_constraints": {
+        "0": true
+    },
+    "silent": {
+        "0": true
+    },
+    "debug_verbose": {
+        "0": 0
+    },
+    "seed": {
+        "0": 1234
+    },
+    "disable_gpus": {
+        "0": false
+    },
+    "lossguide": {
+        "0": false
+    },
+    "dummy": {
+        "0": false
+    },
+    "ensemble_level": {
+        "0": 1
+    },
+    "train_shape": {
+        "0": [
+            23999,
+            25
+        ]
+    },
+    "valid_shape": {
+        "0": ""
+    },
+    "model_origin": {
+        "0": "EXTRA_FS"
+    },
+    "best_learning_rate": {
+        "0": 0.1
+    },
+    "task": {
+        "0": {
+            "address": "http://127.0.0.1:12345",
+            "isMultinode": false,
+            "method": "on_experiment",
+            "server_cwd": "/opt/h2oai/dai"
+        }
+    },
+    "experiment_id": {
+        "0": "04c896ce-7ed1-11ea-96d6-0242ac110002"
+    },
+    "early_stopping_rounds": {
+        "0": 20
+    },
+    "subsample_freq": {
+        "0": 1
+    },
+    "min_data_in_bin": {
+        "0": 1
+    },
+    "min_child_samples": {
+        "0": 1
+    },
+    "boosting_type": {
+        "0": "gbdt"
+    },
+    "enable_early_stopping_rounds": {
+        "0": true
+    }
+}{
+    "indiv_id": {
+        "7": 0
+    },
+    "iter_num": {
+        "7": 7
+    },
+    "accuracy": {
+        "7": 3
+    },
+    "time_tolerance": {
+        "7": 3
+    },
+    "interpretability": {
+        "7": 8
+    },
+    "score": {
+        "7": 0.7849261781
+    },
+    "tournament_score": {
+        "7": 0.7849261781
+    },
+    "score_sd": {
+        "7": 0.0057456345
+    },
+    "top derived_features": {
+        "7": "[['15_Status1', 1.0], ['16_Status2', 0.46456050872802734], ['17_Status3', 0.45038697123527527]]"
+    },
+    "top original_features": {
+        "7": "[['Status1', 0.22974593321653153], ['Status2', 0.10673088761326728], ['Status3', 0.10347457501501545]]"
+    },
+    "training_times": {
+        "7": 1.7115471363
+    },
+    "best_iterations": {
+        "7": 66
+    },
+    "last_3_mutation_try_actual_actions": {
+        "7": [
+            [
+                "prune",
+                "prune_1"
+            ],
+            [
+                "perturb_xgb",
+                "perturb_xgb"
+            ]
+        ]
+    },
+    "ngenes_start": {
+        "7": 24
+    },
+    "ngenes_max": {
+        "7": 100
+    },
+    "ngenes": {
+        "7": 22
+    },
+    "ngenes_dead": {
+        "7": 2
+    },
+    "nfeatures_max": {
+        "7": 100
+    },
+    "nfeatures": {
+        "7": 22
+    },
+    "feature_cost": {
+        "7": 22
+    },
+    "model_name": {
+        "7": "XGBOOSTGBM"
+    },
+    "target_transformer_name": {
+        "7": "NoneType"
+    },
+    "from_brain": {
+        "7": false
+    },
+    "derived_from_brain": {
+        "7": false
+    },
+    "from_brain_count": {
+        "7": 0
+    },
+    "derived_from_brain_count": {
+        "7": 0
+    },
+    "booster": {
+        "7": "gbtree"
+    },
+    "model_class_name": {
+        "7": "XGBoostGBMModel"
+    },
+    "n_gpus": {
+        "7": 1
+    },
+    "gpu_id": {
+        "7": 0
+    },
+    "n_jobs": {
+        "7": 4
+    },
+    "num_classes": {
+        "7": 2
+    },
+    "num_class": {
+        "7": 1
+    },
+    "labels": {
+        "7": [
+            0,
+            1
+        ]
+    },
+    "score_f_name": {
+        "7": "AUC"
+    },
+    "random_state": {
+        "7": 1234
+    },
+    "time_column": {
+        "7": ""
+    },
+    "tgc": {
+        "7": ""
+    },
+    "pred_gap": {
+        "7": ""
+    },
+    "pred_periods": {
+        "7": ""
+    },
+    "target": {
+        "7": ""
+    },
+    "n_estimators": {
+        "7": 300
+    },
+    "learning_rate": {
+        "7": 0.1
+    },
+    "early_stopping_rounds": {
+        "7": 20
+    },
+    "reg_alpha": {
+        "7": 0.0
+    },
+    "reg_lambda": {
+        "7": 10.0
+    },
+    "gamma": {
+        "7": 0.01
+    },
+    "max_bin": {
+        "7": 128
+    },
+    "scale_pos_weight": {
+        "7": 1.0
+    },
+    "max_delta_step": {
+        "7": 0.0
+    },
+    "min_child_weight": {
+        "7": 1
+    },
+    "subsample": {
+        "7": 0.6
+    },
+    "subsample_freq": {
+        "7": ""
+    },
+    "colsample_bytree": {
+        "7": 0.5
+    },
+    "tree_method": {
+        "7": "gpu_hist"
+    },
+    "grow_policy": {
+        "7": "depthwise"
+    },
+    "max_leaves": {
+        "7": 0
+    },
+    "max_depth": {
+        "7": 5
+    },
+    "min_data_in_bin": {
+        "7": ""
+    },
+    "min_child_samples": {
+        "7": ""
+    },
+    "boosting_type": {
+        "7": ""
+    },
+    "enable_early_stopping_rounds": {
+        "7": ""
+    },
+    "objective": {
+        "7": "binary:logistic"
+    },
+    "eval_metric": {
+        "7": "aucpr"
+    },
+    "monotonicity_constraints": {
+        "7": true
+    },
+    "silent": {
+        "7": true
+    },
+    "seed": {
+        "7": 1234
+    },
+    "disable_gpus": {
+        "7": false
+    },
+    "lossguide": {
+        "7": false
+    },
+    "dummy": {
+        "7": false
+    },
+    "ensemble_level": {
+        "7": 1
+    },
+    "train_shape": {
+        "7": [
+            23999,
+            25
+        ]
+    },
+    "valid_shape": {
+        "7": ""
+    },
+    "model_origin": {
+        "7": "SEQUENCE"
+    },
+    "early_stopping_threshold": {
+        "7": 0.001
+    },
+    "debug_verbose": {
+        "7": 0
+    },
+    "updater": {
+        "7": ""
+    },
+    "coordinate_selection": {
+        "7": ""
+    },
+    "tolerance": {
+        "7": ""
+    },
+    "n_lambda": {
+        "7": ""
+    },
+    "min_lambda_fraction": {
+        "7": ""
+    },
+    "best_learning_rate": {
+        "7": ""
+    },
+    "task": {
+        "7": ""
+    },
+    "experiment_id": {
+        "7": ""
+    }
+}{
+    "indiv_id": {
+        "8": 1
+    },
+    "iter_num": {
+        "8": 8
+    },
+    "accuracy": {
+        "8": 3
+    },
+    "time_tolerance": {
+        "8": 3
+    },
+    "interpretability": {
+        "8": 8
+    },
+    "score": {
+        "8": 0.7815862538
+    },
+    "tournament_score": {
+        "8": 0.7815862538
+    },
+    "score_sd": {
+        "8": 0.0056282045
+    },
+    "top derived_features": {
+        "8": "[['26_NumToCatWoEMonotonic:PayAmt1:Status1:Status2:Status3.0', 1.0], ['15_Status1', 0.5080873966217041], ['16_Status2', 0.285116046667099]]"
+    },
+    "top original_features": {
+        "8": "[['Status1', 0.2159187168246104], ['Status2', 0.18399504457677046], ['PayAmt1', 0.15549938435898247]]"
+    },
+    "training_times": {
+        "8": 1.8655097485
+    },
+    "best_iterations": {
+        "8": 101
+    },
+    "last_3_mutation_try_actual_actions": {
+        "8": [
+            [
+                "perturb_xgb",
+                "perturb_xgb"
+            ],
+            [
+                "add",
+                "add"
+            ],
+            [
+                "add",
+                "add"
+            ]
+        ]
+    },
+    "ngenes_start": {
+        "8": 24
+    },
+    "ngenes_max": {
+        "8": 100
+    },
+    "ngenes": {
+        "8": 24
+    },
+    "ngenes_dead": {
+        "8": 3
+    },
+    "nfeatures_max": {
+        "8": 100
+    },
+    "nfeatures": {
+        "8": 24
+    },
+    "feature_cost": {
+        "8": 24
+    },
+    "model_name": {
+        "8": "XGBOOSTGBM"
+    },
+    "target_transformer_name": {
+        "8": "NoneType"
+    },
+    "from_brain": {
+        "8": false
+    },
+    "derived_from_brain": {
+        "8": false
+    },
+    "from_brain_count": {
+        "8": 0
+    },
+    "derived_from_brain_count": {
+        "8": 0
+    },
+    "booster": {
+        "8": "gbtree"
+    },
+    "model_class_name": {
+        "8": "XGBoostGBMModel"
+    },
+    "n_gpus": {
+        "8": 1
+    },
+    "gpu_id": {
+        "8": 0
+    },
+    "n_jobs": {
+        "8": 4
+    },
+    "num_classes": {
+        "8": 2
+    },
+    "num_class": {
+        "8": 1
+    },
+    "labels": {
+        "8": [
+            0,
+            1
+        ]
+    },
+    "score_f_name": {
+        "8": "AUC"
+    },
+    "random_state": {
+        "8": 1234
+    },
+    "time_column": {
+        "8": ""
+    },
+    "tgc": {
+        "8": ""
+    },
+    "pred_gap": {
+        "8": ""
+    },
+    "pred_periods": {
+        "8": ""
+    },
+    "target": {
+        "8": ""
+    },
+    "n_estimators": {
+        "8": 300
+    },
+    "learning_rate": {
+        "8": 0.1
+    },
+    "early_stopping_rounds": {
+        "8": 20
+    },
+    "reg_alpha": {
+        "8": 0.0
+    },
+    "reg_lambda": {
+        "8": 10.0
+    },
+    "gamma": {
+        "8": 0.01
+    },
+    "max_bin": {
+        "8": 128
+    },
+    "scale_pos_weight": {
+        "8": 1.0
+    },
+    "max_delta_step": {
+        "8": 0.0
+    },
+    "min_child_weight": {
+        "8": 1
+    },
+    "subsample": {
+        "8": 0.6
+    },
+    "subsample_freq": {
+        "8": ""
+    },
+    "colsample_bytree": {
+        "8": 0.5
+    },
+    "tree_method": {
+        "8": "gpu_hist"
+    },
+    "grow_policy": {
+        "8": "depthwise"
+    },
+    "max_leaves": {
+        "8": 0
+    },
+    "max_depth": {
+        "8": 5
+    },
+    "min_data_in_bin": {
+        "8": ""
+    },
+    "min_child_samples": {
+        "8": ""
+    },
+    "boosting_type": {
+        "8": ""
+    },
+    "enable_early_stopping_rounds": {
+        "8": ""
+    },
+    "objective": {
+        "8": "binary:logistic"
+    },
+    "eval_metric": {
+        "8": "aucpr"
+    },
+    "monotonicity_constraints": {
+        "8": true
+    },
+    "silent": {
+        "8": true
+    },
+    "seed": {
+        "8": 1234
+    },
+    "disable_gpus": {
+        "8": false
+    },
+    "lossguide": {
+        "8": false
+    },
+    "dummy": {
+        "8": false
+    },
+    "ensemble_level": {
+        "8": 1
+    },
+    "train_shape": {
+        "8": [
+            23999,
+            25
+        ]
+    },
+    "valid_shape": {
+        "8": ""
+    },
+    "model_origin": {
+        "8": "SEQUENCE"
+    },
+    "early_stopping_threshold": {
+        "8": 0.001
+    },
+    "debug_verbose": {
+        "8": 0
+    },
+    "updater": {
+        "8": ""
+    },
+    "coordinate_selection": {
+        "8": ""
+    },
+    "tolerance": {
+        "8": ""
+    },
+    "n_lambda": {
+        "8": ""
+    },
+    "min_lambda_fraction": {
+        "8": ""
+    },
+    "best_learning_rate": {
+        "8": ""
+    },
+    "task": {
+        "8": ""
+    },
+    "experiment_id": {
+        "8": ""
+    }
+}

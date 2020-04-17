@@ -1,0 +1,23 @@
+Relative Importance,Shift of Relative Importance,Description,Feature
+1,0,Status1 (Orig),15_Status1
+0.4761678,0.01160726,Status2 (Orig),16_Status2
+0.371332,-0.07905498,Status3 (Orig),17_Status3
+0.234,-0.09155023,BillAmt1 (Orig),1_BillAmt1
+0.194854,-0.1105101,CreditLimit (Orig),7_CreditLimit
+0.1806425,-0.02409713,PayAmt1 (Orig),9_PayAmt1
+0.1430647,0.000180617,PayAmt2 (Orig),10_PayAmt2
+0.1325258,0.01828355,Status4 (Orig),18_Status4
+0.1270412,-0.003724217,Status6 (Orig),20_Status6
+0.1235299,0.01382696,PayAmt4 (Orig),12_PayAmt4
+0.121455,-0.002135128,PayAmt3 (Orig),11_PayAmt3
+0.1044148,0.01133197,BillAmt4 (Orig),4_BillAmt4
+0.09091328,-0.02215865,BillAmt2 (Orig),2_BillAmt2
+0.08295321,-0.04937086,Age (Orig),0_Age
+0.07656839,-0.01484862,PayAmt5 (Orig),13_PayAmt5
+0.06972241,-0.02332877,BillAmt6 (Orig),6_BillAmt6
+0.06678915,-0.03028879,BillAmt5 (Orig),5_BillAmt5
+0.06531724,-0.005118206,BillAmt3 (Orig),3_BillAmt3
+0.05758026,-0.0399412,PayAmt6 (Orig),14_PayAmt6
+0.05183131,-0.02281519,"Out-of-fold mean of the response grouped by: ['Marriage'] using 5 folds [internal:(10, 3, 10)]",21_CVTE:Marriage.0
+0.04395154,-0.009689365,"Out-of-fold mean of the response grouped by: ['Sex'] using 5 folds [internal:(10, 3, 10)]",22_CVTE:Sex.0
+0.03392754,-0.03065106,Education (Orig),8_Education

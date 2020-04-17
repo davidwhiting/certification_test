@@ -1,0 +1,158 @@
+{
+    "index": {
+        "0": 0
+    },
+    "booster": {
+        "0": "gbtree"
+    },
+    "model_class_name": {
+        "0": "XGBoostGBMModel"
+    },
+    "n_gpus": {
+        "0": 1
+    },
+    "gpu_id": {
+        "0": 0
+    },
+    "n_jobs": {
+        "0": 4
+    },
+    "num_classes": {
+        "0": 2
+    },
+    "num_class": {
+        "0": 1
+    },
+    "labels": {
+        "0": "[0, 1]"
+    },
+    "score_f_name": {
+        "0": "AUC"
+    },
+    "random_state": {
+        "0": 1234
+    },
+    "time_column": {
+        "0": ""
+    },
+    "encoder": {
+        "0": ""
+    },
+    "tgc": {
+        "0": ""
+    },
+    "pred_gap": {
+        "0": ""
+    },
+    "pred_periods": {
+        "0": ""
+    },
+    "target": {
+        "0": ""
+    },
+    "tsp": {
+        "0": ""
+    },
+    "n_estimators": {
+        "0": 116
+    },
+    "learning_rate": {
+        "0": 0.05
+    },
+    "early_stopping_rounds": {
+        "0": ""
+    },
+    "reg_alpha": {
+        "0": 0.0
+    },
+    "reg_lambda": {
+        "0": 10.0
+    },
+    "gamma": {
+        "0": 0.01
+    },
+    "max_bin": {
+        "0": 128
+    },
+    "scale_pos_weight": {
+        "0": 1.0
+    },
+    "max_delta_step": {
+        "0": 0.0
+    },
+    "min_child_weight": {
+        "0": 1
+    },
+    "subsample": {
+        "0": 0.6
+    },
+    "colsample_bytree": {
+        "0": 0.5
+    },
+    "tree_method": {
+        "0": "gpu_hist"
+    },
+    "grow_policy": {
+        "0": "depthwise"
+    },
+    "max_depth": {
+        "0": 5
+    },
+    "max_leaves": {
+        "0": 0
+    },
+    "objective": {
+        "0": "binary:logistic"
+    },
+    "eval_metric": {
+        "0": "aucpr"
+    },
+    "early_stopping_threshold": {
+        "0": 0
+    },
+    "silent": {
+        "0": true
+    },
+    "debug_verbose": {
+        "0": 0
+    },
+    "seed": {
+        "0": 1234
+    },
+    "disable_gpus": {
+        "0": false
+    },
+    "lossguide": {
+        "0": false
+    },
+    "dummy": {
+        "0": false
+    },
+    "accuracy": {
+        "0": 3
+    },
+    "time_tolerance": {
+        "0": 3
+    },
+    "interpretability": {
+        "0": 8
+    },
+    "ensemble_level": {
+        "0": 1
+    },
+    "train_shape": {
+        "0": [
+            23999,
+            25
+        ]
+    },
+    "valid_shape": {
+        "0": ""
+    },
+    "model_origin": {
+        "0": "SEQUENCE"
+    },
+    "monotone_constraints": {
+        "0": "(0,0,0,0,0,0,1,1,1,1,0,1,0,0,0,0,0,0,0,-1,0,0)"
+    }
+}

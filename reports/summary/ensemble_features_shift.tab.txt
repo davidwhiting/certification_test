@@ -1,0 +1,27 @@
+Variable Importance Shift Between Best Iteration Model and Final Model
++----+-----------------------+--------------------------------+--------------------+------------------------------------------------------------------------------------------------+
+|    |   Relative Importance |   Shift of Relative Importance | Feature            | Description                                                                                    |
+|----+-----------------------+--------------------------------+--------------------+------------------------------------------------------------------------------------------------|
+|  0 |             1         |                    0           | 15_Status1         | Status1 (Orig)                                                                                 |
+|  1 |             0.476168  |                    0.0116073   | 16_Status2         | Status2 (Orig)                                                                                 |
+|  2 |             0.371332  |                   -0.079055    | 17_Status3         | Status3 (Orig)                                                                                 |
+|  3 |             0.234     |                   -0.0915502   | 1_BillAmt1         | BillAmt1 (Orig)                                                                                |
+|  4 |             0.194854  |                   -0.11051     | 7_CreditLimit      | CreditLimit (Orig)                                                                             |
+|  5 |             0.180643  |                   -0.0240971   | 9_PayAmt1          | PayAmt1 (Orig)                                                                                 |
+|  6 |             0.143065  |                    0.000180617 | 10_PayAmt2         | PayAmt2 (Orig)                                                                                 |
+|  7 |             0.132526  |                    0.0182836   | 18_Status4         | Status4 (Orig)                                                                                 |
+|  8 |             0.127041  |                   -0.00372422  | 20_Status6         | Status6 (Orig)                                                                                 |
+|  9 |             0.12353   |                    0.013827    | 12_PayAmt4         | PayAmt4 (Orig)                                                                                 |
+| 10 |             0.121455  |                   -0.00213513  | 11_PayAmt3         | PayAmt3 (Orig)                                                                                 |
+| 11 |             0.104415  |                    0.011332    | 4_BillAmt4         | BillAmt4 (Orig)                                                                                |
+| 12 |             0.0909133 |                   -0.0221587   | 2_BillAmt2         | BillAmt2 (Orig)                                                                                |
+| 13 |             0.0829532 |                   -0.0493709   | 0_Age              | Age (Orig)                                                                                     |
+| 14 |             0.0765684 |                   -0.0148486   | 13_PayAmt5         | PayAmt5 (Orig)                                                                                 |
+| 15 |             0.0697224 |                   -0.0233288   | 6_BillAmt6         | BillAmt6 (Orig)                                                                                |
+| 16 |             0.0667892 |                   -0.0302888   | 5_BillAmt5         | BillAmt5 (Orig)                                                                                |
+| 17 |             0.0653172 |                   -0.00511821  | 3_BillAmt3         | BillAmt3 (Orig)                                                                                |
+| 18 |             0.0575803 |                   -0.0399412   | 14_PayAmt6         | PayAmt6 (Orig)                                                                                 |
+| 19 |             0.0518313 |                   -0.0228152   | 21_CVTE:Marriage.0 | Out-of-fold mean of the response grouped by: ['Marriage'] using 5 folds [internal:(10, 3, 10)] |
+| 20 |             0.0439515 |                   -0.00968936  | 22_CVTE:Sex.0      | Out-of-fold mean of the response grouped by: ['Sex'] using 5 folds [internal:(10, 3, 10)]      |
+| 21 |             0.0339275 |                   -0.0306511   | 8_Education        | Education (Orig)                                                                               |
++----+-----------------------+--------------------------------+--------------------+------------------------------------------------------------------------------------------------+

@@ -1,0 +1,27 @@
+Variable Importance
++----+-----------------------+---------------------------------------------+--------------------+-------------------------------------------------------------------------+
+|    |   Relative Importance |   Standard Deviation of Relative Importance | Feature            | Description                                                             |
+|----+-----------------------+---------------------------------------------+--------------------+-------------------------------------------------------------------------|
+|  0 |             1         |                                           0 | 15_Status1         | Status1 (Orig)                                                          |
+|  1 |             0.464561  |                                           0 | 16_Status2         | Status2 (Orig)                                                          |
+|  2 |             0.450387  |                                           0 | 17_Status3         | Status3 (Orig)                                                          |
+|  3 |             0.32555   |                                           0 | 1_BillAmt1         | BillAmt1 (Orig)                                                         |
+|  4 |             0.305364  |                                           0 | 7_CreditLimit      | CreditLimit (Orig)                                                      |
+|  5 |             0.20474   |                                           0 | 9_PayAmt1          | PayAmt1 (Orig)                                                          |
+|  6 |             0.142884  |                                           0 | 10_PayAmt2         | PayAmt2 (Orig)                                                          |
+|  7 |             0.132324  |                                           0 | 0_Age              | Age (Orig)                                                              |
+|  8 |             0.130765  |                                           0 | 20_Status6         | Status6 (Orig)                                                          |
+|  9 |             0.12359   |                                           0 | 11_PayAmt3         | PayAmt3 (Orig)                                                          |
+| 10 |             0.114242  |                                           0 | 18_Status4         | Status4 (Orig)                                                          |
+| 11 |             0.113072  |                                           0 | 2_BillAmt2         | BillAmt2 (Orig)                                                         |
+| 12 |             0.109703  |                                           0 | 12_PayAmt4         | PayAmt4 (Orig)                                                          |
+| 13 |             0.0975215 |                                           0 | 14_PayAmt6         | PayAmt6 (Orig)                                                          |
+| 14 |             0.0970779 |                                           0 | 5_BillAmt5         | BillAmt5 (Orig)                                                         |
+| 15 |             0.0930828 |                                           0 | 4_BillAmt4         | BillAmt4 (Orig)                                                         |
+| 16 |             0.0930512 |                                           0 | 6_BillAmt6         | BillAmt6 (Orig)                                                         |
+| 17 |             0.091417  |                                           0 | 13_PayAmt5         | PayAmt5 (Orig)                                                          |
+| 18 |             0.0746465 |                                           0 | 21_CVTE:Marriage.0 | Out-of-fold mean of the response grouped by: ['Marriage'] using 5 folds |
+| 19 |             0.0704354 |                                           0 | 3_BillAmt3         | BillAmt3 (Orig)                                                         |
+| 20 |             0.0645786 |                                           0 | 8_Education        | Education (Orig)                                                        |
+| 21 |             0.0536409 |                                           0 | 22_CVTE:Sex.0      | Out-of-fold mean of the response grouped by: ['Sex'] using 5 folds      |
++----+-----------------------+---------------------------------------------+--------------------+-------------------------------------------------------------------------+

@@ -1,0 +1,306 @@
+# Copyright 2020 H2O.ai; Proprietary License;  -*- encoding: utf-8 -*-
+
+-------------------------------------------------------------------------------
+
+                H2O DRIVERLESS AI EXPERIMENT LOGFILE 
+
+
+                           PROPRIETARY LICENSE -
+
+                USE OF ANY PART OF THIS SOFTWARE REQUIRES A VALID,
+                ONGOING LICENSE AGREEMENT WITH H2O.AI.
+
+                Please contact sales@h2o.ai for more information.
+
+-------------------------------------------------------------------------------
+
+
+PLEASE READ THIS H2O.AI DRIVERLESS AI EVALUATION AGREEMENT ('AGREEMENT') CAREFULLY BEFORE USING THE EVALUATION SOFTWARE OFFERED BY H2O.AI, INC. ('H2O.AI').  BY CLICKING THE 'AGREE' (OR SIMILAR) BUTTON ON AN ONLINE ORDER FORM, BY USING THE EVALUATION SOFTWARE IN ANY MANNER, OR BY SIGNING AN ORDER FORM WHICH REFERENCES THESE EVALUATION TERMS AND CONDITIONS (AS APPLICABLE) YOU OR THE ENTITY YOU REPRESENT ('LICENSEE') AGREE THAT YOU HAVE READ AND AGREE TO BE BOUND BY AND A PARTY TO THE TERMS AND CONDITIONS OF THIS AGREEMENT TO THE EXCLUSION OF ALL OTHER TERMS, YOU REPRESENT AND WARRANT THAT YOU ARE AUTHORIZED TO BIND LICENSEE.  IF THE TERMS OF THIS AGREEMENT ARE CONSIDERED AN OFFER, ACCEPTANCE IS EXPRESSLY LIMITED TO SUCH TERMS.
+
+H2O.AI DRIVERLESS AI EVALUATION AGREEMENT
+
+  WHEREAS, H2O.ai is willing to supply, within the protection of a confidential relationship, the software, services and related materials provided in connection with this Agreement (collectively, the 'Evaluation Software') to Licensee solely for internal evaluation purposes and not for any production use ('Evaluation');
+
+  NOW, THEREFORE, in consideration of the foregoing and the mutual covenants hereinafter set forth, the parties hereby agree as follows:
+      1. Use of Evaluation Software. Subject to the terms of this Agreement, H2O.ai hereby grants to Licensee a personal, nontransferable, nonsublicensable, nonexclusive, revocable license to access and use the Evaluation Software only in accordance with all documentation supplied by H2O.ai solely for Licensee's internal Evaluation purposes during the term of this Agreement. H2O.ai shall at all times retain all title to and ownership of the Evaluation Software and all intellectual property rights relating thereto. Licensee agrees to use the Evaluation Software only in the ordinary course of its Evaluation. Licensee shall not (and shall not allow any third party to): (a) decompile, disassemble, or otherwise reverse engineer any portion of the Evaluation Software; (b) remove, alter or obscure any product identification, copyright or other notices contained on or in the Evaluation Software; (c) disclose, provide, distribute, resell, lease, lend or allow access to the Evaluation Software to any third party; (d) use the Evaluation Software for timesharing or service bureau purposes, or otherwise for the benefit of any third party; (e) copy, modify, adapt or create a derivative work of any part of the Evaluation Software; (f) use the Evaluation Software in excess of any limitations provided by H2O.ai;(g) use the Evaluation Software to help develop any competitive product or service; (h) remove or export the Evaluation Software or any direct product thereof from the United States. H2O
+      2. Feedback. If Licensee proposes any modifications, derivatives, enhancements or improvements to the Evaluation Software ('Feedback'), then notwithstanding anything else, Licensee hereby grants H2O.ai a perpetual, irrevocable, royalty free, fully paid-up, sub-licensable, right and license to use, display, reproduce, distribute and otherwise fully exploit such Feedback for any purposes.
+      3. Warning. THE EVALUATION SOFTWARE MAY CONTAIN A ROUTINE THAT CAUSES THE EVALUATION SOFTWARE TO CEASE PROPER FUNCTIONING AFTER A CERTAIN PERIOD OF TIME. THIS MAY OCCUR BEFORE OR AFTER TERMINATION OF THE LICENSE, SO LICENSEE MUST BE PREPARED AT ALL TIMES AND MAY NOT RELY ON THE EVALUATION SOFTWARE
+      4. Warranty Disclaimer.  The parties acknowledge that the Evaluation Software are provided 'AS IS' and may not be functional on any machine or in any environment. H2O.AI DISCLAIMS ALL WARRANTIES RELATING TO THE EVALUATION SOFTWARE, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES AGAINST INFRINGEMENT OF THIRD-PARTY RIGHTS, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+      5. Limitation of Remedies and Damages. H2O.AI SHALL NOT BE RESPONSIBLE OR LIABLE TO THE OTHER PARTY WITH RESPECT TO ANY SUBJECT MATTER OF THIS AGREEMENT UNDER ANY CONTRACT, NEGLIGENCE, STRICT LIABILITY OR OTHER THEORY (A) FOR LOSS OR INACCURACY OF DATA OR COST OF PROCUREMENT OF SUBSTITUTE GOODS, SERVICES OR TECHNOLOGY, (B) FOR ANY SPECIAL, INDIRECT, INCIDENTAL, PUNITIVE, RELIANCE, OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED TO LOSS OF REVENUES AND LOSS OF PROFITS, OR (C) FOR DAMAGES OF ANY KIND WHATSOEVER ARISING OUT OF THIS AGREEMENT IN EXCESS OF $100. H2O.AI SHALL NOT BE RESPONSIBLE FOR ANY MATTER BEYOND ITS REASONABLE CONTROL.
+      6. Nonassignability. Although fully assignable and transferable by H2O.ai, neither the rights nor the obligations arising under this Agreement are assignable or transferable by Licensee, and any such attempted assignment or transfer shall be void and without effect.
+      7. Controlling Law, Attorneys' Fees and Severability. This Agreement shall be governed by and construed in accordance with the laws of the State of California without regard to the conflicts of laws provisions therein. In any action to enforce this Agreement the prevailing party will be entitled to costs and attorneys' fees. In the event that any of the provisions of this Agreement shall be held by a court or other tribunal of competent jurisdiction to be unenforceable, such provisions shall be limited or eliminated to the minimum extent necessary so that this Agreement shall otherwise remain in full force and effect and enforceable.
+      8. Entire Agreement. This Agreement constitutes the entire agreement between the parties pertaining to the subject matter hereof.  Any modifications of this Agreement must be in writing and signed by both parties.
+      9. Term; Termination. This Agreement shall become effective upon Licensee's first access to or use of the Evaluation Software ('Start Date'). This Agreement may be terminated by either party for any reason or no reason upon written notice to the other party, or immediately upon notice of any breach by Licensee of the provisions of this Agreement, and in any case will terminate twenty-one (21) days from the Start Date, unless extended by H2O.ai in writing.  Upon termination, the license granted hereunder will terminate and Licensee shall promptly cease accessing the Evaluation Software, and shall return any and all documents, notes and other materials regarding the Evaluation Software to H2O.ai, including, without limitation, all copies and extracts of the foregoing, but the terms of this Agreement will otherwise remain in effect.
+
+GDSVF&H\2472254.1
+2020-04-15 04:29:05,471 C:▂ D:199.0GB M:57.1GB 7701  INFO   : Size of file system containing temp dir: 248.1GB
+2020-04-15 04:29:05,473 C:▂ D:199.0GB M:57.1GB 7701  INFO   : Available space on file system containing temp dir: 199.0GB
+2020-04-15 04:29:05,803 C:▂ D:199.0GB M:57.1GB 7701  INFO   : H2O Driverless.ai Version: 1.8.5.1
+2020-04-15 04:29:05,804 C:▂ D:199.0GB M:57.1GB 7701  INFO   : Logger is already set
+2020-04-15 04:29:05,805 C:▂ D:199.0GB M:57.1GB 7701  INFO   : DAI base tmp directory: ./tmp
+2020-04-15 04:29:05,806 C:▂ D:199.0GB M:57.1GB 7701  INFO   : MLI experiment id: a3fba89e-7ed1-11ea-96d6-0242ac110002
+2020-04-15 04:29:05,807 C:▂ D:199.0GB M:57.1GB 7701  INFO   : MLI experiment tmp directory: ./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002
+2020-04-15 04:29:06,175 C:▂ D:199.0GB M:57.1GB 7701  INFO   : Attempting to connect to MLI...
+2020-04-15 04:29:06,186 C:▂ D:199.0GB M:57.1GB 7701  INFO   : Succesfully connected to MLI after version check. Starting MLI process...
+2020-04-15 04:29:06,187 C:▂ D:199.0GB M:57.1GB 7701  INFO   : MLI will utilize LOCO for local variable importance in Surrogate Models and Shapley for the DAI model
+2020-04-15 04:29:07,210 C:  D:199.0GB M:56.8GB 7701  INFO   : Reading in training data from ./tmp/eaa648cc-7ed0-11ea-96d6-0242ac110002/Card_train.1586924634.452401.bin...
+2020-04-15 04:29:07,304 C:  D:199.0GB M:56.8GB 7701  INFO   : Doing sanity checks for MLI...
+2020-04-15 04:29:07,305 C:  D:199.0GB M:56.8GB 7701  INFO   : Checking if all columns in dataset have high cardinality (>25 levels)...
+2020-04-15 04:29:07,311 C:  D:199.0GB M:56.8GB 7701  INFO   : Checking if weight column is in dropped columns list...
+2020-04-15 04:29:07,312 C:  D:199.0GB M:56.8GB 7701  INFO   : Checking if target column is in dropped columns list...
+2020-04-15 04:29:07,313 C:  D:199.0GB M:56.8GB 7701  INFO   : Checking if target column is the same as prediction score...
+2020-04-15 04:29:07,313 C:  D:199.0GB M:56.8GB 7701  INFO   : Checking if target and prediction column data types match...
+2020-04-15 04:29:07,315 C:  D:199.0GB M:56.8GB 7701  INFO   : Checking for text transformers in DAI model...
+2020-04-15 04:29:07,317 C:  D:199.0GB M:56.8GB 7701  INFO   : No text transformers detected in DAI model
+2020-04-15 04:29:07,318 C:  D:199.0GB M:56.8GB 7701  INFO   : Using fast approximation...
+2020-04-15 04:29:07,319 C:  D:199.0GB M:56.8GB 7701  INFO   : Making predictions...
+2020-04-15 04:29:10,252 C:  D:199.0GB M:56.7GB 7701  INFO   : Calculating Shapley values for binomial experiment (number of classes in response: 2)...
+2020-04-15 04:29:12,511 C:  D:199.0GB M:56.7GB 7701  INFO   : Saving Shapley data...
+2020-04-15 04:29:12,581 C:  D:199.0GB M:56.7GB 7701  INFO   : Reformatting Shapley reason codes for transformed features...
+2020-04-15 04:29:24,760 C:  D:199.0GB M:56.6GB 7701  INFO   : Reformatting Shapley reason codes for original features...
+2020-04-15 04:29:36,862 C:  D:198.9GB M:56.7GB 7701  INFO   : MLI will use ['CreditLimit', 'Sex', 'Education', 'Marriage', 'Age', 'Status1', 'Status2', 'Status3', 'Status4', 'Status6', 'BillAmt1', 'BillAmt2', 'BillAmt3', 'BillAmt4', 'BillAmt5', 'BillAmt6', 'PayAmt1', 'PayAmt2', 'PayAmt3', 'PayAmt4', 'PayAmt5', 'PayAmt6', 'Default', 'model_pred'] features to build surrogate models
+2020-04-15 04:29:36,864 C:  D:198.9GB M:56.7GB 7701  INFO   : MLI will use ('CreditLimit', 'Sex', 'Education', 'Marriage', 'Age', 'Status1', 'Status2', 'Status3', 'Status4', 'Status6', 'BillAmt1', 'BillAmt2', 'BillAmt3', 'BillAmt4', 'BillAmt5', 'BillAmt6', 'PayAmt1', 'PayAmt2', 'PayAmt3', 'PayAmt4', 'PayAmt5', 'PayAmt6', 'Default', 'model_pred') features to build surrogate models
+2020-04-15 04:29:36,865 C:  D:198.9GB M:56.7GB 7701  INFO   : Starting MLI for experiment: a3fba89e-7ed1-11ea-96d6-0242ac110002
+2020-04-15 04:29:36,866 C:  D:198.9GB M:56.7GB 7701  INFO   : Response column for MLI is: Default
+2020-04-15 04:29:36,866 C:  D:198.9GB M:56.7GB 7701  INFO   : Default has 2 classes for MLI
+2020-04-15 04:29:36,867 C:  D:198.9GB M:56.7GB 7701  INFO   : MLI will ignore ['ID']
+2020-04-15 04:29:36,868 C:  D:198.9GB M:56.7GB 7701  INFO   : Nfolds for MLI is: 3
+2020-04-15 04:29:36,868 C:  D:198.9GB M:56.7GB 7701  INFO   : Using raw features for MLI...
+2020-04-15 04:29:36,869 C:  D:198.9GB M:56.7GB 7701  INFO   : MLI will sample down rows to 100000
+2020-04-15 04:29:36,869 C:  D:198.9GB M:56.7GB 7701  INFO   : MLI will run with LIME method: k-LIME
+2020-04-15 04:29:36,870 C:  D:198.9GB M:56.7GB 7701  INFO   : Analyzing cardinality for all columns in training dataset...
+2020-04-15 04:29:36,905 C:  D:198.9GB M:56.7GB 7701  INFO   : Column indexes for enum columns: [1, 2, 3, 5, 6, 7, 8, 9]
+2020-04-15 04:29:36,918 C:  D:198.9GB M:56.7GB 7701  INFO   : target indices: {'raw_frame': 22}
+2020-04-15 04:30:15,315 C:▄ D:198.9GB M:52.9GB 7701  INFO   : MLI is 2% done...
+2020-04-15 04:30:17,464 C:  D:198.9GB M:52.9GB 7701  INFO   : MLI is 3% done...
+2020-04-15 04:30:21,535 C:▄ D:198.9GB M:52.8GB 7701  INFO   : MLI is 5% done...
+2020-04-15 04:30:24,593 C:  D:198.9GB M:52.8GB 7701  INFO   : MLI is 6% done...
+2020-04-15 04:30:28,666 C:  D:198.9GB M:52.9GB 7701  INFO   : MLI is 8% done...
+2020-04-15 04:30:38,867 C:▆ D:198.9GB M:53.0GB 7701  INFO   : MLI is 9% done...
+2020-04-15 04:30:49,054 C:▂ D:198.9GB M:53.0GB 7701  INFO   : MLI is 11% done...
+2020-04-15 04:30:59,245 C:  D:198.9GB M:53.0GB 7701  INFO   : MLI is 12% done...
+2020-04-15 04:31:08,426 C:▃ D:198.9GB M:53.0GB 7701  INFO   : MLI is 14% done...
+2020-04-15 04:31:18,649 C:  D:198.9GB M:53.3GB 7701  INFO   : MLI is 17% done...
+2020-04-15 04:31:19,670 C:  D:198.9GB M:53.1GB 7701  INFO   : MLI is 18% done...
+2020-04-15 04:31:22,719 C:▁ D:198.8GB M:53.2GB 7701  INFO   : MLI is 31% done...
+2020-04-15 04:31:23,738 C:  D:198.9GB M:53.5GB 7701  INFO   : MLI is 69% done...
+2020-04-15 04:31:28,833 C:  D:198.9GB M:53.7GB 7701  INFO   : MLI is 74% done...
+2020-04-15 04:31:29,851 C:  D:198.9GB M:53.7GB 7701  INFO   : MLI is 99% done...
+2020-04-15 04:31:29,853 C:  D:198.9GB M:53.7GB 7701  INFO   : MLI is finishing up...
+2020-04-15 04:31:29,860 C:  D:198.9GB M:53.7GB 7701  INFO   : Preparing Datatable files for MLI...
+2020-04-15 04:31:29,860 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing out DataTable files for MLI...
+2020-04-15 04:31:29,864 C:  D:198.9GB M:53.7GB 7701  INFO   : Sorting Aggregrated Frame for MLI...
+2020-04-15 04:31:29,933 C:  D:198.9GB M:53.7GB 7701  INFO   : Reformatting LIME reason codes...
+2020-04-15 04:31:40,820 C:  D:198.9GB M:53.7GB 7701  ERROR  : Jobs 3/Jobs/$03017f0000013d30ffffffff$_92daaec847d9fbedb27cdd5d0f2344b0: Failed to delete H2O-3 key: 3/DKV/nfs://opt/h2oai/dai/tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/mli-a3fba89e-7ed1-11ea-96d6-0242ac110002.csv
+2020-04-15 04:31:40,822 C:  D:198.9GB M:53.7GB 7701  ERROR  : ['water.exceptions.H2ONotFoundArgumentException: DELETE /3/DKV/nfs://opt/h2oai/dai/tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/mli-a3fba89e-7ed1-11ea-96d6-0242ac110002.csv not found', '    water.api.RequestServer.response404(RequestServer.java:741)', '    water.api.RequestServer.serve(RequestServer.java:472)', '    water.api.RequestServer.doGeneric(RequestServer.java:319)', '    water.api.RequestServer.doDelete(RequestServer.java:247)', '    javax.servlet.http.HttpServlet.service(HttpServlet.java:761)', '    javax.servlet.http.HttpServlet.service(HttpServlet.java:848)', '    org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)', '    org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)', '    org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)', '    org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:427)', '    org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)', '    org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)', '    org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)', '    org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)', '    water.webserver.jetty8.Jetty8ServerAdapter$LoginHandler.handle(Jetty8ServerAdapter.java:119)', '    org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)', '    org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)', '    org.eclipse.jetty.server.Server.handle(Server.java:370)', '    org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)', '    org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)', '    org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:973)', '    org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1035)', '    org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:641)', '    org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:231)', '    org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)', '    org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)', '    org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)', '    org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)', '    java.lang.Thread.run(Thread.java:748)']
+Traceback (most recent call last):
+  File "h2oaicore/mli/mli.py", line 1081, in h2oaicore.mli.mli.H2OMLIClient.cleanup
+  File "h2oaicore/h2o.py", line 62, in h2oaicore.h2o.H2OClient._delete
+  File "h2oaicore/h2o.py", line 56, in h2oaicore.h2o.H2OClient._handle
+h2oaicore.h2o.H2OClientException: ['water.exceptions.H2ONotFoundArgumentException: DELETE /3/DKV/nfs://opt/h2oai/dai/tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/mli-a3fba89e-7ed1-11ea-96d6-0242ac110002.csv not found', '    water.api.RequestServer.response404(RequestServer.java:741)', '    water.api.RequestServer.serve(RequestServer.java:472)', '    water.api.RequestServer.doGeneric(RequestServer.java:319)', '    water.api.RequestServer.doDelete(RequestServer.java:247)', '    javax.servlet.http.HttpServlet.service(HttpServlet.java:761)', '    javax.servlet.http.HttpServlet.service(HttpServlet.java:848)', '    org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)', '    org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)', '    org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)', '    org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:427)', '    org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)', '    org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)', '    org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)', '    org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)', '    water.webserver.jetty8.Jetty8ServerAdapter$LoginHandler.handle(Jetty8ServerAdapter.java:119)', '    org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)', '    org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)', '    org.eclipse.jetty.server.Server.handle(Server.java:370)', '    org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)', '    org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)', '    org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:973)', '    org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1035)', '    org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:641)', '    org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:231)', '    org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)', '    org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)', '    org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)', '    org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)', '    java.lang.Thread.run(Thread.java:748)']
+2020-04-15 04:31:40,911 C:  D:198.9GB M:53.7GB 7701  INFO   : Load MLI page at: http://127.0.0.1:12345/static/mli/mli.html?interpret_key=a3fba89e-7ed1-11ea-96d6-0242ac110002
+2020-04-15 04:31:40,912 C:  D:198.9GB M:53.7GB 7701  INFO   : Preparing scoring pipeline for MLI...
+2020-04-15 04:31:40,913 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing out MLI scoring pipeline...
+2020-04-15 04:31:41,132 C:  D:198.9GB M:53.7GB 7701  INFO   : Creating MLI scoring package named scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:41,532 C:  D:198.9GB M:53.7GB 7701  INFO   : Building scoring wheel...
+2020-04-15 04:31:41,534 C:  D:198.9GB M:53.7GB 7701  INFO   : Creating thrift IDL...
+2020-04-15 04:31:41,539 C:  D:198.9GB M:53.7GB 7701  INFO   : Collecting wheels...
+2020-04-15 04:31:41,540 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing requirements.txt...
+2020-04-15 04:31:41,542 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing environment.yml...
+2020-04-15 04:31:41,543 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing example.py...
+2020-04-15 04:31:41,544 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing example_shapley.py...
+2020-04-15 04:31:41,546 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing http_server.py...
+2020-04-15 04:31:41,547 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing tcp_server.py...
+2020-04-15 04:31:41,549 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing setup.py...
+2020-04-15 04:31:41,550 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing example_client.py
+2020-04-15 04:31:41,552 C:  D:198.9GB M:53.7GB 7701  INFO   : Writing run_http_client.sh
+2020-04-15 04:31:59,278 C:  D:198.6GB M:53.7GB 7701  INFO   : + TEMPLATE=/opt/h2oai/dai/h2oai_scorer
+2020-04-15 04:31:59,281 C:  D:198.6GB M:53.7GB 7701  INFO   : + SCHEMA=/opt/h2oai/dai/./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/schema.pickle
+2020-04-15 04:31:59,281 C:  D:198.6GB M:53.7GB 7701  INFO   : + CONFIG_OVERRIDES=/opt/h2oai/dai/./tmp/h2oai_experiment_04c896ce-7ed1-11ea-96d6-0242ac110002/config_overrides.pickle
+2020-04-15 04:31:59,282 C:  D:198.6GB M:53.7GB 7701  INFO   : + KLIME_MOJO=/opt/h2oai/dai/./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/klime_mojo.zip
+2020-04-15 04:31:59,283 C:  D:198.6GB M:53.7GB 7701  INFO   : + MODULE=scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,283 C:  D:198.6GB M:53.7GB 7701  INFO   : + PYTHON=/opt/h2oai/dai/python/bin/python
+2020-04-15 04:31:59,284 C:  D:198.6GB M:53.7GB 7701  INFO   : + USE_RAW_FEATURES=true
+2020-04-15 04:31:59,285 C:  D:198.6GB M:53.7GB 7701  INFO   : + CLEAN=true
+2020-04-15 04:31:59,285 C:  D:198.6GB M:53.7GB 7701  INFO   : + KLIME_DATA=/opt/h2oai/dai/./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/klimeData.json
+2020-04-15 04:31:59,286 C:  D:198.6GB M:53.7GB 7701  INFO   : + DIR=scoring-pipeline-mli
+2020-04-15 04:31:59,287 C:  D:198.6GB M:53.7GB 7701  INFO   : + mkdir -p scoring-pipeline-mli/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,287 C:  D:198.6GB M:53.7GB 7701  INFO   : + cd scoring-pipeline-mli
+2020-04-15 04:31:59,288 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Copying klime mojo...'
+2020-04-15 04:31:59,289 C:  D:198.6GB M:53.7GB 7701  INFO   : Copying klime mojo...
+2020-04-15 04:31:59,290 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/klime_mojo.zip scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/
+2020-04-15 04:31:59,290 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Copying klime data...'
+2020-04-15 04:31:59,291 C:  D:198.6GB M:53.7GB 7701  INFO   : Copying klime data...
+2020-04-15 04:31:59,292 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/klimeData.json scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/
+2020-04-15 04:31:59,292 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Copying schema...'
+2020-04-15 04:31:59,293 C:  D:198.6GB M:53.7GB 7701  INFO   : Copying schema...
+2020-04-15 04:31:59,294 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/schema.pickle scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/
+2020-04-15 04:31:59,294 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Copying config overrides...'
+2020-04-15 04:31:59,295 C:  D:198.6GB M:53.7GB 7701  INFO   : Copying config overrides...
+2020-04-15 04:31:59,296 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/./tmp/h2oai_experiment_04c896ce-7ed1-11ea-96d6-0242ac110002/config_overrides.pickle scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/
+2020-04-15 04:31:59,296 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Copying dependency wheels...'
+2020-04-15 04:31:59,297 C:  D:198.6GB M:53.7GB 7701  INFO   : Copying dependency wheels...
+2020-04-15 04:31:59,298 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/datatable-0.11.0a269-cp36-cp36m-manylinux2010_x86_64.whl /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/h2o4gpu-0.3.2-cp36-cp36m-linux_x86_64.whl /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/h2oaicore-1.8.5.1-cp36-cp36m-linux_x86_64.whl .
+2020-04-15 04:31:59,298 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Copying scorer wheel assets...'
+2020-04-15 04:31:59,299 C:  D:198.6GB M:53.7GB 7701  INFO   : Copying scorer wheel assets...
+2020-04-15 04:31:59,300 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/mli_scoring/__init__.py scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/
+2020-04-15 04:31:59,300 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/mli_scoring/klime_scorer.py scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/
+2020-04-15 04:31:59,301 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/README.txt .
+2020-04-15 04:31:59,302 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/run_example.sh .
+2020-04-15 04:31:59,302 C:  D:198.6GB M:53.7GB 7701  INFO   : + '[' true = true ']'
+2020-04-15 04:31:59,303 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'MLI in transformed features mode. Skipping export of Shapley example.'
+2020-04-15 04:31:59,304 C:  D:198.6GB M:53.7GB 7701  INFO   : MLI in transformed features mode. Skipping export of Shapley example.
+2020-04-15 04:31:59,304 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/run_example_shapley.sh .
+2020-04-15 04:31:59,305 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/tcp_server_requirements.txt .
+2020-04-15 04:31:59,306 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/http_server_requirements.txt .
+2020-04-15 04:31:59,306 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/run_tcp_server.sh .
+2020-04-15 04:31:59,307 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/run_http_server.sh .
+2020-04-15 04:31:59,307 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/client_requirements.txt .
+2020-04-15 04:31:59,308 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/run_tcp_client.sh .
+2020-04-15 04:31:59,309 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/thrift_post_processing.py .
+2020-04-15 04:31:59,309 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/full_constraints.txt .
+2020-04-15 04:31:59,310 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/scoring-pipeline-mli/full_constraints.txt scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/
+2020-04-15 04:31:59,311 C:  D:198.6GB M:53.7GB 7701  INFO   : + cp /opt/h2oai/dai/h2oai_scorer/common-functions.sh .
+2020-04-15 04:31:59,311 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Setting up virtualenv...'
+2020-04-15 04:31:59,312 C:  D:198.6GB M:53.7GB 7701  INFO   : Setting up virtualenv...
+2020-04-15 04:31:59,313 C:  D:198.6GB M:53.7GB 7701  INFO   : + virtualenv --python=/opt/h2oai/dai/python/bin/python --extra-search-dir . --never-download env
+2020-04-15 04:31:59,313 C:  D:198.6GB M:53.7GB 7701  INFO   : Using base prefix '/opt/h2oai/dai/python'
+2020-04-15 04:31:59,314 C:  D:198.6GB M:53.7GB 7701  INFO   : New python executable in /tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/scoring_pipeline_mli/scoring-pipeline-mli/env/bin/python
+2020-04-15 04:31:59,315 C:  D:198.6GB M:53.7GB 7701  INFO   : Installing setuptools, pip, wheel...done.
+2020-04-15 04:31:59,315 C:  D:198.6GB M:53.7GB 7701  INFO   : Running virtualenv with interpreter /opt/h2oai/dai/python/bin/python
+2020-04-15 04:31:59,316 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Activating virtualenv...'
+2020-04-15 04:31:59,317 C:  D:198.6GB M:53.7GB 7701  INFO   : Activating virtualenv...
+2020-04-15 04:31:59,317 C:  D:198.6GB M:53.7GB 7701  INFO   : + source env/bin/activate
+2020-04-15 04:31:59,318 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ deactivate nondestructive
+2020-04-15 04:31:59,319 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ unset -f pydoc
+2020-04-15 04:31:59,319 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ '[' -z '' ']'
+2020-04-15 04:31:59,320 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ '[' -z '' ']'
+2020-04-15 04:31:59,321 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ '[' -n /usr/bin/bash ']'
+2020-04-15 04:31:59,321 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ hash -r
+2020-04-15 04:31:59,322 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ '[' -z '' ']'
+2020-04-15 04:31:59,322 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ unset VIRTUAL_ENV
+2020-04-15 04:31:59,323 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ '[' '!' nondestructive = nondestructive ']'
+2020-04-15 04:31:59,324 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ VIRTUAL_ENV=/tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/scoring_pipeline_mli/scoring-pipeline-mli/env
+2020-04-15 04:31:59,324 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ export VIRTUAL_ENV
+2020-04-15 04:31:59,325 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ _OLD_VIRTUAL_PATH=/opt/h2oai/dai/bin:/opt/h2oai/dai/python/bin:/opt/h2oai/dai/jre/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2020-04-15 04:31:59,326 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ PATH=/tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/scoring_pipeline_mli/scoring-pipeline-mli/env/bin:/opt/h2oai/dai/bin:/opt/h2oai/dai/python/bin:/opt/h2oai/dai/jre/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2020-04-15 04:31:59,326 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ export PATH
+2020-04-15 04:31:59,327 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ '[' -z '' ']'
+2020-04-15 04:31:59,328 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ '[' -z '' ']'
+2020-04-15 04:31:59,328 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ _OLD_VIRTUAL_PS1=
+2020-04-15 04:31:59,329 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ '[' x '!=' x ']'
+2020-04-15 04:31:59,330 C:  D:198.6GB M:53.7GB 7701  INFO   : +++ basename /tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002/scoring_pipeline_mli/scoring-pipeline-mli/env
+2020-04-15 04:31:59,330 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ PS1='(env) '
+2020-04-15 04:31:59,331 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ export PS1
+2020-04-15 04:31:59,332 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ alias pydoc
+2020-04-15 04:31:59,332 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ '[' -n /usr/bin/bash ']'
+2020-04-15 04:31:59,333 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ hash -r
+2020-04-15 04:31:59,334 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Building scorer wheel...'
+2020-04-15 04:31:59,334 C:  D:198.6GB M:53.7GB 7701  INFO   : Building scorer wheel...
+2020-04-15 04:31:59,335 C:  D:198.6GB M:53.7GB 7701  INFO   : + python setup.py bdist_wheel
+2020-04-15 04:31:59,335 C:  D:198.6GB M:53.7GB 7701  INFO   : running bdist_wheel
+2020-04-15 04:31:59,336 C:  D:198.6GB M:53.7GB 7701  INFO   : running build
+2020-04-15 04:31:59,337 C:  D:198.6GB M:53.7GB 7701  INFO   : running build_py
+2020-04-15 04:31:59,337 C:  D:198.6GB M:53.7GB 7701  INFO   : creating build
+2020-04-15 04:31:59,338 C:  D:198.6GB M:53.7GB 7701  INFO   : creating build/lib
+2020-04-15 04:31:59,339 C:  D:198.6GB M:53.7GB 7701  INFO   : creating build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,339 C:  D:198.6GB M:53.7GB 7701  INFO   : copying scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/__init__.py -> build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,340 C:  D:198.6GB M:53.7GB 7701  INFO   : copying scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/klime_scorer.py -> build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,341 C:  D:198.6GB M:53.7GB 7701  INFO   : copying scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/schema.pickle -> build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,341 C:  D:198.6GB M:53.7GB 7701  INFO   : copying scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/config_overrides.pickle -> build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,342 C:  D:198.6GB M:53.7GB 7701  INFO   : copying scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/klime_mojo.zip -> build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,343 C:  D:198.6GB M:53.7GB 7701  INFO   : copying scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/klimeData.json -> build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,343 C:  D:198.6GB M:53.7GB 7701  INFO   : copying scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/full_constraints.txt -> build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,344 C:  D:198.6GB M:53.7GB 7701  INFO   : installing to build/bdist.linux-x86_64/wheel
+2020-04-15 04:31:59,345 C:  D:198.6GB M:53.7GB 7701  INFO   : running install
+2020-04-15 04:31:59,345 C:  D:198.6GB M:53.7GB 7701  INFO   : running install_lib
+2020-04-15 04:31:59,346 C:  D:198.6GB M:53.7GB 7701  INFO   : creating build/bdist.linux-x86_64
+2020-04-15 04:31:59,347 C:  D:198.6GB M:53.7GB 7701  INFO   : creating build/bdist.linux-x86_64/wheel
+2020-04-15 04:31:59,347 C:  D:198.6GB M:53.7GB 7701  INFO   : creating build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,348 C:  D:198.6GB M:53.7GB 7701  INFO   : copying build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/config_overrides.pickle -> build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,349 C:  D:198.6GB M:53.7GB 7701  INFO   : copying build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/__init__.py -> build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,349 C:  D:198.6GB M:53.7GB 7701  INFO   : copying build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/klimeData.json -> build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,350 C:  D:198.6GB M:53.7GB 7701  INFO   : copying build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/full_constraints.txt -> build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,351 C:  D:198.6GB M:53.7GB 7701  INFO   : copying build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/klime_scorer.py -> build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,351 C:  D:198.6GB M:53.7GB 7701  INFO   : copying build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/klime_mojo.zip -> build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,352 C:  D:198.6GB M:53.7GB 7701  INFO   : copying build/lib/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/schema.pickle -> build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,353 C:  D:198.6GB M:53.7GB 7701  INFO   : running install_egg_info
+2020-04-15 04:31:59,353 C:  D:198.6GB M:53.7GB 7701  INFO   : running egg_info
+2020-04-15 04:31:59,354 C:  D:198.6GB M:53.7GB 7701  INFO   : creating scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002.egg-info
+2020-04-15 04:31:59,354 C:  D:198.6GB M:53.7GB 7701  INFO   : writing scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002.egg-info/PKG-INFO
+2020-04-15 04:31:59,355 C:  D:198.6GB M:53.7GB 7701  INFO   : writing dependency_links to scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002.egg-info/dependency_links.txt
+2020-04-15 04:31:59,356 C:  D:198.6GB M:53.7GB 7701  INFO   : writing top-level names to scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002.egg-info/top_level.txt
+2020-04-15 04:31:59,356 C:  D:198.6GB M:53.7GB 7701  INFO   : writing manifest file 'scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002.egg-info/SOURCES.txt'
+2020-04-15 04:31:59,357 C:  D:198.6GB M:53.7GB 7701  INFO   : reading manifest file 'scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002.egg-info/SOURCES.txt'
+2020-04-15 04:31:59,358 C:  D:198.6GB M:53.7GB 7701  INFO   : writing manifest file 'scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002.egg-info/SOURCES.txt'
+2020-04-15 04:31:59,358 C:  D:198.6GB M:53.7GB 7701  INFO   : Copying scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002.egg-info to build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002-1.0.0-py3.6.egg-info
+2020-04-15 04:31:59,359 C:  D:198.6GB M:53.7GB 7701  INFO   : running install_scripts
+2020-04-15 04:31:59,360 C:  D:198.6GB M:53.7GB 7701  INFO   : creating build/bdist.linux-x86_64/wheel/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002-1.0.0.dist-info/WHEEL
+2020-04-15 04:31:59,360 C:  D:198.6GB M:53.7GB 7701  INFO   : + deactivate
+2020-04-15 04:31:59,361 C:  D:198.6GB M:53.7GB 7701  INFO   : + unset -f pydoc
+2020-04-15 04:31:59,362 C:  D:198.6GB M:53.7GB 7701  INFO   : + '[' -z _ ']'
+2020-04-15 04:31:59,362 C:  D:198.6GB M:53.7GB 7701  INFO   : + PATH=/opt/h2oai/dai/bin:/opt/h2oai/dai/python/bin:/opt/h2oai/dai/jre/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2020-04-15 04:31:59,363 C:  D:198.6GB M:53.7GB 7701  INFO   : + export PATH
+2020-04-15 04:31:59,364 C:  D:198.6GB M:53.7GB 7701  INFO   : + unset _OLD_VIRTUAL_PATH
+2020-04-15 04:31:59,364 C:  D:198.6GB M:53.7GB 7701  INFO   : + '[' -z '' ']'
+2020-04-15 04:31:59,365 C:  D:198.6GB M:53.7GB 7701  INFO   : + '[' -n /usr/bin/bash ']'
+2020-04-15 04:31:59,366 C:  D:198.6GB M:53.7GB 7701  INFO   : + hash -r
+2020-04-15 04:31:59,366 C:  D:198.6GB M:53.7GB 7701  INFO   : + '[' -z _ ']'
+2020-04-15 04:31:59,367 C:  D:198.6GB M:53.7GB 7701  INFO   : + PS1=
+2020-04-15 04:31:59,367 C:  D:198.6GB M:53.7GB 7701  INFO   : + export PS1
+2020-04-15 04:31:59,368 C:  D:198.6GB M:53.7GB 7701  INFO   : + unset _OLD_VIRTUAL_PS1
+2020-04-15 04:31:59,369 C:  D:198.6GB M:53.7GB 7701  INFO   : + unset VIRTUAL_ENV
+2020-04-15 04:31:59,369 C:  D:198.6GB M:53.7GB 7701  INFO   : + '[' '!' '' = nondestructive ']'
+2020-04-15 04:31:59,370 C:  D:198.6GB M:53.7GB 7701  INFO   : + unset -f deactivate
+2020-04-15 04:31:59,371 C:  D:198.6GB M:53.7GB 7701  INFO   : + mv dist/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002-1.0.0-py3-none-any.whl .
+2020-04-15 04:31:59,371 C:  D:198.6GB M:53.7GB 7701  INFO   : + ls scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002-1.0.0-py3-none-any.whl
+2020-04-15 04:31:59,372 C:  D:198.6GB M:53.7GB 7701  INFO   : + ls scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002-1.0.0-py3-none-any.whl
+2020-04-15 04:31:59,373 C:  D:198.6GB M:53.7GB 7701  INFO   : + sed 's/^/      - /'
+2020-04-15 04:31:59,373 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ ls scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002-1.0.0-py3-none-any.whl
+2020-04-15 04:31:59,374 C:  D:198.6GB M:53.7GB 7701  INFO   : ++ cut -d - -f 1
+2020-04-15 04:31:59,375 C:  D:198.6GB M:53.7GB 7701  INFO   : + ENVNAME=scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,375 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Environment name is scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002'
+2020-04-15 04:31:59,376 C:  D:198.6GB M:53.7GB 7701  INFO   : Environment name is scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002
+2020-04-15 04:31:59,377 C:  D:198.6GB M:53.7GB 7701  INFO   : + sed -i s/__MLI_ENV_NAME__/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002/g environment.yml
+2020-04-15 04:31:59,377 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Cleaning up scorer wheel debris...'
+2020-04-15 04:31:59,378 C:  D:198.6GB M:53.7GB 7701  INFO   : Cleaning up scorer wheel debris...
+2020-04-15 04:31:59,379 C:  D:198.6GB M:53.7GB 7701  INFO   : + rm -rf build env dist scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002 scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002.egg-info setup.cfg setup.py
+2020-04-15 04:31:59,379 C:  D:198.6GB M:53.7GB 7701  INFO   : + cd ..
+2020-04-15 04:31:59,380 C:  D:198.6GB M:53.7GB 7701  INFO   : + rm build_mli.sh
+2020-04-15 04:31:59,381 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Building scorer zip archive'
+2020-04-15 04:31:59,381 C:  D:198.6GB M:53.7GB 7701  INFO   : Building scorer zip archive
+2020-04-15 04:31:59,382 C:  D:198.6GB M:53.7GB 7701  INFO   : + zip -r scorer.zip .
+2020-04-15 04:31:59,382 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/ (stored 0%)
+2020-04-15 04:31:59,383 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/example_client.py (deflated 76%)
+2020-04-15 04:31:59,384 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/h2o4gpu-0.3.2-cp36-cp36m-linux_x86_64.whl (deflated 1%)
+2020-04-15 04:31:59,384 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/h2oaicore-1.8.5.1-cp36-cp36m-linux_x86_64.whl (deflated 1%)
+2020-04-15 04:31:59,385 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/requirements.txt (deflated 49%)
+2020-04-15 04:31:59,386 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/datatable-0.11.0a269-cp36-cp36m-manylinux2010_x86_64.whl (deflated 70%)
+2020-04-15 04:31:59,386 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/environment.yml (deflated 57%)
+2020-04-15 04:31:59,387 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/http_server_requirements.txt (stored 0%)
+2020-04-15 04:31:59,388 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/example.py (deflated 78%)
+2020-04-15 04:31:59,388 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/tcp_server_requirements.txt (stored 0%)
+2020-04-15 04:31:59,389 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/http_server.py (deflated 66%)
+2020-04-15 04:31:59,390 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/run_tcp_server.sh (deflated 64%)
+2020-04-15 04:31:59,390 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/run_tcp_client.sh (deflated 60%)
+2020-04-15 04:31:59,391 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/README.txt (deflated 66%)
+2020-04-15 04:31:59,391 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/run_example_shapley.sh (deflated 66%)
+2020-04-15 04:31:59,392 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/full_constraints.txt (deflated 51%)
+2020-04-15 04:31:59,393 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/run_http_server.sh (deflated 58%)
+2020-04-15 04:31:59,393 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/run_http_client.sh (deflated 81%)
+2020-04-15 04:31:59,394 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/scoring_mli_experiment_a3fba89e_7ed1_11ea_96d6_0242ac110002-1.0.0-py3-none-any.whl (deflated 3%)
+2020-04-15 04:31:59,395 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/common-functions.sh (deflated 66%)
+2020-04-15 04:31:59,395 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/thrift_post_processing.py (deflated 60%)
+2020-04-15 04:31:59,396 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/run_example.sh (deflated 54%)
+2020-04-15 04:31:59,397 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/scoring.thrift (deflated 69%)
+2020-04-15 04:31:59,397 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/tcp_server.py (deflated 78%)
+2020-04-15 04:31:59,398 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/example_shapley.py (deflated 59%)
+2020-04-15 04:31:59,399 C:  D:198.6GB M:53.7GB 7701  INFO   :   adding: scoring-pipeline-mli/client_requirements.txt (stored 0%)
+2020-04-15 04:31:59,399 C:  D:198.6GB M:53.7GB 7701  INFO   : + '[' true = true ']'
+2020-04-15 04:31:59,400 C:  D:198.6GB M:53.7GB 7701  INFO   : + echo 'Cleaning up...'
+2020-04-15 04:31:59,401 C:  D:198.6GB M:53.7GB 7701  INFO   : Cleaning up...
+2020-04-15 04:31:59,401 C:  D:198.6GB M:53.7GB 7701  INFO   : + rm -rf scoring-pipeline-mli
+2020-04-15 04:31:59,402 C:  D:198.6GB M:53.7GB 7701  INFO   : MLI scoring wheel build completed successfully.
+2020-04-15 04:31:59,403 C:  D:198.6GB M:53.7GB 7701  INFO   : Merging MLI scoring package with DAI scoring package
+2020-04-15 04:32:01,770 C:  D:198.3GB M:53.7GB 7701  INFO   : Finished building scoring pipeline...
+2020-04-15 04:32:01,782 C:  D:198.3GB M:53.7GB 7701  INFO   : Collecting MLI logs into ./tmp/mli_experiment_a3fba89e-7ed1-11ea-96d6-0242ac110002 

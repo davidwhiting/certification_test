@@ -1,0 +1,23 @@
+Coefficient,Standard Deviation of Coefficient,Description,Feature
+468.107,0,Age (Orig),0_Age
+505.464,0,PayAmt2 (Orig),10_PayAmt2
+437.21,0,PayAmt3 (Orig),11_PayAmt3
+388.083,0,PayAmt4 (Orig),12_PayAmt4
+323.395,0,PayAmt5 (Orig),13_PayAmt5
+344.99,0,PayAmt6 (Orig),14_PayAmt6
+3537.58,0,Status1 (Orig),15_Status1
+1643.42,0,Status2 (Orig),16_Status2
+1593.28,0,Status3 (Orig),17_Status3
+404.141,0,Status4 (Orig),18_Status4
+1151.66,0,BillAmt1 (Orig),1_BillAmt1
+462.593,0,Status6 (Orig),20_Status6
+264.068,0,Out-of-fold mean of the response grouped by: ['Marriage'] using 5 folds,21_CVTE:Marriage.0
+189.759,0,Out-of-fold mean of the response grouped by: ['Sex'] using 5 folds,22_CVTE:Sex.0
+400.001,0,BillAmt2 (Orig),2_BillAmt2
+249.171,0,BillAmt3 (Orig),3_BillAmt3
+329.288,0,BillAmt4 (Orig),4_BillAmt4
+343.421,0,BillAmt5 (Orig),5_BillAmt5
+329.176,0,BillAmt6 (Orig),6_BillAmt6
+1080.25,0,CreditLimit (Orig),7_CreditLimit
+228.452,0,Education (Orig),8_Education
+724.283,0,PayAmt1 (Orig),9_PayAmt1

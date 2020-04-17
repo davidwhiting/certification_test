@@ -1,0 +1,23 @@
+Coefficient,Shift of Coefficient,Description,Feature
+792.384,324.277,Age (Orig),0_Age
+1366.58,861.116,PayAmt2 (Orig),10_PayAmt2
+1160.16,722.9501,PayAmt3 (Orig),11_PayAmt3
+1179.98,791.897,PayAmt4 (Orig),12_PayAmt4
+731.395,408,PayAmt5 (Orig),13_PayAmt5
+550.017,205.027,PayAmt6 (Orig),14_PayAmt6
+9552.18,6014.6,Status1 (Orig),15_Status1
+4548.44,2905.02,Status2 (Orig),16_Status2
+3547.03,1953.75,Status3 (Orig),17_Status3
+1265.91,861.769,Status4 (Orig),18_Status4
+2235.21,1083.55,BillAmt1 (Orig),1_BillAmt1
+1213.52,750.927,Status6 (Orig),20_Status6
+495.102,231.034,"Out-of-fold mean of the response grouped by: ['Marriage'] using 5 folds [internal:(10, 3, 10)]",21_CVTE:Marriage.0
+419.833,230.074,"Out-of-fold mean of the response grouped by: ['Sex'] using 5 folds [internal:(10, 3, 10)]",22_CVTE:Sex.0
+868.42,468.419,BillAmt2 (Orig),2_BillAmt2
+623.922,374.751,BillAmt3 (Orig),3_BillAmt3
+997.389,668.101,BillAmt4 (Orig),4_BillAmt4
+637.982,294.561,BillAmt5 (Orig),5_BillAmt5
+666.001,336.825,BillAmt6 (Orig),6_BillAmt6
+1861.28,781.03,CreditLimit (Orig),7_CreditLimit
+324.082,95.63,Education (Orig),8_Education
+1725.53,1001.247,PayAmt1 (Orig),9_PayAmt1

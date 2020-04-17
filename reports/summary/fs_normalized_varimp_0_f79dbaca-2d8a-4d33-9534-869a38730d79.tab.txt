@@ -1,0 +1,28 @@
+FS Varimp (i.e. delta score)
++----+---------------------------------------------+------------+--------------+
+|    | fi                                          |   fi_depth |         gain |
+|----+---------------------------------------------+------------+--------------|
+|  0 | 48_WoE:Status1:Status6.0                    |          0 |  0.0637981   |
+|  1 | 67_BillAmt6                                 |          0 |  0.0528133   |
+|  2 | 38_CVTE:Status4.0                           |          0 |  0.0522758   |
+|  3 | 36_CVTE:Status2.0                           |          0 |  0.020219    |
+|  4 | 43_CVTE:CreditLimit:Marriage:Status6.0      |          0 |  0.0147348   |
+|  5 | 19_Status5                                  |          0 |  0.014712    |
+|  6 | 6_NumToCatWoE:BillAmt6.0                    |          0 |  0.0144794   |
+|  7 | 57_CVTE:Education:Status4.0                 |          0 |  0.0138247   |
+|  8 | 61_Freq:Age:Status1:Status2:Status4         |          0 |  0.0102178   |
+|  9 | 27_NumToCatWoEMonotonic:BillAmt3:BillAmt6.0 |          0 |  0.00991448  |
+| 10 | 59_Freq:Marriage:Status2:Status3:Status4    |          0 |  0.00936894  |
+| 11 | 55_Freq:Marriage:Status1                    |          0 |  0.00902103  |
+| 12 | 66_BillAmt2                                 |          0 |  0.00787677  |
+| 13 | 56_Freq:Age:Sex:Status5:Status6             |          0 |  0.00674785  |
+| 14 | 3_NumToCatWoE:BillAmt3.0                    |          0 |  0.00652868  |
+| 15 | 71_Status1                                  |          0 |  0.00529244  |
+| 16 | 49_CVTE:Marriage:Status1.0                  |          0 |  0.00521604  |
+| 17 | 35_CVTE:Status1.0                           |          0 |  0.0039656   |
+| 18 | 34_Freq:Sex                                 |          0 |  0.00332668  |
+| 19 | 42_Freq:CreditLimit:Marriage:Sex            |          0 |  0.00307413  |
+| 20 | 2_NumToCatWoEMonotonic:BillAmt2.0           |          0 |  0.00239404  |
+| 21 | 47_Freq:CreditLimit:Status3:Status4:Status5 |          0 |  0.000645788 |
+| 22 | 39_WoE:Status5.0                            |          0 | -0.000819234 |
++----+---------------------------------------------+------------+--------------+
