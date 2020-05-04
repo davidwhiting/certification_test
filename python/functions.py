@@ -15,15 +15,14 @@ def make_multiple_choice(question, choices, which=1, randomize=True, aota=False,
         none_prob : probability that "None of the above" is right (If a correct 
             answer is supplied, it will be removed with this probability.) 
 
-
     Note: 
        - "All of the above" always appears before "None of the above" in 
          options and after random shuffle
        - If a correct answer is removed and the answer made "None of the above",
          and there are only 3 remaining options, then "All of the above" will 
          also be added 
-    
     """
+
     import random
     import string
 
@@ -62,7 +61,6 @@ def make_multiple_choice(question, choices, which=1, randomize=True, aota=False,
     # get correct answer
     answer = string.ascii_lowercase[choices.index(correct)]
 
-
     # format if number present
     if number is None:
         blank = "\n"
@@ -81,6 +79,7 @@ def make_multiple_choice(question, choices, which=1, randomize=True, aota=False,
 
     return question, answer
 
+
 def make_true_false(question, answer, number=None):
     """
     Format a True/False question
@@ -98,7 +97,6 @@ def make_true_false(question, answer, number=None):
         
         question = str(number) + ". " + question
         
-    question = str(number) + ". " + question
     question += blank + "a) True"
     question += blank + "b) False"
 
@@ -108,3 +106,5 @@ def make_true_false(question, answer, number=None):
         answer = "b"
 
     return question, answer
+
+
