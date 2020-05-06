@@ -2,24 +2,9 @@ version : '3'
 
 services:
 
-  mysql:
-    image: mysql
-    container_name: mysql
-    ports:
-      - 8306:3306
-    volumes:
-      - ./db:/var/lib/mysql
-    environment:
-      MYSQL_USER: user
-      MYSQL_PASSWORD: user
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: default_schema
-
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
-    links:
-      - mysql
     environment:
       PMA_HOST: mysql
       PMA_PORT: 3306

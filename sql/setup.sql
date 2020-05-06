@@ -3,6 +3,9 @@
 ## difficulty might be different for different certification tests
 ## create a different difficulty table
 
+// Creating tables
+
+
 DROP TABLE IF EXISTS `question_templates`;
 CREATE TABLE `question_templates`(
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -56,35 +59,119 @@ CREATE TABLE `questions`(
     INDEX `template_id` (`template_id`)
 );
 
-DROP TABLE IF EXISTS `test_definitions`;
-CREATE TABLE `test_definitions`(
+DROP TABLE IF EXISTS `datasets`;
+CREATE TABLE `datasets`(
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    `name` VARCHAR,
-    `code` TEXT,
-    `description` TEXT, 
-    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,    
+    `name` VARCHAR(50),
+    `path` TEXT,
+    `train_fraction` DECIMAL,
+    `seed` INT,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
     PRIMARY KEY(`id`)
 );
 
-## 
+DROP TABLE IF EXISTS `student_answers`;
+CREATE TABLE `student_answers`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `student_id` INT,
+    `questions_id` INT,
+    `score` REAL,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
+    PRIMARY KEY(`id`),
+    INDEX(`questions_id`),
+    INDEX(`student_id`)
+);
 
-## Populate with values
+DROP TABLE IF EXISTS `test_definitions`;
+CREATE TABLE `test_definitions`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50),
+    `definition` TEXT,
+    `description` TEXT, 
+    `dai_version` VARCHAR(15),
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
+    `last_modified` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,    
+    PRIMARY KEY(`id`)
+);
 
-INSERT INTO `question_templates` (`question`, `answer`, `type`, `tags`) 
-    VALUES ('Recipes need to be added to Driverless AI each time you want to use it for an experiment.', 
-        'False', 'True/False', 'Easy');
+DROP TABLE IF EXISTS `tests`;
+CREATE TABLE `tests`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `definition_id` INT,
+    `seed` BIGINT,
+    `question_list` TEXT,
+    `experiments` TEXT,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
+    PRIMARY KEY(`id`),
+    INDEX(`definition_id`)
+);
 
-INSERT INTO `question_templates` (`question`, `answer`, `type`) 
-    VALUES ('Which graph will show your variables which could be good candidates for transformation before being used in modeling?', 
-        '["Skewed Histograms", "Outliers", "Spikey Histograms", "Correlation Graph"]', 
-        'Multiple Choice');
+DROP TABLE IF EXISTS `tag_list`;
+CREATE TABLE `tag_list`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50),
+    PRIMARY KEY(`id`),
+    UNIQUE(`name`)    
+);
 
-INSERT INTO `question_templates` (`question`, `answer`, `correct`, `randomize`, `type`, `tags`) 
-    VALUES ('For regression problems, which type of sampling will Driverless AI perform at the start of an experiment?', 
-        '[\"Stratified\", \"Systematic\", \"Cluster\", \"Random\"]', 
-        '4', 
-        '1', 
-        'Multiple Choice', 
-        'Medium,Experiments', 
-        );
+DROP TABLE IF EXISTS `tags`;
+CREATE TABLE `tags`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `templates_id` INT,
+    `taglist_id` INT,
+    PRIMARY KEY(`id`),
+    INDEX(`templates_id`),
+    INDEX(`taglist_id`)    
+);
+
+DROP TABLE IF EXISTS `exp_definitions`;
+CREATE TABLE `exp_definitions`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50),
+    `dataset_id` INT,
+    `accuracy` INT,
+    `time` INT,
+    `interpretability` INT,
+    `config_overrides` TEXT,
+    `approx_runtime` INT,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
+    PRIMARY KEY(`id`),
+    INDEX(`dataset_id`)
+);
+
+DROP TABLE IF EXISTS `experiments`;
+CREATE TABLE `experiments`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50),
+    `seed` BIGINT,
+    `dai_version` VARCHAR(15),
+    `definition_id` INT,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
+    PRIMARY KEY(`id`),
+    INDEX(`definition_id`)
+);
+
+DROP TABLE IF EXISTS `results`;
+CREATE TABLE `results`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `experiments_id` INT,
+    `field` VARCHAR(50),
+    `value` TEXT,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
+    PRIMARY KEY(`id`),
+    INDEX(`experiments_id`)
+);
+
+DROP TABLE IF EXISTS `students`;
+CREATE TABLE `students`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `email` TEXT,
+    `login` VARCHAR(50),
+    `password` VARCHAR(50),
+    `firstname` VARCHAR(50),
+    `lastname` VARCHAR(50),
+    `company` VARCHAR(50),
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
+    PRIMARY KEY(`id`)
+);
 
