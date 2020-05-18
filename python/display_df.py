@@ -1,34 +1,27 @@
-#import PySimpleGUIWeb as sg
-#import PySimpleGUIWx as sg
-
 import PySimpleGUI as sg
 import sqlalchemy as db
 import pandas as pd
 
-## Display a 
+## Query from the certification
 
 engine = db.create_engine('mysql://root:root@127.0.0.1:8306/certification')
 conn = engine.connect()
 metadata = db.MetaData()
 metadata.reflect(bind=engine)
 
-query = """
-        SELECT id, question, answer, correct, randomize, type, aota, nota, enabled 
-        FROM question_templates
-        WHERE enabled=0
-        """
+query = "SELECT id, question, answer, correct, randomize, type, aota, nota, enabled FROM question_templates"
 result = conn.execute(query).fetchall()
 df = pd.DataFrame(result)
 df.columns = result[0].keys()
 
-header_list = df.columns
+header_list = df.columns.tolist()
 data = df.values.tolist()
 
 sg.set_options(auto_size_buttons=True)
 
 layout = [
     [sg.Table(values=data,
-              headings=df.columns,
+              headings=header_list,
               display_row_numbers=False,
               auto_size_columns=True,
               num_rows=min(250, len(data)))]
