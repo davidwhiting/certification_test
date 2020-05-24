@@ -13,7 +13,7 @@ db = SQLAlchemy(app)
 
 
 #Creating model table for our CRUD database
-class Data(db.Model):
+class QuestionTemplates(db.Model):
     id        = db.Column(db.Integer, primary_key = True)
     question  = db.Column(db.Text)
     answer    = db.Column(db.Text)
@@ -42,7 +42,7 @@ class Data(db.Model):
 #query on all our employee data
 @app.route('/')
 def Index():
-    all_data = Data.query.all()
+    all_data = QuestionTemplates.query.all()
 
     return render_template("index.html", question_templates = all_data)
 
@@ -64,7 +64,7 @@ def insert():
         comments  = request.form['comments']  
 
 
-        my_data = Data(question, answer, correct, randomize, type, aota, nota, enabled, comments)
+        my_data = QuestionTemplates(question, answer, correct, randomize, type, aota, nota, enabled, comments)
         db.session.add(my_data)
         db.session.commit()
 
@@ -73,33 +73,96 @@ def insert():
         return redirect(url_for('Index'))
 
 
-#this is our update route where we are going to update our employee
+#this is our update route where we are going to update our question template
 @app.route('/update', methods = ['GET', 'POST'])
 def update():
 
     if request.method == 'POST':
-        my_data = Data.query.get(request.form.get('id'))
+        my_data = QuestionTemplates.query.get(request.form.get('id'))
 
-        my_data.question  = request.form['question']
-        my_data.answer    = request.form['answer']
-        my_data.correct   = request.form['correct']
-        my_data.randomize = request.form['randomize']
-        my_data.type      = request.form['type']
-        my_data.aota      = request.form['aota']
-        my_data.nota      = request.form['nota']
-        my_data.enabled   = request.form['enabled']
-        my_data.comments  = request.form['comments']
+        # Determine whether enabled checkbox is checked
+        if request.form.get('enabled'):
+            my_data.enabled = True
+        else:
+            my_data.enabled = False
+
+        # Entries depend on question type
+
+        my_data.type = request.form['type']
+
+        if my_data.type == 'Multiple Choice':
+
+            # Determine if checkboxes are checked
+            if request.form.get('randomize'):
+                my_data.randomize = True
+            else:
+                my_data.randomize = False
+
+            if request.form.get('aota'):
+                my_data.aota = True
+            else:
+                my_data.aota = False
+
+            if request.form.get('nota'):
+                my_data.nota = True
+            else:
+                my_data.nota = False
+
+            # Multiple choice default for correct is 1
+
+            correct  = request.form['correct']
+            if correct is None:
+                my_data.correct = 1
+            else:
+                my_data.correct = correct
+
+            my_data.question  = request.form['question']
+            my_data.answer    = request.form['answer']
+            my_data.comments  = request.form['comments']
+
+        elif my_data.type == 'True/False':
+
+            my_data.question  = request.form['question']
+            my_data.answer    = request.form['answer']
+            my_data.comments  = request.form['comments']
+            my_data.correct   = None
+            my_data.randomize = None
+            my_data.aota      = None
+            my_data.nota      = None
+
 
         db.session.commit()
         flash("Question Template Updated Successfully")
 
         return redirect(url_for('Index'))
 
+#this is our update route where we are going to update our question template
+#@app.route('/update', methods = ['GET', 'POST'])
+#def update():
+#
+#    if request.method == 'POST':
+#        my_data = QuestionTemplates.query.get(request.form.get('id'))
+#
+#        my_data.question  = request.form['question']
+#        my_data.answer    = request.form['answer']
+#        my_data.correct   = request.form['correct']
+#        my_data.randomize = request.form['randomize']
+#        my_data.type      = request.form['type']
+#        my_data.aota      = request.form['aota']
+#        my_data.nota      = request.form['nota']
+#        my_data.enabled   = request.form['enabled']
+#        my_data.comments  = request.form['comments']
+#
+#        db.session.commit()
+#        flash("Question Template Updated Successfully")
+#
+#        return redirect(url_for('Index'))
+
 
 #This route is for deleting our employee
 @app.route('/delete/<id>/', methods = ['GET', 'POST'])
 def delete(id):
-    my_data = Data.query.get(id)
+    my_data = QuestionTemplates.query.get(id)
     db.session.delete(my_data)
     db.session.commit()
     flash("Question Template Deleted Successfully")
