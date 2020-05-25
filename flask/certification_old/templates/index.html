@@ -1,0 +1,352 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col md-12">
+      <div class="jumbotron p-3">
+
+        <h2>Manage Question Templates  
+          <button type="button"  class="btn btn-success float-right"
+            data-toggle="modal" data-target="#mymodal">
+            Add New Question
+          </button> 
+        </h2>
+
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+
+              <div class="alert alert-success alert-dismissable" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                  <span aria-hidden="true">x</span>
+                </button>
+
+                  {{message}}
+
+              </div>
+
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+<!--
+        <table class="table table-hover table-striped table-bordered table-condensed table-light table-md">
+-->     
+        <div class="table-responsive">
+        <table class="table table-hover table-sm table-condensed table-striped">
+
+          <thead class="thead-dark">
+            <tr>
+              <th>id</th>
+              <th class="col-md-2">Question</th>  
+              <th>Answer</th>  
+              <th>Correct</th>  
+              <th>Type</th>
+              <th>Randomize</th>
+              <th>AOTA</th>
+              <th>NOTA</th>
+              <th>Enabled</th>
+              <th>Comments</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            {% for row in question_templates %}
+
+              {% if row.enabled >= 0 %}
+
+                <tr>
+                  <td>{{row.id}}</td>
+                  <td>{{row.question}}</td>
+                  <td>{{row.answer}}</td>
+                  <td>{{row.correct}}</td>
+                  <td>{{row.type}}</td>
+                  <td>{{row.randomize}}</td>
+                  <td>{{row.aota}}</td>
+                  <td>{{row.nota}}</td>
+                  <td>{{row.enabled}}</td>
+                  <td>{{row.comments}}</td>
+
+                  <td>
+                    <a href="/update/{{row.id}}" class="btn btn-warning btn-xs" data-toggle="modal" 
+                      data-target="#modaledit{{row.id}}">
+                      Edit
+                    </a>
+                    <a href="/delete/{{row.id}}" class="btn btn-danger btn-xs" 
+                      onclick="return confirm('Do you really want to delete?')">
+                      Delete
+                    </a>
+                  </td>
+                </tr>
+
+              {% endif %}
+
+          </tbody>
+
+          <!-- Modal Edit Question Template -->
+          <div id="modaledit{{row.id}}" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <h4 class="modal-title">Update Information</h4>
+                </div>
+
+                <div class="modal-body">
+
+                  <form>
+                    <div class="form-group">
+                      <label for="sampleLabels">Sample Labels</label>
+                      <select multiple class="form-control" id="sampleLabels">
+                        <option>AutoViz</option>
+                        <option>Recipes</option>
+                        <option>AutoDoc</option>
+                        <option>Models</option>
+                        <option>Expert Settings</option>
+                      </select>
+                    </div>
+                  </form>
+
+                  <form action="{{url_for('update')}}" method="POST">
+
+<!--
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+-->
+
+<!--
+                    <div class="form-group">
+                      <label for="exampleSelect">Type:</label>
+                      <select class="form-control" id="exampleSelect">
+                        <option>"Multiple Choice"</option>
+                        <option>"True/False"</option>
+                      </select>
+                      <input type="text" class="form-control" name="type" value="{{row.type}}">
+                    </div>
+-->
+
+<!--
+                    <h5 class="modal-title">Question Type</h5>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="multipleChoice" name="multipleChoice" class="custom-control-input">
+                        <label class="custom-control-label" for="multipleChoice">
+                          Multiple Choice
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="trueFalse" name="trueFalse" class="custom-control-input">
+                        <label class="custom-control-label" for="trueFalse">
+                          True/False
+                        </label>
+                      </div>
+-->
+
+<!--
+                    <h5 class="modal-title">Question Type</h5>
+                    <div class="form-group">
+                      <label>Question Type:</label>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="multipleChoice" name="multipleChoice" class="custom-control-input">
+                        <label class="custom-control-label" for="multipleChoice">
+                          Multiple Choice
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="trueFalse" name="trueFalse" class="custom-control-input">
+                        <label class="custom-control-label" for="trueFalse">
+                          True/False
+                        </label>
+                      </div>
+                    </div>
+-->
+
+<!--
+                    <div class="form-group">
+                      <input type="hidden"  name="id" value="{{row.id}}">
+                      <label>Type:</label>
+                      <input type="text" class="form-control" name="type" value="{{row.type}}">
+                    </div>
+-->
+
+
+                    <div class="form-group">
+                      <label for="questionType">Question Type</label>
+                      <select class="form-control" id="questionType">
+                        <option>Multiple Choice</option>
+                        <option>True/False</option>
+                        <option>Numeric</option>
+                        <option>Short Answer</option>
+                        <option>Paragraph</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group shadow-textarea">
+                      <label for="questionTextarea">Question</label>
+                      <textarea class="form-control rounded-0" name="question" id="questionTextArea" rows="4">{{row.question}}
+                      </textarea>
+                    </div>
+
+<!--
+                    <div class="form-group">
+                      <label>Question:</label>
+                      <input type="text" class="form-control md-textarea" name="question" value="{{row.question}}" rows="3" placeholder="Enter question">
+                    </div>
+-->
+
+<!--
+                    <div class="form-group">
+                      <label for="question_form">Question:</label>
+                      <textarea type="text" id="question_form" class="form-control" name="question" value="{{row.question}}" placeholder="Enter question">
+                        <input >
+                      </textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="question_form">Question:</label>
+                      <textarea type="text" id="question_form" class="form-control" name="question" value="{{row.question}}" placeholder="Enter question"></textarea>
+                    </div>
+                    <div class="md-form">
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+-->
+
+
+                    <div class="form-group">
+                       <label>Answer:</label>
+                       <input type="text" class="form-control" name="answer" value="{{row.answer}}">
+                    </div>
+
+                    <div class="form-group">
+                       <label>Correct:</label>
+                       <input type="number" class="form-control" name="correct" value="{{row.correct}}">
+                    </div>
+
+<!--
+                    <div class="form-group">
+                       <label>Randomize:</label>
+                       <input type="number" class="form-control" name="randomize" value="{{row.randomize}}">
+                    </div>
+-->
+
+                    <div class="form-group form-check">
+                       <input type="checkbox" class="form-check-input" id="randomCheck" name="randomize" value="{{row.randomize}}">
+                       <label class="form-check-label" for="randomCheck">Randomize multiple choice options</label>
+                    </div>
+
+
+<!--
+                    <div class="form-group">
+                       <label>AOTA:</label>
+                       <input type="number" class="form-control" name="aota" value="{{row.aota}}">
+                    </div>
+-->
+
+                    <div class="form-group form-check">
+                       <input type="checkbox" class="form-check-input" id="aotaCheck" name="aota" value="{{row.aota}}">
+                       <label class="form-check-label" for="aotaCheck">Multiple choice: Include "All of the above"</label>
+                    </div>
+
+<!--
+                    <div class="form-group"> 
+                       <label>NOTA:</label>
+                       <input type="number" class="form-control" name="nota" value="{{row.nota}}">
+                    </div>
+-->
+                    <div class="form-group form-check">
+                       <input type="checkbox" class="form-check-input" id="notaCheck" name="nota" value="{{row.nota}}">
+                       <label class="form-check-label" for="notaCheck">Multiple choice: Include "None of the above"</label>
+                    </div>
+
+<!--
+                    <div class="form-group">
+                       <label>Enabled:</label>
+                       <input type="text" class="form-control" name="enabled" value="{{row.enabled}}">
+                    </div>
+-->
+                    <div class="form-group form-check">
+                       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="enabled" value="{{row.enabled}}">
+                       <label class="form-check-label" for="exampleCheck1">Enable question</label>
+                    </div>
+
+                    <div class="form-group">
+                       <label>Comments:</label>
+                       <input type="text" class="form-control" name="comments" value="{{row.comments}}">
+                    </div>
+
+                    <div class="form-group">
+                       <button class="btn btn-primary" type="submit">Update</button>
+                    </div>
+
+                  </form>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          {% endfor %}
+
+
+        </table>
+        </div>
+      </div>
+
+      <!-- Modal Add Question-->
+
+      <div id="mymodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Add Question Template</h4>
+            </div>
+
+            <div class="modal-body">
+              <form action="{{url_for('insert')}}" method="POST">
+
+                <div class="form-group">
+                  <label>Name:</label>
+                  <input type="text" class="form-control" name="question" required="1">
+                </div>
+
+                <div class="form-group">
+                  <label>Answer:</label>
+                  <input type="text" class="form-control" name="answer" required="1">
+                </div>
+
+                <div class="form-group">
+                  <label>Type:</label>
+                  <input type="text" class="form-control" name="type" required="1">
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-primary" type="submit">Add Question Template</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
