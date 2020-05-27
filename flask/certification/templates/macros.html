@@ -1,0 +1,429 @@
+{# ###################################################################### #}
+
+{# ###################################################################### #}
+
+
+
+{# ###################################################################### #}
+
+{% macro ids(row) %}
+  <div class="form-group">
+    <label for="Id">ID</label>
+    <input type="number"  name="id" value="{{row.id}}" readonly>
+  </div>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro navtabs(row) %}
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+      {% if row.type == "Multiple Choice" %}
+        <a class="nav-item nav-link" id="nav-mc-tab" data-toggle="tab" href="#nav-mc" role="tab" aria-controls="nav-mc" aria-selected="true">
+      {% else %}
+        <a class="nav-item nav-link" id="nav-mc-tab" data-toggle="tab" href="#nav-mc" role="tab" aria-controls="nav-mc" aria-selected="false">
+      {% endif %}
+          Multiple Choice
+        </a>
+
+      {% if row.type == "True/False" %}
+        <a class="nav-item nav-link" id="nav-tf-tab" data-toggle="tab" href="#nav-tf" role="tab" aria-controls="nav-tf" aria-selected="true">
+      {% else %}
+        <a class="nav-item nav-link" id="nav-tf-tab" data-toggle="tab" href="#nav-tf" role="tab" aria-controls="nav-tf" aria-selected="false">
+      {% endif %}
+          True/False
+        </a>
+
+      {% if row.type == "Numeric" %}
+        <a class="nav-item nav-link" id="nav-numeric-tab" data-toggle="tab" href="#nav-numeric" role="tab" aria-controls="nav-numeric" aria-selected="true">      
+      {% else %}
+        <a class="nav-item nav-link" id="nav-numeric-tab" data-toggle="tab" href="#nav-numeric" role="tab" aria-controls="nav-numeric" aria-selected="false">
+      {% endif %}
+        Numeric
+      </a>
+
+      <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="false">
+        General
+      </a>
+    </div>
+  </nav>
+
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro question_type2(row) -%}
+
+  <div class="form-group">
+    <label for="questionType">Question Type</label>
+    <select class="form-control" id="questionType">
+
+      {% if row.type == "Multiple Choice" %}
+        <option value="MC" selected >Multiple Choice</option>
+      {% else %}
+        <option value="MC">Multiple Choice</option>
+      {% endif %}
+
+      {% if row.type == "True/False" %}
+        <option value="TF" selected>True/False</option>
+      {% else %}
+        <option value="TF">True/False</option>
+      {% endif %}
+
+      {% if row.type == "Numeric" %}
+        <option value="Numeric" selected>Numeric</option>
+      {% else %}
+        <option value="Numeric">Numeric</option>
+      {% endif %}
+
+      {% if row.type == "Short Answer" %}
+        <option value="SA" selected>Short Answer</option>
+      {% else %}
+        <option value="SA">Short Answer</option>
+      {% endif %}
+
+      {% if row.type == "Paragraph" %}
+        <option value="Paragraph" selected>Paragraph</option>
+      {% else %}
+        <option value="Paragraph">Paragraph</option>
+      {% endif %}
+
+    </select>
+  </div>
+
+{%- endmacro %}
+
+{# ###################################################################### #}
+
+{% macro true_false(row) %}
+  <h5>
+    True/False Options
+  </h5>
+
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Answer</legend>
+      <div class="col-sm-10">
+        <div class="form-check form-check-inline">
+          {% if row.answer == '"True"' %}
+            <input class="form-check-input" type="radio" name="gridTF" id="gridTF1" checked>
+          {% else %}
+            <input class="form-check-input" type="radio" name="gridTF" id="gridTF1">
+          {% endif %}
+          <label class="form-check-label" for="gridTF1"> True </label>
+        </div>
+        <div class="form-check form-check-inline">
+            {% if row.answer == '"False"' %}
+              <input class="form-check-input" type="radio" name="gridTF" id="gridTF2" checked>
+            {% else %}
+              <input class="form-check-input" type="radio" name="gridTF" id="gridTF2">
+            {% endif %}
+            <label class="form-check-label" for="gridTF2"> False </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro multiple_choice_options(row) %}
+  <h5>
+    Multiple Choice Options
+  </h5>
+
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Correct</legend>
+      <div class="col-sm-10">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="1" checked>
+          <label class="form-check-label" for="gridRadios1"> 1 </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="2">
+          <label class="form-check-label" for="gridRadios2"> 2 </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="3">
+          <label class="form-check-label" for="gridRadios3"> 3 </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="4">
+          <label class="form-check-label" for="gridRadios4"> 4 </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="5" disabled>
+          <label class="form-check-label" for="gridRadios5"> 5 </label>
+        </div>      
+        <p id="correctHelpBlock" class="form-text text-muted">
+         Indicate which multiple choice option is correct
+        </p>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form-group row">
+    <div class="col-sm-2">Options</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        {% if row.randomize == 1 %}
+          <input class="form-check-input" type="checkbox" id="checkRandomize" checked>
+        {% else %}
+          <input class="form-check-input" type="checkbox" id="checkRandomize">
+        {% endif %}
+        <label class="form-check-label" for="checkRandomize">
+          Randomize order
+        </label>
+      </div>
+      <div class="form-check">
+        {% if row.aota == 1 %}
+          <input class="form-check-input" type="checkbox" id="checkAota" checked>
+        {% else %}
+          <input class="form-check-input" type="checkbox" id="checkAota">
+        {% endif %}
+        <label class="form-check-label" for="checkAota">
+          Include "All of the Above"
+        </label>
+      </div>
+
+      <div class="form-check">
+        {% if row.nota == 1 %}
+          <input class="form-check-input" type="checkbox" id="checkNota" checked>
+        {% else %}
+          <input class="form-check-input" type="checkbox" id="checkNota">
+        {% endif %}
+        <label class="form-check-label" for="checkNota">
+          Include "None of the Above"
+        </label>
+      </div> 
+    </div> <!-- class="col-sm-10" -->
+  </div> <!-- class="form-group row" -->
+
+{% endmacro %}
+
+{# ###################################################################### #}
+
+
+{% macro header() %}
+  <thead class="thead-dark">
+    <tr>
+      <th>id</th>
+      <th class="col-md-2">Question</th>  
+      <th>Answer</th>  
+      <th>Correct</th>  
+      <th>Type</th>
+      <th>Randomize</th>
+      <th>AOTA</th>
+      <th>NOTA</th>
+      <th>Enabled</th>
+      <th>Comments</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro print_row(row) %}
+  <tr>
+    <td>{{row.id}}</td>
+    <td>{{row.question}}</td>
+    <td>{{row.answer}}</td>
+    <td>{{row.correct}}</td>
+    <td>{{row.type}}</td>
+    <td>{{row.randomize}}</td>
+    <td>{{row.aota}}</td>
+    <td>{{row.nota}}</td>
+    <td>{{row.enabled}}</td>
+    <td>{{row.comments}}</td>
+
+    <td>
+      <a href="/update/{{row.id}}" class="btn btn-warning btn-xs" data-toggle="modal" 
+        data-target="#modaledit{{row.id}}">
+        Edit
+      </a>
+      <a href="/delete/{{row.id}}" class="btn btn-danger btn-xs" 
+        onclick="return confirm('Do you really want to delete?')">
+        Delete
+      </a>
+    </td>
+  </tr>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro sample_labels() %}
+    <div class="form-group">
+      <label for="sampleLabels">Sample Labels</label>
+      <select multiple class="form-control" id="sampleLabels">
+        <option>AutoViz</option>
+        <option>Recipes</option>
+        <option>AutoDoc</option>
+        <option>Models</option>
+        <option>Expert Settings</option>
+      </select>
+    </div>
+
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro question_types() %}
+  <div class="form-group">
+    <label for="questionType">Question Type</label>
+    <select class="form-control" id="questionType">
+      <option>Multiple Choice</option>
+      <option>True/False</option>
+      <option>Numeric</option>
+      <option>Short Answer</option>
+      <option>Paragraph</option>
+    </select>
+  </div>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro question_type_advanced(row) %}
+
+  <div class="form-group">
+    <label for="questionType">Question Type</label>
+    <select class="form-control" id="questionType">
+
+      {% if row.type == "Multiple Choice" %}
+        <option value="MC" selected >Multiple Choice</option>
+      {% else %}
+        <option value="MC">Multiple Choice</option>
+      {% endif %}
+
+      {% if row.type == "True/False" %}
+        <option value="TF" selected>True/False</option>
+      {% else %}
+        <option value="TF">True/False</option>
+      {% endif %}
+
+      {% if row.type == "Numeric" %}
+        <option value="Numeric" selected>Numeric</option>
+      {% else %}
+        <option value="Numeric">Numeric</option>
+      {% endif %}
+
+      {% if row.type == "Short Answer" %}
+        <option value="SA" selected>Short Answer</option>
+      {% else %}
+        <option value="SA">Short Answer</option>
+      {% endif %}
+
+      {% if row.type == "Paragraph" %}
+        <option value="Paragraph" selected>Paragraph</option>
+      {% else %}
+        <option value="Paragraph">Paragraph</option>
+      {% endif %}
+
+    </select>
+  </div> 
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro question(row) %}
+  <div class="form-group shadow-textarea">
+    <label for="questionTextarea">Question</label>
+    <textarea class="form-control rounded-0" name="question" id="questionTextArea" rows="4" placeholder="Enter question">
+      {{ row.question }}
+    </textarea>
+  </div>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro answer(row) %}
+  <div class="form-group">
+     <label>Answer:</label>
+     <input type="text" class="form-control" name="answer" value="{{row.answer}}" placeholder="Enter question">
+  </div>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro everything_else(row) %}
+  <div class="form-group shadow-textarea">
+    <label for="questionTextarea">Question</label>
+    <textarea class="form-control rounded-0" name="question" id="questionTextArea" rows="4">{{row.question}}
+    </textarea>
+  </div>
+
+  <div class="form-group">
+     <label>Answer:</label>
+     <input type="text" class="form-control" name="answer" value="{{row.answer}}">
+  </div>
+
+  <div class="form-group">
+     <label>Correct:</label>
+     <input type="number" class="form-control" name="correct" value="{{row.correct}}">
+  </div>
+
+  <div class="form-group form-check">
+     <input type="checkbox" class="form-check-input" id="randomCheck" name="randomize" value="{{row.randomize}}">
+     <label class="form-check-label" for="randomCheck">Randomize multiple choice options</label>
+  </div>
+
+  <div class="form-group form-check">
+     <input type="checkbox" class="form-check-input" id="aotaCheck" name="aota" value="{{row.aota}}">
+     <label class="form-check-label" for="aotaCheck">Multiple choice: Include "All of the above"</label>
+  </div>
+
+  <div class="form-group form-check">
+     <input type="checkbox" class="form-check-input" id="notaCheck" name="nota" value="{{row.nota}}">
+     <label class="form-check-label" for="notaCheck">Multiple choice: Include "None of the above"</label>
+  </div>
+
+  <div class="form-group form-check">
+     <input type="checkbox" class="form-check-input" id="exampleCheck1" name="enabled" value="{{row.enabled}}">
+     <label class="form-check-label" for="exampleCheck1">Enable question</label>
+  </div>
+
+  <div class="form-group">
+     <label>Comments:</label>
+     <input type="text" class="form-control" name="comments" value="{{row.comments}}">
+  </div>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro enabled(row) %}
+  <div class="form-group form-check">
+    {% if row.enabled == 1 %}
+      <input class="form-check-input" type="checkbox" id="checkEnabled" name="enabled" checked>
+    {% else %}
+      <input class="form-check-input" type="checkbox" id="checkEnabled" name="enabled">
+    {% endif %}
+    <label class="form-check-label" for="checkEnabled">Enable question</label>
+  </div>
+
+{% endmacro %}
+
+
+{# ###################################################################### #}
+
+{% macro comments(row) %}
+
+              <div class="form-group">
+                 <label>Comments:</label>
+                 <input type="text" class="form-control" name="comments" value="{{row.comments}}">
+              </div>
+
+{% endmacro %}
+
+{# ###################################################################### #}
+
+
+{# ###################################################################### #}
+
+
+{# ###################################################################### #}
+
+
+{# ###################################################################### #}
+
