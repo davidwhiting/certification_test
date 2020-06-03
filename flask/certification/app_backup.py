@@ -38,88 +38,9 @@ class QuestionTemplates(db.Model):
         self.comments  = comments  
 
 
-#Creating model table for our CRUD database
-class QuestionTemplates(db.Model):
-    id        = db.Column(db.Integer, primary_key = True)
-    question  = db.Column(db.Text)
-    answer    = db.Column(db.Text)
-    correct   = db.Column(db.Integer)
-    randomize = db.Column(db.Boolean)
-    type      = db.Column(db.Text) # Enum()
-    aota      = db.Column(db.Boolean)
-    nota      = db.Column(db.Boolean)
-    enabled   = db.Column(db.Boolean)
-    comments  = db.Column(db.Text)
-
-    def __init__(self, question, answer, correct, randomize, type, aota, nota, enabled, comments):
-        self.question  = question  
-        self.answer    = answer    
-        self.correct   = correct   
-        self.randomize = randomize 
-        self.type      = type      
-        self.aota      = aota      
-        self.nota      = nota      
-        self.enabled   = enabled   
-        self.comments  = comments  
-
-#Creating model tables
-class TestDefinitions(db.Model):
-    id          = db.Column(db.Integer, primary_key = True)
-    name        = db.Column(db.Text)
-    description = db.Column(db.Text)
-    dai_version = db.Column(db.Text)
-
-    def __init__(self, id, name, description, dai_version):
-        self.id          = id          
-        self.name        = name        
-        self.description = description 
-        self.dai_version = dai_version 
-
-#Creating model tables
-class TestSubqueries(db.Model):
-    id            = db.Column(db.Integer, primary_key = True)
-    definition_id = db.Column(db.Integer)
-    section       = db.Column(db.Integer)
-    prefix        = db.Column(db.Text)
-    definition    = db.Column(db.Text)
-    n             = db.Column(db.Integer)
-    randomize     = db.Column(db.Integer)
-
-    def __init__(self, id, definition_id, section, prefix, definition, n, randomize):
-        self.id            = id             
-        self.definition_id = definition_id 
-        self.section       = section       
-        self.prefix        = prefix        
-        self.definition    = definition    
-        self.n             = n             
-        self.randomize     = randomize     
-
-#Creating model tables
-class Questions(db.Model):
-    id          = db.Column(db.Integer, primary_key = True)
-    test_id     = db.Column(db.Integer)
-    number      = db.Column(db.Integer)
-    question    = db.Column(db.Text)
-    answer      = db.Column(db.Text)
-    template_id = db.Column(db.Integer)
-
-    def __init__(self, id, test_id, number, question, answer, template_id):
-        self.id          = id          
-        self.test_id     = test_id     
-        self.number      = number      
-        self.question    = question    
-        self.answer      = answer      
-        self.template_id = template_id 
-
 #This is the index route where we are going to
 #query on all our employee data
 @app.route('/')
-def Index():
-    all_data = Questions.query.all()
-
-    return render_template("index.html", questions = all_data)
-
-@app.route('/templates/')
 def Index():
     all_data = QuestionTemplates.query.all()
 
@@ -127,7 +48,7 @@ def Index():
 
 
 #this route is for inserting data to mysql database via html forms
-@app.route('/templates/insert', methods = ['POST'])
+@app.route('/insert', methods = ['POST'])
 def insert():
 
     if request.method == 'POST':
@@ -153,7 +74,7 @@ def insert():
 
 
 #this is our update route where we are going to update our question template
-@app.route('/templates/update', methods = ['GET', 'POST'])
+@app.route('/update', methods = ['GET', 'POST'])
 def update():
 
     if request.method == 'POST':
@@ -238,8 +159,8 @@ def update():
 #        return redirect(url_for('Index'))
 
 
-#This route is for deleting our question templates
-@app.route('/templates/delete/<id>/', methods = ['GET', 'POST'])
+#This route is for deleting our employee
+@app.route('/delete/<id>/', methods = ['GET', 'POST'])
 def delete(id):
     my_data = QuestionTemplates.query.get(id)
     db.session.delete(my_data)

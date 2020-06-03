@@ -165,3 +165,11 @@ CREATE TABLE `students`(
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
+
+CREATE OR REPLACE VIEW tags AS 
+    SELECT b.templates_id as id, a.name 
+    FROM label_list a, labels b 
+    WHERE a.id=b.labellist_id 
+    ORDER BY templates_id, a.name;
+
+

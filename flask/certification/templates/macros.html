@@ -206,6 +206,20 @@
 {# ###################################################################### #}
 
 
+{% macro test_header() %}
+  <thead class="thead-dark">
+    <tr>
+      <th>id</th>
+      <th>Number</th>        
+      <th class="col-md-2">Question</th>  
+      <th>Answer</th>  
+    </tr>
+  </thead>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+
 {% macro header() %}
   <thead class="thead-dark">
     <tr>
@@ -249,6 +263,17 @@
         Delete
       </a>
     </td>
+  </tr>
+{% endmacro %}
+
+{# ###################################################################### #}
+
+{% macro print_question_row(row) %}
+  <tr>
+    <th>id</th>
+    <th>Number</th>        
+    <th class="col-md-2">Question</th>  
+    <th>Answer</th>  
   </tr>
 {% endmacro %}
 
