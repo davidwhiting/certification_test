@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+{% block title %} Home {% endblock %}
+{% block body %}
+
+{% from "macros.html" import header with context %}
+{% from "macros.html" import print_row with context %}
+{% from "macros.html" import sample_labels with context %}
+{% from "macros.html" import question_types with context %}
+{% from "macros.html" import everything_else with context %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col md-12">
+      <div class="jumbotron p-3">
+
+        <h2>Manage Question Templates  
+          <button type="button"  class="btn btn-success float-right"
+            data-toggle="modal" data-target="#mymodal">
+            Add New Question
+          </button> 
+        </h2>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+
+        <div class="alert alert-success alert-dismissable" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">x</span>
+          </button>
+          {{ message }}
+        </div>
+
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+<!--
+        <table class="table table-hover table-striped table-bordered table-condensed table-light table-md">
+-->     
+        <div class="table-responsive">
+        <table class="table table-hover table-sm table-condensed table-striped">
+
+          {{ header() }}
+
+          <tbody>
+
+  {% for row in question_templates %}
+
+            {% if row.enabled >= 0 %}
+              {{ print_row(row) }}
+            {% endif %}
+
+          </tbody>
+
+          <!-- Modal Edit Question Template -->
+          <div id="modaledit{{row.id}}" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <h4 class="modal-title">Update Information</h4>
+                </div>
+
+                <div class="modal-body">
+                  {{ sample_labels() }}
+
+                  <form action="{{url_for('update')}}" method="POST">
+                    {{ question_types() }}
+                    {{ everything_else(row) }}
+                  </form>
+                </div> <!-- class="modal-body" -->
+
+                <div class="modal-footer">
+                  <button class="btn btn-primary" type="submit">Update</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+              </div> <!-- class="modal-content" -->
+            </div> <!-- class="modal-dialog" -->
+          </div> <!-- id="modaledit{{row.id}}" class="modal fade" role="dialog" -->
+
+  {% endfor %}
+
+
+        </table>
+        </div>
+      </div>
+
+      <!-- Modal Add Question-->
+
+      <div id="mymodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Add Question Template</h4>
+            </div>
+
+            <div class="modal-body">
+              <form action="{{url_for('insert')}}" method="POST">
+
+                <div class="form-group">
+                  <label>Name:</label>
+                  <input type="text" class="form-control" name="question" required="1">
+                </div>
+
+                <div class="form-group">
+                  <label>Answer:</label>
+                  <input type="text" class="form-control" name="answer" required="1">
+                </div>
+
+                <div class="form-group">
+                  <label>Type:</label>
+                  <input type="text" class="form-control" name="type" required="1">
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-primary" type="submit">Add Question Template</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
