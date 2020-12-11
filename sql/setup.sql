@@ -76,8 +76,7 @@ CREATE TABLE `datasets`(
     `path` TEXT,
     `train_fraction` DECIMAL,
     `seed` INT,
-    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
-    PRIMARY KEY(`id`)
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP  
 ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS `student_answers`;
@@ -87,14 +86,9 @@ CREATE TABLE `student_answers`(
     `questions_id` INT,
     `score` REAL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
-    PRIMARY KEY(`id`),
     INDEX(`questions_id`),
     INDEX(`student_id`)
 ) ENGINE=InnoDB;
-
-
-
-
 
 DROP TABLE IF EXISTS `tests`;
 CREATE TABLE `tests`(
@@ -108,22 +102,20 @@ CREATE TABLE `tests`(
     INDEX(`definition_id`)
 ) ENGINE=InnoDB;
 
-DROP TABLE IF EXISTS `tag_list`;
-CREATE TABLE `tag_list`(
+DROP TABLE IF EXISTS `label_list`;
+CREATE TABLE `label_list`(
     `id` INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `name` VARCHAR(50),
-    PRIMARY KEY(`id`),
     UNIQUE(`name`)    
 ) ENGINE=InnoDB;
 
-DROP TABLE IF EXISTS `tags`;
-CREATE TABLE `tags`(
+DROP TABLE IF EXISTS `labels`;
+CREATE TABLE `labels`(
     `id` INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `templates_id` INT,
-    `taglist_id` INT,
-    PRIMARY KEY(`id`),
+    `labellist_id` INT,
     INDEX(`templates_id`),
-    INDEX(`taglist_id`)    
+    INDEX(`labellist_id`)    
 ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS `exp_definitions`;
@@ -137,7 +129,6 @@ CREATE TABLE `exp_definitions`(
     `config_overrides` TEXT,
     `approx_runtime` INT,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
-    PRIMARY KEY(`id`),
     INDEX(`dataset_id`)
 ) ENGINE=InnoDB;
 
@@ -149,7 +140,6 @@ CREATE TABLE `experiments`(
     `dai_version` VARCHAR(15),
     `definition_id` INT,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
-    PRIMARY KEY(`id`),
     INDEX(`definition_id`)
 ) ENGINE=InnoDB;
 
@@ -160,7 +150,6 @@ CREATE TABLE `results`(
     `field` VARCHAR(50),
     `value` TEXT,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
-    PRIMARY KEY(`id`),
     INDEX(`experiments_id`)
 ) ENGINE=InnoDB;
 
@@ -173,7 +162,14 @@ CREATE TABLE `students`(
     `firstname` VARCHAR(50),
     `lastname` VARCHAR(50),
     `company` VARCHAR(50),
-    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,   
-    PRIMARY KEY(`id`)
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
+
+
+CREATE OR REPLACE VIEW tags AS 
+    SELECT b.templates_id as id, a.name 
+    FROM label_list a, labels b 
+    WHERE a.id=b.labellist_id 
+    ORDER BY templates_id, a.name;
+
 

@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+{% block title %} Home {% endblock %}
+{% block body %}
+
+{% from "macros.html" import answer with context %}
+{% from "macros.html" import comments with context %}
+{% from "macros.html" import enabled with context %}
+{% from "macros.html" import everything_else with context %}
+{% from "macros.html" import header with context %}
+{% from "macros.html" import ids with context %}
+{% from "macros.html" import multiple_choice_options with context %}
+{% from "macros.html" import navtabs with context %}
+{% from "macros.html" import print_row with context %}
+{% from "macros.html" import question with context %}
+{% from "macros.html" import question_type2 with context %}
+{% from "macros.html" import question_type_advanced with context %}
+{% from "macros.html" import question_types with context %}
+{% from "macros.html" import sample_labels with context %}
+{% from "macros.html" import true_false with context %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col md-12">
+      <div class="jumbotron p-3">
+
+        <h2>Manage Question Templates  
+          <button type="button"  class="btn btn-success float-right"
+            data-toggle="modal" data-target="#mymodal">
+            Add New Question
+          </button> 
+        </h2>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+
+        <div class="alert alert-success alert-dismissable" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">x</span>
+          </button>
+          {{ message }}
+        </div>
+
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+<!--
+        <table class="table table-hover table-striped table-bordered table-condensed table-light table-md">
+-->     
+        <div class="table-responsive">
+          <table class="table table-hover table-sm table-condensed table-striped">
+
+          {{ header() }}
+
+            <tbody>
+              
+  {% for row in question_templates %}
+
+            {% if row.enabled >= 0 %}
+              {{ print_row(row) }}
+            {% endif %}
+
+            </tbody>
+
+            <!-- Modal Edit Question Template -->
+            <div id="modaledit{{row.id}}" class="modal fade" role="dialog" tabindex="-1">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Edit Question Template</h4>
+                  </div>
+
+                  {{ navtabs(row) }}
+
+                  <div class="tab-content" id="nav-tabContent">
+
+                    <!-- MULTIPLE CHOICE TAB -->
+                    <div class="tab-pane fade" id="nav-mc" role="tabpanel" aria-labelledby="nav-mc-tab">
+                      <div class="modal-body">
+                        <form action="{{url_for('update')}}" method="POST">
+
+                          {{ ids(row) }}
+                          {{ question_type_advanced(row) }}
+                          {{ question(row) }}
+                          {{ answer(row) }}
+                          {{ multiple_choice_options(row) }}
+                          {{ enabled(row) }}
+                          {{ comments(row) }}
+                          {{ sample_labels() }}
+
+                          <div class="form-group">
+                             <button class="btn btn-primary" type="submit">Update</button>
+                          </div>
+                        </form> 
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div> 
+                    </div> 
+
+                    <!-- TRUE/FALSE TAB -->
+                    <div class="tab-pane fade" id="nav-tf" role="tabpanel" aria-labelledby="nav-tf-tab">
+                      <div class="modal-body">
+                        <form action="{{url_for('update')}}" method="POST">
+
+                          {{ ids(row) }}
+                          {{ question_type_advanced(row) }}
+                          {{ question(row) }}
+                          {{ true_false(row) }}
+                          {{ enabled(row) }}
+                          {{ comments(row) }}
+                          {{ sample_labels() }}
+
+                          <div class="form-group">
+                             <button class="btn btn-primary" type="submit">Update</button>
+                          </div>
+                        </form> 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div> 
+                    </div>
+
+                    <!-- NUMERIC TAB -->
+                    <div class="tab-pane fade" id="nav-numeric" role="tabpanel" aria-labelledby="nav-numeric-tab">
+                      <div class="modal-body">
+                        <form action="{{url_for('update')}}" method="POST">
+
+                          {{ ids(row) }}
+                          {{ question_type_advanced(row) }}
+                          {{ question(row) }}
+                          {{ answer(row) }}
+                          {{ enabled(row) }}
+                          {{ comments(row) }}
+                          {{ sample_labels() }}
+
+                          <div class="form-group">
+                             <button class="btn btn-primary" type="submit">Update</button>
+                          </div>
+                        </form> 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div> 
+                    </div> 
+
+                    <!-- ORIGINAL ALL TAB -->
+                    <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                      <div class="modal-body">
+                        <form action="{{url_for('update')}}" method="POST">
+
+                          {{ ids(row) }}
+                          {{ question_type_advanced(row) }}
+                          {{ question(row) }}
+                          {{ answer(row) }}
+                          {{ true_false(row) }}
+                          {{ multiple_choice_options(row) }}
+                          {{ enabled(row) }}
+                          {{ comments(row) }}
+                          {{ sample_labels() }}
+
+                          <div class="form-group">
+                             <button class="btn btn-primary" type="submit">Update</button>
+                          </div>
+                        </form> 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div> 
+                    </div> 
+
+                  </div> <!-- tabContent -->
+
+                </div> <!-- modal-content -->
+              </div> <!-- modal-dialog -->
+            </div> <!-- modaledit -->
+  
+            <!-- End Modal Template -->
+
+  {% endfor %}
+
+          </table> <!-- -->
+        </div> <!-- table-responsive -->
+
+        <!-- Modal Add Question-->
+
+        <div id="mymodal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Add Question Template</h4>
+              </div>
+
+              <div class="modal-body">
+                <form action="{{url_for('insert')}}" method="POST">
+
+                  <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" class="form-control" name="question" required="1">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Answer:</label>
+                    <input type="text" class="form-control" name="answer" required="1">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Type:</label>
+                    <input type="text" class="form-control" name="type" required="1">
+                  </div>
+  
+                  <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Add Question Template</button>
+                  </div>
+                </form>
+              </div> <!-- class="modal-body" -->
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+
+            </div> <!-- class="modal-content" -->
+          </div> <!-- class="modal-dialog" -->
+        </div> <!-- mymodal -->
+
+      </div> <!-- jumbotron -->
+    </div> <!-- col md-12 -->
+  </div> <!-- -->
+</div> <!-- class="container-fluid" -->
+
+{% endblock %}
